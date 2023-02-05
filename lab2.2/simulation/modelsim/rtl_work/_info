@@ -1,0 +1,287 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Soumi/Documents/ece385/lab2.2/simulation/modelsim
+vcompute
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1675453123
+!i10b 1
+!s100 i=]6932U1_OWO<5E?3HbR1
+I3QU8?Nkmn9S_?W8=UbUJ31
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 compute_sv_unit
+S1
+R0
+Z4 w1675309048
+8C:/Users/Soumi/Documents/ece385/lab2.2/compute.sv
+FC:/Users/Soumi/Documents/ece385/lab2.2/compute.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1675453123.000000
+!s107 C:/Users/Soumi/Documents/ece385/lab2.2/compute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/compute.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/Soumi/Documents/ece385/lab2.2
+Z9 tCvgOpt 0
+vcontrol
+R1
+R2
+!i10b 1
+!s100 3UO6Qj=zEkX`9kWR;GIh91
+I_bFHIz[AI8[8N89BZ2W:_0
+R3
+!s105 Control_sv_unit
+S1
+R0
+w1675380081
+8C:/Users/Soumi/Documents/ece385/lab2.2/Control.sv
+FC:/Users/Soumi/Documents/ece385/lab2.2/Control.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Control.sv|
+!i113 1
+R7
+R8
+R9
+vHexDriver
+R1
+Z10 !s110 1675453124
+!i10b 1
+!s100 ^DddjRd7Wla]U<SlP;mT@0
+I1Q_En7lgPRJhO:0l[>m`[1
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+R4
+8C:/Users/Soumi/Documents/ece385/lab2.2/HexDriver.sv
+FC:/Users/Soumi/Documents/ece385/lab2.2/HexDriver.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Soumi/Documents/ece385/lab2.2/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/HexDriver.sv|
+!i113 1
+R7
+R8
+R9
+n@hex@driver
+vProcessor
+R1
+Z11 !s110 1675453125
+!i10b 1
+!s100 Q490j06AnLUl^[N5WS1:k1
+IQl0^l5i[QSmS5jdK0o:g<2
+R3
+!s105 Processor_sv_unit
+S1
+R0
+w1675452198
+8C:/Users/Soumi/Documents/ece385/lab2.2/Processor.sv
+FC:/Users/Soumi/Documents/ece385/lab2.2/Processor.sv
+L0 8
+R5
+r1
+!s85 0
+31
+Z12 !s108 1675453125.000000
+!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Processor.sv|
+!i113 1
+R7
+R8
+R9
+n@processor
+vreg_4
+R1
+R10
+!i10b 1
+!s100 g728BkI_Hej5?[[NfZJXH2
+IaLN3gN]E823_djMU5QSFT3
+R3
+!s105 Reg_4_sv_unit
+S1
+R0
+w1675445239
+8C:/Users/Soumi/Documents/ece385/lab2.2/Reg_4.sv
+FC:/Users/Soumi/Documents/ece385/lab2.2/Reg_4.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z13 !s108 1675453124.000000
+!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Reg_4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Reg_4.sv|
+!i113 1
+R7
+R8
+R9
+vregister_unit
+R1
+R10
+!i10b 1
+!s100 c?`W04Obk>`oYn_UgA>oj0
+Ig4gGJZgJcTTC7;V?<aVOi3
+R3
+!s105 Register_unit_sv_unit
+S1
+R0
+w1675321657
+8C:/Users/Soumi/Documents/ece385/lab2.2/Register_unit.sv
+FC:/Users/Soumi/Documents/ece385/lab2.2/Register_unit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Register_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Register_unit.sv|
+!i113 1
+R7
+R8
+R9
+vrouter
+R1
+R10
+!i10b 1
+!s100 lIdD9@`9>^lYia[Dkg2aV0
+IIi[Nl5JiH0l`;ECSVm2Gb1
+R3
+!s105 Router_sv_unit
+S1
+R0
+R4
+8C:/Users/Soumi/Documents/ece385/lab2.2/Router.sv
+FC:/Users/Soumi/Documents/ece385/lab2.2/Router.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Router.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Router.sv|
+!i113 1
+R7
+R8
+R9
+vsync
+R1
+R10
+!i10b 1
+!s100 2W5Vz0:F6ckE2`eJOTK5l1
+IVhRE;Lzi[ebQa6Xbm[hQQ2
+R3
+Z14 !s105 Synchronizers_sv_unit
+S1
+R0
+R4
+Z15 8C:/Users/Soumi/Documents/ece385/lab2.2/Synchronizers.sv
+Z16 FC:/Users/Soumi/Documents/ece385/lab2.2/Synchronizers.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R13
+Z17 !s107 C:/Users/Soumi/Documents/ece385/lab2.2/Synchronizers.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Synchronizers.sv|
+!i113 1
+R7
+R8
+R9
+vsync_r0
+R1
+R10
+!i10b 1
+!s100 IGd9f_F;JNjVBLQ@DAnD10
+I@U[1b:`SWn8A[[3MJ_h]L0
+R3
+R14
+S1
+R0
+R4
+R15
+R16
+L0 18
+R5
+r1
+!s85 0
+31
+R13
+R17
+R18
+!i113 1
+R7
+R8
+R9
+vsync_r1
+R1
+R10
+!i10b 1
+!s100 1CXiH1DYDbAUS69Ee2j060
+I7R36X9gFhB1`95JXZ12823
+R3
+R14
+S1
+R0
+R4
+R15
+R16
+L0 39
+R5
+r1
+!s85 0
+31
+R13
+R17
+R18
+!i113 1
+R7
+R8
+R9
+vtestbench
+R1
+R11
+!i10b 1
+!s100 6fgeGEV<MmGbRAG8fZAbS0
+I1@S75GkQ_FKkafdohSAck2
+R3
+!s105 testbench_8_sv_unit
+S1
+R0
+R4
+8C:/Users/Soumi/Documents/ece385/lab2.2/testbench_8.sv
+FC:/Users/Soumi/Documents/ece385/lab2.2/testbench_8.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Soumi/Documents/ece385/lab2.2/testbench_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/testbench_8.sv|
+!i113 1
+R7
+R8
+R9
