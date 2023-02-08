@@ -1,1 +1,1 @@
-Warning (10273): Verilog HDL warning at HexDriver.sv(23): extended using "x" or "z" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv Line: 23
+Info (10281): Verilog HDL Declaration information at lookahead_adder.sv(6): object "PG" differs only in case from object "Pg" in the same scope File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/lookahead_adder.sv Line: 6

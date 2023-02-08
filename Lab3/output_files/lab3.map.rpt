@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Mon Feb 06 01:52:43 2023
+Wed Feb 08 00:00:03 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Feb 06 01:52:43 2023           ;
+; Analysis & Synthesis Status        ; Failed - Wed Feb 08 00:00:03 2023           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab3                                        ;
 ; Top-level Entity Name              ; adder_toplevel                              ;
@@ -164,46 +164,36 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Feb 06 01:52:25 2023
+    Info: Processing started: Tue Feb 07 23:59:52 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file select_adder.sv
-    Info (12023): Found entity 1: select_adder File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/select_adder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file ripple_adder.sv
+Error (10170): Verilog HDL syntax error at select_adder.sv(43) near text: "FR1";  expecting "<=", or "=", or "+=", or "-=", or "*=", or "/=", or "%=", or "&=", or "|=", or "^=", or "<<=", or ">>=", or "<<<=", or ">>>=", or "++", or "--". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/select_adder.sv Line: 43
+Error (10170): Verilog HDL syntax error at select_adder.sv(44) near text: "else";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/select_adder.sv Line: 44
+Error (10112): Ignored design unit "CSA_unit" at select_adder.sv(27) due to previous errors File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/select_adder.sv Line: 27
+Info (12021): Found 0 design units, including 0 entities, in source file select_adder.sv
+Info (12021): Found 3 design units, including 3 entities, in source file ripple_adder.sv
     Info (12023): Found entity 1: ripple_adder File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv Line: 1
+    Info (12023): Found entity 2: four_bit_ra File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv Line: 17
+    Info (12023): Found entity 3: full_adder File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file reg_17.sv
     Info (12023): Found entity 1: reg_17 File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_17.sv
     Info (12023): Found entity 1: mux2_1_17 File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file lookahead_adder.sv
+Info (12021): Found 2 design units, including 2 entities, in source file lookahead_adder.sv
     Info (12023): Found entity 1: lookahead_adder File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/lookahead_adder.sv Line: 1
+    Info (12023): Found entity 2: CLA File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/lookahead_adder.sv Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
     Info (12023): Found entity 1: HexDriver File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control.sv
     Info (12023): Found entity 1: control File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file adder_toplevel.sv
     Info (12023): Found entity 1: adder_toplevel File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at ripple_adder.sv(35): created implicit net for "CO" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv Line: 35
-Info (12127): Elaborating entity "adder_toplevel" for the top level hierarchy
-Info (12128): Elaborating entity "control" for hierarchy "control:run_once" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv Line: 38
-Info (12128): Elaborating entity "mux2_1_17" for hierarchy "mux2_1_17:m_mux" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv Line: 41
-Info (12128): Elaborating entity "reg_17" for hierarchy "reg_17:reg_unit" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv Line: 44
-Info (12128): Elaborating entity "ripple_adder" for hierarchy "ripple_adder:adder" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv Line: 48
-Warning (10034): Output port "cout" at ripple_adder.sv(7) has no driver File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv Line: 7
-Warning (12125): Using design file full_adder.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: full_adder File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/full_adder.sv Line: 1
-Error (10161): Verilog HDL error at full_adder.sv(9): object "A" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/full_adder.sv Line: 9
-Error (10161): Verilog HDL error at full_adder.sv(9): object "B" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/full_adder.sv Line: 9
-Error (10161): Verilog HDL error at full_adder.sv(9): object "cin" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/full_adder.sv Line: 9
-Error (10161): Verilog HDL error at full_adder.sv(10): object "A" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/full_adder.sv Line: 10
-Error (10161): Verilog HDL error at full_adder.sv(10): object "B" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/full_adder.sv Line: 10
-Error (10161): Verilog HDL error at full_adder.sv(10): object "cin" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/full_adder.sv Line: 10
 Info (144001): Generated suppressed messages file C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/output_files/lab3.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 4 warnings
-    Error: Peak virtual memory: 4707 megabytes
-    Error: Processing ended: Mon Feb 06 01:52:43 2023
-    Error: Elapsed time: 00:00:18
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
+    Error: Peak virtual memory: 4705 megabytes
+    Error: Processing ended: Wed Feb 08 00:00:03 2023
+    Error: Elapsed time: 00:00:11
     Error: Total CPU time (on all processors): 00:00:24
 
 
