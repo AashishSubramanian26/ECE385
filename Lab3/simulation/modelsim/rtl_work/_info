@@ -10,36 +10,36 @@ cModel Technology
 Z0 dC:/Users/Soumi/Documents/GitHub/ECE385/Lab3/simulation/modelsim
 vadder_toplevel
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1675669863
+!s110 1675900621
 !i10b 1
 !s100 9KYVWUMCM8ge@:n1O6>_a3
 IFhHkgE3OK;EdCg2gE8=QQ3
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 !s105 adder_toplevel_sv_unit
 S1
 R0
-w1675573516
+w1675728864
 8C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv
 L0 8
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1675669863.000000
+Z4 !s108 1675900620.000000
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3|C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3
-Z8 tCvgOpt 0
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3
+Z7 tCvgOpt 0
 vcontrol
 R1
-R2
+Z8 !s110 1675900620
 !i10b 1
 !s100 OOHQ2a[iW<z:5Zbk18;j=0
 IWn@YedfCVc^[]neVYWOjN3
-R3
+R2
 !s105 control_sv_unit
 S1
 R0
@@ -47,24 +47,74 @@ Z9 w1675573002
 8C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv
 L0 5
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3|C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv|
 !i113 1
+R5
 R6
 R7
+vfour_bit_ra
+R1
 R8
+!i10b 1
+!s100 FnS=ObLK7=g9h]QJe?AEo2
+IcHJOIa_oJlDkMj2Gocz`;3
+R2
+Z10 !s105 ripple_adder_sv_unit
+S1
+R0
+Z11 w1675900522
+Z12 8C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv
+Z13 FC:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv
+L0 18
+R3
+r1
+!s85 0
+31
+R4
+Z14 !s107 C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3|C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv|
+!i113 1
+R5
+R6
+R7
+vfull_adder
+R1
+R8
+!i10b 1
+!s100 5CA`zPCOE:76eZMGH<Dd60
+I=CIb7^j=`c474DRMCf;@o1
+R2
+R10
+S1
+R0
+R11
+R12
+R13
+L0 36
+R3
+r1
+!s85 0
+31
+R4
+R14
+R15
+!i113 1
+R5
+R6
+R7
 vHexDriver
 R1
-R2
+R8
 !i10b 1
 !s100 ^DddjRd7Wla]U<SlP;mT@0
 IzkU8h?oSUh2Ko7B>2]k>80
-R3
+R2
 !s105 HexDriver_sv_unit
 S1
 R0
@@ -72,50 +122,50 @@ R9
 8C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3|C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv|
 !i113 1
+R5
 R6
 R7
-R8
 n@hex@driver
 vmux2_1_17
 R1
-R2
+R8
 !i10b 1
 !s100 g0@DG?cNA3JbATh;G2l680
 I;_lY9hZ`mO;ThgLTNVC]I2
-R3
+R2
 !s105 mux2_1_17_sv_unit
 S1
 R0
-R9
+w1675900288
 8C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3|C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv|
 !i113 1
+R5
 R6
 R7
-R8
 vreg_17
 R1
-R2
+R8
 !i10b 1
 !s100 @KRhZfEFY2Rjzk6WVkhBC3
 IO:hj:f?DiBilRg12ojQHE3
-R3
+R2
 !s105 reg_17_sv_unit
 S1
 R0
@@ -123,39 +173,39 @@ R9
 8C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3|C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv|
 !i113 1
+R5
 R6
 R7
-R8
 vripple_adder
 R1
-R2
+R8
 !i10b 1
-!s100 TzC[H1^>bOZn[D7F@MKQk2
-IB<bYTFJ5VN0d`4heW@^321
-R3
-!s105 ripple_adder_sv_unit
+!s100 d=LIH<06j@R97hmnnAfk:0
+IkQ8z9hoMXQB3b=PiKWhEd3
+R2
+R10
 S1
 R0
-w1675663571
-8C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv
-FC:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv
+R11
+R12
+R13
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3|C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv|
+R4
+R14
+R15
 !i113 1
+R5
 R6
 R7
-R8

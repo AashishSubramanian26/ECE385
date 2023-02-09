@@ -12,62 +12,90 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:51:03 on Feb 06,2023
+# Start time: 17:57:00 on Feb 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv 
 # -- Compiling module ripple_adder
+# -- Compiling module four_bit_ra
+# -- Compiling module full_adder
 # 
 # Top level modules:
 # 	ripple_adder
-# End time: 01:51:03 on Feb 06,2023, Elapsed time: 0:00:00
+# End time: 17:57:00 on Feb 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:51:03 on Feb 06,2023
+# Start time: 17:57:00 on Feb 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv 
 # -- Compiling module reg_17
 # 
 # Top level modules:
 # 	reg_17
-# End time: 01:51:03 on Feb 06,2023, Elapsed time: 0:00:00
+# End time: 17:57:00 on Feb 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:51:03 on Feb 06,2023
+# Start time: 17:57:00 on Feb 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv 
 # -- Compiling module mux2_1_17
 # 
 # Top level modules:
 # 	mux2_1_17
-# End time: 01:51:03 on Feb 06,2023, Elapsed time: 0:00:00
+# End time: 17:57:00 on Feb 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:51:03 on Feb 06,2023
+# Start time: 17:57:00 on Feb 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 01:51:03 on Feb 06,2023, Elapsed time: 0:00:00
+# End time: 17:57:00 on Feb 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:51:03 on Feb 06,2023
+# Start time: 17:57:00 on Feb 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv 
 # -- Compiling module control
 # 
 # Top level modules:
 # 	control
-# End time: 01:51:03 on Feb 06,2023, Elapsed time: 0:00:00
+# End time: 17:57:00 on Feb 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:51:03 on Feb 06,2023
+# Start time: 17:57:00 on Feb 08,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv 
 # -- Compiling module adder_toplevel
 # 
 # Top level modules:
 # 	adder_toplevel
-# End time: 01:51:03 on Feb 06,2023, Elapsed time: 0:00:00
+# End time: 17:57:01 on Feb 08,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
+vsim work.adder_toplevel
+# vsim work.adder_toplevel 
+# Start time: 18:03:20 on Feb 08,2023
+# Loading sv_std.std
+# Loading work.adder_toplevel
+# Loading work.control
+# Loading work.mux2_1_17
+# Loading work.reg_17
+# Loading work.ripple_adder
+# Loading work.four_bit_ra
+# Loading work.full_adder
+# Loading work.HexDriver
+vsim work.adder_toplevel
+# End time: 18:10:54 on Feb 08,2023, Elapsed time: 0:07:34
+# Errors: 0, Warnings: 0
+# vsim work.adder_toplevel 
+# Start time: 18:10:54 on Feb 08,2023
+# Loading sv_std.std
+# Loading work.adder_toplevel
+# Loading work.control
+# Loading work.mux2_1_17
+# Loading work.reg_17
+# Loading work.ripple_adder
+# Loading work.four_bit_ra
+# Loading work.full_adder
+# Loading work.HexDriver

@@ -44,7 +44,7 @@ module CLA (
 	output        Cout1,
     output P, output G
 ); 
-    four_bit_ra FR1(.x(a[3 : 0]), .y(b[3 : 0]), .cin(C0), .s(S[3 : 0]), .cout(Cout1));
+    four_bit_ra FR1(.x(a[3 : 0]), .y(b[3 : 0]), .cin(C0), .s(Sc[3 : 0]), .cout(Cout1));
 
     assign P = (a[0] ^ b[0]) & (a[1] ^ b[1]) & (a[2] ^ b[2]) & (a[3] ^ b[3]); 
     assign G = (a[3] & b[3]) | ((a[2] & b[2]) & (a[3] ^ b[3])) | ((a[1] & b[1]) & (a[3] ^ b[3]) & (a[2] ^ b[2])) | ((a[0] & b[0]) & (a[3] ^ b[3]) & (a[2] ^ b[2]) & (a[1] ^ b[1])); 
