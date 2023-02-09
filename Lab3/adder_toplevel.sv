@@ -8,6 +8,7 @@
 module adder_toplevel  (input Clk, Reset_Clear, Run_Accumulate, 
 						input [9:0]			SW,
 						output logic [9:0]	LED,
+						output logic [16:0] Out,
 						output logic [6:0]	HEX0, 
 											HEX1, 
 											HEX2, 
@@ -19,7 +20,7 @@ module adder_toplevel  (input Clk, Reset_Clear, Run_Accumulate,
 		// Declare temporary values used by other modules
 		logic Reset_h, Run_h;
 		logic Load;
-		logic [16:0] In, Out;
+		logic [16:0] In;
 		logic [16:0] S;
 		logic [16:0] extended_SW;
 		//HELLO	

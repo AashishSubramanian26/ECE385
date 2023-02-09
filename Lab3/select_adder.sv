@@ -19,7 +19,7 @@ module select_adder (
 
     CSA_unit UNITB(.a(A[11 : 8]), .b(B[11 : 8]), .cin_CSA(C8), .S_CSA(S[11 : 8]), .Cout_CSA(C12));
 
-    CSA_unit UNITC(.a(A[15 : 12]), .b(B[15 : 12]), .cin_CSA(C15), .S_CSA(S[15 : 12]), .Cout_CSA(cout));    
+    CSA_unit UNITC(.a(A[15 : 12]), .b(B[15 : 12]), .cin_CSA(C12), .S_CSA(S[15 : 12]), .Cout_CSA(cout));    
 
 
 endmodule
