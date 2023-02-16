@@ -7,78 +7,78 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Soumi/Documents/ece385/lab2.2/simulation/modelsim
+Z0 dC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/simulation/modelsim
 vcompute
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1675453123
+Z2 !s110 1676166741
 !i10b 1
 !s100 i=]6932U1_OWO<5E?3HbR1
-I3QU8?Nkmn9S_?W8=UbUJ31
+IBmF6lA=kNiQabcBAM5:<z2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 compute_sv_unit
 S1
 R0
 Z4 w1675309048
-8C:/Users/Soumi/Documents/ece385/lab2.2/compute.sv
-FC:/Users/Soumi/Documents/ece385/lab2.2/compute.sv
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/compute.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/compute.sv
 L0 1
 Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1675453123.000000
-!s107 C:/Users/Soumi/Documents/ece385/lab2.2/compute.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/compute.sv|
+Z6 !s108 1676166741.000000
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/compute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/compute.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/Soumi/Documents/ece385/lab2.2
+Z8 !s92 -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2
 Z9 tCvgOpt 0
 vcontrol
 R1
 R2
 !i10b 1
 !s100 3UO6Qj=zEkX`9kWR;GIh91
-I_bFHIz[AI8[8N89BZ2W:_0
+IOWE56n>l2Zb9YeZJge`_10
 R3
 !s105 Control_sv_unit
 S1
 R0
 w1675380081
-8C:/Users/Soumi/Documents/ece385/lab2.2/Control.sv
-FC:/Users/Soumi/Documents/ece385/lab2.2/Control.sv
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Control.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Control.sv
 L0 3
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Control.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Control.sv|
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Control.sv|
 !i113 1
 R7
 R8
 R9
 vHexDriver
 R1
-Z10 !s110 1675453124
+R2
 !i10b 1
 !s100 ^DddjRd7Wla]U<SlP;mT@0
-I1Q_En7lgPRJhO:0l[>m`[1
+I?b`UOcoP;R5CVVMIlJmVU3
 R3
 !s105 HexDriver_sv_unit
 S1
 R0
 R4
-8C:/Users/Soumi/Documents/ece385/lab2.2/HexDriver.sv
-FC:/Users/Soumi/Documents/ece385/lab2.2/HexDriver.sv
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/HexDriver.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/HexDriver.sv
 L0 1
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/Soumi/Documents/ece385/lab2.2/HexDriver.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/HexDriver.sv|
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/HexDriver.sv|
 !i113 1
 R7
 R8
@@ -86,25 +86,25 @@ R9
 n@hex@driver
 vProcessor
 R1
-Z11 !s110 1675453125
+Z10 !s110 1676166743
 !i10b 1
 !s100 Q490j06AnLUl^[N5WS1:k1
-IQl0^l5i[QSmS5jdK0o:g<2
+IH5fN3I=D6BNZI5_VLEji^3
 R3
 !s105 Processor_sv_unit
 S1
 R0
-w1675452198
-8C:/Users/Soumi/Documents/ece385/lab2.2/Processor.sv
-FC:/Users/Soumi/Documents/ece385/lab2.2/Processor.sv
+w1675669938
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Processor.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Processor.sv
 L0 8
 R5
 r1
 !s85 0
 31
-Z12 !s108 1675453125.000000
-!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Processor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Processor.sv|
+Z11 !s108 1676166742.000000
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Processor.sv|
 !i113 1
 R7
 R8
@@ -112,175 +112,175 @@ R9
 n@processor
 vreg_4
 R1
-R10
+Z12 !s110 1676166742
 !i10b 1
 !s100 g728BkI_Hej5?[[NfZJXH2
-IaLN3gN]E823_djMU5QSFT3
+IN;S:@41?kCRS2A^>J9PcV1
 R3
 !s105 Reg_4_sv_unit
 S1
 R0
 w1675445239
-8C:/Users/Soumi/Documents/ece385/lab2.2/Reg_4.sv
-FC:/Users/Soumi/Documents/ece385/lab2.2/Reg_4.sv
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Reg_4.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Reg_4.sv
 L0 1
 R5
 r1
 !s85 0
 31
-Z13 !s108 1675453124.000000
-!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Reg_4.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Reg_4.sv|
+R6
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Reg_4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Reg_4.sv|
 !i113 1
 R7
 R8
 R9
 vregister_unit
 R1
-R10
+R12
 !i10b 1
 !s100 c?`W04Obk>`oYn_UgA>oj0
-Ig4gGJZgJcTTC7;V?<aVOi3
+IIHoZhmOYAhF[HXPWiaTM21
 R3
 !s105 Register_unit_sv_unit
 S1
 R0
-w1675321657
-8C:/Users/Soumi/Documents/ece385/lab2.2/Register_unit.sv
-FC:/Users/Soumi/Documents/ece385/lab2.2/Register_unit.sv
+w1676166641
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Register_unit.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Register_unit.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Register_unit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Register_unit.sv|
+R11
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Register_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Register_unit.sv|
 !i113 1
 R7
 R8
 R9
 vrouter
 R1
-R10
+R12
 !i10b 1
 !s100 lIdD9@`9>^lYia[Dkg2aV0
-IIi[Nl5JiH0l`;ECSVm2Gb1
+IHNZ7H6a_YYi8XcfWzR`0L3
 R3
 !s105 Router_sv_unit
 S1
 R0
 R4
-8C:/Users/Soumi/Documents/ece385/lab2.2/Router.sv
-FC:/Users/Soumi/Documents/ece385/lab2.2/Router.sv
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Router.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Router.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/Soumi/Documents/ece385/lab2.2/Router.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Router.sv|
+R11
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Router.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Router.sv|
 !i113 1
 R7
 R8
 R9
 vsync
 R1
-R10
+R12
 !i10b 1
 !s100 2W5Vz0:F6ckE2`eJOTK5l1
-IVhRE;Lzi[ebQa6Xbm[hQQ2
+I3A^@:8cN]?5j`<[makc]W1
 R3
-Z14 !s105 Synchronizers_sv_unit
+Z13 !s105 Synchronizers_sv_unit
 S1
 R0
 R4
-Z15 8C:/Users/Soumi/Documents/ece385/lab2.2/Synchronizers.sv
-Z16 FC:/Users/Soumi/Documents/ece385/lab2.2/Synchronizers.sv
+Z14 8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Synchronizers.sv
+Z15 FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Synchronizers.sv
 L0 4
 R5
 r1
 !s85 0
 31
-R13
-Z17 !s107 C:/Users/Soumi/Documents/ece385/lab2.2/Synchronizers.sv|
-Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/Synchronizers.sv|
+R11
+Z16 !s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Synchronizers.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/Synchronizers.sv|
 !i113 1
 R7
 R8
 R9
 vsync_r0
 R1
-R10
+R12
 !i10b 1
 !s100 IGd9f_F;JNjVBLQ@DAnD10
-I@U[1b:`SWn8A[[3MJ_h]L0
+IahjUmOX3S^K9jQ5UH^]0M2
 R3
-R14
+R13
 S1
 R0
 R4
+R14
 R15
-R16
 L0 18
 R5
 r1
 !s85 0
 31
-R13
+R11
+R16
 R17
-R18
 !i113 1
 R7
 R8
 R9
 vsync_r1
 R1
-R10
+R12
 !i10b 1
 !s100 1CXiH1DYDbAUS69Ee2j060
-I7R36X9gFhB1`95JXZ12823
+IJc2`J<mS@XP62W^792gVz1
 R3
-R14
+R13
 S1
 R0
 R4
+R14
 R15
-R16
 L0 39
 R5
 r1
 !s85 0
 31
-R13
+R11
+R16
 R17
-R18
 !i113 1
 R7
 R8
 R9
 vtestbench
 R1
-R11
+R10
 !i10b 1
 !s100 6fgeGEV<MmGbRAG8fZAbS0
-I1@S75GkQ_FKkafdohSAck2
+ISMf>cNlb9oeZ87:6`m76Q1
 R3
 !s105 testbench_8_sv_unit
 S1
 R0
 R4
-8C:/Users/Soumi/Documents/ece385/lab2.2/testbench_8.sv
-FC:/Users/Soumi/Documents/ece385/lab2.2/testbench_8.sv
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/testbench_8.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/testbench_8.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/Soumi/Documents/ece385/lab2.2/testbench_8.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/ece385/lab2.2|C:/Users/Soumi/Documents/ece385/lab2.2/testbench_8.sv|
+!s108 1676166743.000000
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/testbench_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2|C:/Users/Soumi/Documents/GitHub/ECE385/lab2.2/testbench_8.sv|
 !i113 1
 R7
 R8
