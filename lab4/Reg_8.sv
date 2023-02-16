@@ -1,7 +1,8 @@
-module reg_4 (input  logic Clk, Reset, Shift_In, Load, Shift_En,
-              input  logic [7:0]  D,
-              output logic Shift_Out,
-              output logic [7:0]  Data_Out);
+module reg_8 ( input logic         Clk, Reset, Shift_In,
+                                   Load, Shift_En,
+               input logic  [7:0]  D,
+               output logic        Shift_Out,
+               output logic [7:0]  Data_Out);
 
     always_ff @ (posedge Clk)
     begin
