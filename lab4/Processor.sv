@@ -7,14 +7,14 @@ module Processor (input logic   Clk,     // Internal
                                 Reset,   // Push button 0
                                 Execute  // Push Button 1
                                 ClearA_LoadB //Push button 2
-                  input  logic [7:0]  Din,     // input data
-				  //Hint for SignalTap, you want to comment out the following 2 lines to hardwire values for F and R
-						input  logic S, //Input data 
+
+						input  logic [7:0] S, //Input data 
 						
-                  output logic [7:0]  Aval,    // DEBUG
-                                Bval,    // DEBUG
-                  output logic [6:0]  AhexL,AhexU,
-                                BhexL,BhexU	  
+                  output logic [6:0]  HEX1, HEX0, HEX3, HEX2,
+
+                  output logic [7:0] Aval, Bval,
+
+                  output logic Xval
                                 );
 
                                 

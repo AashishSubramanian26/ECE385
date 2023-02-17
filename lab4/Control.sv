@@ -31,41 +31,61 @@ module control (input  logic Clk, Reset, CLR_LDB, Execute,
                             else next_state = Shift1; 
             
             Add1 : next_state = Shift1; 
-            Shift1: if(M) next_state = Add2; 
+            Shift1: 
+                begin
+                if(M) next_state = Add2; 
                 else next_state = Shift2;
+                end
 
             Add2 : next_state = Shift2; 
-            Shift2: if(M) next_state = Add3; 
+            Shift2: 
+                begin
+                if(M) next_state = Add3; 
                 else next_state = Shift3;
+                end
 
             Add3 : next_state = Shift3; 
-            Shift3: if(M) next_state = Add4; 
+            Shift3: 
+                begin
+                if(M) next_state = Add4; 
                 else next_state = Shift4;
+                end
 
             Add4 : next_state = Shift4; 
-            Shift4: if(M) next_state = Add5; 
+            Shift4: 
+                begin
+                if(M) next_state = Add5; 
                 else next_state = Shift5;
+                end
 
             Add5 : next_state = Shift5; 
-            Shift5: if(M) next_state = Add6; 
+            Shift5: 
+                begin
+                if(M) next_state = Add6; 
                 else next_state = Shift6;
+                end
 
             Add6 : next_state = Shift6; 
-            Shift6: if(M) next_state = Add7; 
+            Shift6: 
+                begin
+                if(M) next_state = Add7; 
                 else next_state = Shift7;
+                end
 
             Add7 : next_state = Shift7; 
-            Shift7: if(M) next_state = Sub; 
+            Shift7: 
+                begin
+                if(M) next_state = Sub; 
                 else next_state = Shift8;
-
+                end
             Shift8 : next_state = Fin; 
 
             Fin : if(~Execute)
                 next_state = Start; 
             
             default: Start; 
-
-
+            endcase
+        end
 		  // Assign outputs based on ‘state’
 		  
 		  case (curr_state)
@@ -80,14 +100,12 @@ module control (input  logic Clk, Reset, CLR_LDB, Execute,
 				
 				Initialization:
 				begin
-				
 					 Shift = 1'b0;
 					 Add = 1'b0;
 					 Sub = 1'b0;
 					 ClearA_LoadB = 1'b1;
-
 				end
-				
+
 				Add1:
 				begin
 				
