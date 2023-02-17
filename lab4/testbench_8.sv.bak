@@ -1,0 +1,129 @@
+module testbench();
+
+timeunit 10ns;	// Half clock cycle at 50 MHz
+			// This is the amount of time represented by #1 
+timeprecision 1ns;
+
+// These signals are internal because the processor will be 
+// instantiated as a submodule in testbench.
+logic Clk = 0;
+logic Reset, Run, ClearXA_loadB;
+logic [7:0] S;
+logic [7:0] Aval, Bval;
+logic [3:0] LED;
+logic [6:0] AhexL, AhexU, BhexL, BhexU;
+
+// To store expected results
+logic [7:0] ans_1a, ans_2b;
+				
+// A counter to count the instances where simulation results
+// do no match with expected results
+integer ErrorCnt = 0;
+		
+// Instantiating the DUT
+// Make sure the module and signal names match with those in your design
+Processor process(.*);	
+
+// Toggle the clock
+// #1 means wait for a delay of 1 timeunit
+always begin : CLOCK_GENERATION
+#1 Clk = ~Clk;
+end
+
+initial begin: CLOCK_INITIALIZATION
+    Clk = 0;
+end 
+
+// Testing begins here
+// The initial block is not synthesizable
+// Everything happens sequentially inside an initial block
+// as in a software program
+initial begin: TEST_VECTORS
+Reset = 0;		// Toggle Rest
+Run = 1;
+ClearXA_loadB = 1;
+
+//Testcase: 7 * 59
+S = 8'b00000111;
+
+#2 Reset = 1;
+
+#2 ClearXA_LoadB = 0; 
+#2 ClearXA_LoadB = 1;
+
+#10 S = 8'b00111011; // 59
+
+#2 Run = 0;
+
+#40 Run = 1;
+
+//answer = 413
+ans_1a = 8'h01;
+ans_2b = 8'h9d;
+
+	if (Aval != ans_1a || Bval != ans_2b)
+		ErrorCnt++;
+// Test 2: 7 * -59 = -413
+#10 S = 8'b00000111; // 7
+
+#2 ClearXA_LoadB = 0; 
+#2 ClearXA_LoadB = 1;
+
+#10 S = 8'b11000101; // -59
+
+#2 Run = 0;
+
+#40 Run = 1;
+
+//answer = -413
+ans_1a = 8'hfe;
+ans_2b = 8'h63;
+
+if (Aval != ans_1a || Bval != ans_2b)
+	ErrorCnt++;
+
+		
+// Test 3: -7 * 59 = -413
+#10 S = 8'b11111001; // -7
+
+#2 ClearXA_LoadB = 0; 
+#2 ClearXA_LoadB = 1;
+
+#10 S = 8'b00111011; // 59
+
+#2 Run = 0;
+
+#40 Run = 1;
+
+//answer = -413
+ans_1a = 8'hfe;
+ans_2b = 8'h63;
+
+if (Aval != ans_1a || Bval != ans_2b)
+    ErrorCnt++;
+
+// Test 4: -7 * -59 = 413
+#10 S = 8'b11111001; // -7
+
+#2 ClearXA_LoadB = 0; 
+#2 ClearXA_LoadB = 1;
+
+#10 S = 8'b11000101; // -59
+
+#2 Run = 0;
+
+#40 Run = 1;
+
+//answer = 413
+ans_1a = 8'h01;
+ans_2b = 8'h9d;
+
+if (Aval != ans_1a || Bval != ans_2b)
+    ErrorCnt++;
+
+if (ErrorCnt == 0)
+	$display("Success!");  // Command line output in ModelSim
+else
+	$display("%d error(s) detected. Try again!", ErrorCnt);
+end
+endmodule

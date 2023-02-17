@@ -7,7 +7,7 @@ module ADD_SUB9 ( input  [7:0] A, B,
     logic [7:0] BB;
     logic A8, BB8; 
     assign A8 = A[7]; 
-    assign BB = (B^{8{fn}});
+    assign BB = (B^{8{Fn}});
     assign BB8 = BB[7]; //Droid Moment (Star Wars The Force Awakens Sucks (& Sequels Suck) But BB8 Ig)
 
     full_adder fa0(.x(A[0]), .y(BB[0]), .cin(fn), .s(S[0]), .cout(c0));
@@ -18,7 +18,7 @@ module ADD_SUB9 ( input  [7:0] A, B,
     full_adder fa5(.x(A[5]), .y(BB[5]), .cin(c4), .s(S[5]), .cout(c5));
     full_adder fa6(.x(A[6]), .y(BB[6]), .cin(c5), .s(S[6]), .cout(c6));
     full_adder fa7(.x(A[7]), .y(BB[7]), .cin(c6), .s(S[7]), .cout(c7));
-    full_adder fa8(.x(A[7]), .y(BB[7]), .cin(c7), .s(S[8]), .cout(cout));
+    full_adder fa8(.x(A8), .y(BB8), .cin(c7), .s(S[8]), .cout(cout));
 
 endmodule
 

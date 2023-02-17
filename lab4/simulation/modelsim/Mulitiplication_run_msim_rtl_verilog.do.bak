@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4 {C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Reg_8.sv}
+vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4 {C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv}
+vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4 {C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Register_unit.sv}
+vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4 {C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv}
+vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4 {C:/Users/Soumi/Documents/GitHub/ECE385/lab4/HexDriver.sv}
+vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4 {C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Control.sv}
+
