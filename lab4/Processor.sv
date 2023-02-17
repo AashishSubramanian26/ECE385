@@ -1,26 +1,23 @@
 //4-bit logic processor top level module
-//for use with ECE 385 Spring 2021
-//last modified by Zuofu Cheng
 
 
 //Always use input/output logic types when possible, prevents issues with tools that have strict type enforcement
 
 module Processor (input logic   Clk,     // Internal
                                 Reset,   // Push button 0
-                                LoadA,   // Push button 1
-                                LoadB,   // Push button 2
-                                Execute, // Push button 3
+                                Execute  // Push Button 1
+                                ClearA_LoadB //Push button 2
                   input  logic [7:0]  Din,     // input data
 				  //Hint for SignalTap, you want to comment out the following 2 lines to hardwire values for F and R
-						input  logic [2:0]  F,       // Function select 
-						input  logic [1:0]  R,       // Routing select
-                  output logic [3:0]  LED,     // DEBUG 
+						input  logic S, //Input data 
+						
                   output logic [7:0]  Aval,    // DEBUG
                                 Bval,    // DEBUG
                   output logic [6:0]  AhexL,AhexU,
-                                BhexL,BhexU
-										  
+                                BhexL,BhexU	  
                                 );
+
+                                
 
 	 //local logic variables go here
 	 logic Reset_SH, LoadA_SH, LoadB_SH, Execute_SH;
