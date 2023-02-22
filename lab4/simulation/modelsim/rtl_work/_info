@@ -1,0 +1,213 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Soumi/Documents/GitHub/ECE385/lab4/simulation/modelsim
+vADD_SUB9
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1676627350
+!i10b 1
+!s100 Efc2^QPEYOeO6ST<l[1;J3
+I]0^zQmRAQ4h4[;5lkhR<i0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 Five_Bit_Adder_sv_unit
+S1
+R0
+Z5 w1676626221
+Z6 8C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv
+Z7 FC:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1676627350.000000
+Z10 !s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4|C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4
+Z14 tCvgOpt 0
+n@a@d@d_@s@u@b9
+vcontrol
+R1
+Z15 !s110 1676627351
+!i10b 1
+!s100 OnK2fSclldcbfo]dA9]ZK0
+I3Ra:ij_jn@@H=bIGz`_:11
+R3
+!s105 Control_sv_unit
+S1
+R0
+w1676626820
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Control.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab4/Control.sv
+L0 3
+R8
+r1
+!s85 0
+31
+Z16 !s108 1676627351.000000
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4|C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Control.sv|
+!i113 1
+R12
+R13
+R14
+vfull_adder
+R1
+R2
+!i10b 1
+!s100 >ME;>DLzc0Q0kh60hULO?1
+IoMg2@4V;KT799z<jmbmSV1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 26
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vHexDriver
+R1
+R15
+!i10b 1
+!s100 ^DddjRd7Wla]U<SlP;mT@0
+Io[MXEEZaVH=7In]URiI_i1
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1675309048
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab4/HexDriver.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab4/HexDriver.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab4/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4|C:/Users/Soumi/Documents/GitHub/ECE385/lab4/HexDriver.sv|
+!i113 1
+R12
+R13
+R14
+n@hex@driver
+vProcessor
+R1
+R15
+!i10b 1
+!s100 [c8V6ShVa0E?7njiV_M5Y1
+I6Nh9Gj6A[iA;IzIlNgjzS3
+R3
+!s105 Processor_sv_unit
+S1
+R0
+w1676627339
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4|C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv|
+!i113 1
+R12
+R13
+R14
+n@processor
+vreg_8
+R1
+R2
+!i10b 1
+!s100 iW;Kb47Zog_B_;U?2<Kic3
+IhY1J7E>dM0`i30@Sfl3mA3
+R3
+!s105 Reg_8_sv_unit
+S1
+R0
+w1676531372
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Reg_8.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab4/Reg_8.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Reg_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4|C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Reg_8.sv|
+!i113 1
+R12
+R13
+R14
+vregister_unit
+R1
+R2
+!i10b 1
+!s100 OLD]<XVOF23CzW]IWHmX]3
+I1b9jfIS;]2dFj0Naf8olk0
+R3
+!s105 Register_unit_sv_unit
+S1
+R0
+w1676625629
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Register_unit.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab4/Register_unit.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Register_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4|C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Register_unit.sv|
+!i113 1
+R12
+R13
+R14
+vtestbench
+R1
+R15
+!i10b 1
+!s100 h_]No:Kf26>9MjFOWOSN61
+IkSK0S?PLJJMMlie4O>bGJ0
+R3
+!s105 testbench_8_sv_unit
+S1
+R0
+w1676627059
+8C:/Users/Soumi/Documents/GitHub/ECE385/lab4/testbench_8.sv
+FC:/Users/Soumi/Documents/GitHub/ECE385/lab4/testbench_8.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Soumi/Documents/GitHub/ECE385/lab4/testbench_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/lab4|C:/Users/Soumi/Documents/GitHub/ECE385/lab4/testbench_8.sv|
+!i113 1
+R12
+R13
+R14
