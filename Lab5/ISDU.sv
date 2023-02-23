@@ -159,8 +159,13 @@ module ISDU (   input logic         Clk,
 					LD_PC = 1'b1;
 				end
 			S_33_1 : 
-				Mem_OE = 1'b1;
+					Mem_OE = 1'b1;
 			S_33_2 : 
+				begin 
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1;
+				end
+			S_33_3 :
 				begin 
 					Mem_OE = 1'b1;
 					LD_MDR = 1'b1;
