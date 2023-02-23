@@ -5,13 +5,13 @@ module datapath (
                     input logic  BEN, MIO_EN, DRMUX, SR1MUX,
                     input logic  [1:0] PCMUX, ADDR2MUX, ALUK,
                     input logic  [15:0] MDR_In,
-					output logic [15:0]	MAR, MDR, IR //outputs
+					output logic [15:0] MAR, MDR, IR //outputs
 				);
 				
 	logic 	[15:0] 	BUS,
 					IR_Reg_Out,
 					MDR_Reg_Out,
-					MAR_Out_Reg, 
+					MAR_Reg_Out, 
 					PC_Reg_Out, 
 					MDR_MUX,
 					PCMUX_Out;
@@ -54,7 +54,7 @@ module datapath (
 		.Reset(Reset),	 
 		.Load(LD_MAR), 
 		.D(BUS), 
-		.Out(MAR_Out_Reg)
+		.Out(MAR_Reg_Out)
 		);
 
 	TwoInputMux MDRMult (
@@ -74,9 +74,9 @@ module datapath (
 					);
 
 	always_comb begin
-		MDR_out = MDR_Reg_Out;
-		MAR_out = MAR_Out_Reg;
-		IR_out = IR_Reg_Out;
-		PC_out = PC_Reg_Out;
+		MDR = MDR_Reg_Out;
+		MAR = MAR_Reg_Out;
+		IR  = IR_Reg_Out;
+		////PC  = PC_Reg_Out;
 	end 
 endmodule 
