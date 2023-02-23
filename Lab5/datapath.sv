@@ -8,7 +8,7 @@ module datapath (
 					output logic [15:0]	logic [15:0] MAR, MDR, IR; //outputs
 				);
 				
-
+//hello
 	logic 	[15:0] 	BUS,
 					SR1OUT,
 					SR2OUT,
