@@ -41,9 +41,9 @@ module Processor (input logic   Clk,     // Internal
       Run_H <= ~Execute;
     end
 
-    always_ff @ (posedge Clk)
+    always_ff @ (posedge Clk) //notice, this is a sycnrhonous reset, which is recommended on the FPGA
     begin
-	 	 if (Reset_H | ClearXA) //notice, this is a sycnrhonous reset, which is recommended on the FPGA
+	 	 if (Reset_H | ClearXA) 
          X <= 0;
 		 else if (add | sub)
          X <= Sum[8];

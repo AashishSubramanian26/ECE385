@@ -12,7 +12,7 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:58:31 on Feb 08,2023
+# Start time: 21:58:47 on Feb 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/ripple_adder.sv 
 # -- Compiling module ripple_adder
 # -- Compiling module four_bit_ra
@@ -20,101 +20,90 @@
 # 
 # Top level modules:
 # 	ripple_adder
-# End time: 20:58:31 on Feb 08,2023, Elapsed time: 0:00:00
+# End time: 21:58:47 on Feb 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:58:31 on Feb 08,2023
+# Start time: 21:58:47 on Feb 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/reg_17.sv 
 # -- Compiling module reg_17
 # 
 # Top level modules:
 # 	reg_17
-# End time: 20:58:31 on Feb 08,2023, Elapsed time: 0:00:00
+# End time: 21:58:47 on Feb 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:58:31 on Feb 08,2023
+# Start time: 21:58:47 on Feb 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/mux2_1_17.sv 
 # -- Compiling module mux2_1_17
 # 
 # Top level modules:
 # 	mux2_1_17
-# End time: 20:58:31 on Feb 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/lookahead_adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:58:32 on Feb 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/lookahead_adder.sv 
-# -- Compiling module lookahead_adder
-# -- Compiling module CLA
-# 
-# Top level modules:
-# 	lookahead_adder
-# End time: 20:58:32 on Feb 08,2023, Elapsed time: 0:00:00
+# End time: 21:58:47 on Feb 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:58:32 on Feb 08,2023
+# Start time: 21:58:47 on Feb 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 20:58:32 on Feb 08,2023, Elapsed time: 0:00:00
+# End time: 21:58:47 on Feb 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:58:32 on Feb 08,2023
+# Start time: 21:58:48 on Feb 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/control.sv 
 # -- Compiling module control
 # 
 # Top level modules:
 # 	control
-# End time: 20:58:32 on Feb 08,2023, Elapsed time: 0:00:00
+# End time: 21:58:48 on Feb 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:58:32 on Feb 08,2023
+# Start time: 21:58:48 on Feb 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv 
 # -- Compiling module adder_toplevel
 # 
 # Top level modules:
 # 	adder_toplevel
-# End time: 20:58:32 on Feb 08,2023, Elapsed time: 0:00:00
+# End time: 21:58:48 on Feb 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3 {C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/testbench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:58:32 on Feb 08,2023
+# Start time: 21:58:48 on Feb 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385/Lab3" C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 20:58:32 on Feb 08,2023, Elapsed time: 0:00:00
+# End time: 21:58:48 on Feb 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 20:58:32 on Feb 08,2023
+# Start time: 21:58:48 on Feb 20,2023
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.adder_toplevel
 # Loading work.control
 # Loading work.mux2_1_17
 # Loading work.reg_17
-# Loading work.lookahead_adder
-# Loading work.CLA
+# Loading work.ripple_adder
 # Loading work.four_bit_ra
 # Loading work.full_adder
 # Loading work.HexDriver
-# ** Warning: (vsim-3017) C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv(51): [TFMPC] - Too few port connections. Expected 7, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/processor0/adderla File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/lookahead_adder.sv
-# ** Warning: (vsim-3722) C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv(51): [TFMPC] - Missing connection for port 'PG'.
-# ** Warning: (vsim-3722) C:/Users/Soumi/Documents/GitHub/ECE385/Lab3/adder_toplevel.sv(51): [TFMPC] - Missing connection for port 'GG'.
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Soumi  Hostname: LAPTOP-BC1I6CAC  ProcessID: 43120
+#           Attempting to use alternate WLF file "./wlfthyi8by".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthyi8by
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals

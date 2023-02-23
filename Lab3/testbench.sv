@@ -48,7 +48,7 @@ Run_Accumulate = 1;
 #2 Reset_Clear = 1;
 
 
-#2 SW = 10'b01; 
+#2 SW = 10'b100; 
    Run_Accumulate = 0; 
 
 #16 Run_Accumulate = 1; 
