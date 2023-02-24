@@ -67,8 +67,8 @@ module datapath (
 	
 	ThreeInputMux PCMult(
 					.S(PCMUX), 
-					.D3(PC_Reg_Out + 1'b1), 
-					.D1(BUS), 
+					.D3(BUS), 
+					.D1(PC_Reg_Out + 1'b1), 
 					.D2(16'hxxxx),
 					.OUT(PCMUX_Out)
 					);
