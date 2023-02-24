@@ -11,12 +11,15 @@ logic [9:0] LED;
 logic [6:0] HEX0, HEX1, HEX2, HEX3;
 logic [15:0] PC;
 logic [15:0] IR;
-
+logic [15:0] MAR;
+logic [15:0] MDR;
 
 
 slc3_testtop slc3_1(.*);
 assign PC = slc3_1.slc.d0.PC_Reg_Out; 
 assign IR =  slc3_1.slc.IR; 
+assign MAR =  slc3_1.slc.MAR; 
+assign MDR =  slc3_1.slc.MDR; 
 always begin : CLOCK_GENERATION
 #1 Clk = ~Clk;
 end
@@ -57,18 +60,6 @@ Continue = 0;
 
 #2 Continue = 0;
 
-#10 Continue = 1;
-
-#2 Continue = 1;
-
-#2 Continue = 0;
-
-#2 Continue = 1;
-
-#8 Continue = 1;
-
-#2 Continue = 0;
-
 #2 Continue = 1;
 
 #2 Continue = 1;
@@ -87,7 +78,7 @@ Continue = 0;
 
 #2 Continue = 0;
 
-#5 Continue = 1;
+#2 Continue = 1;
 
 #2 Continue = 1;
 

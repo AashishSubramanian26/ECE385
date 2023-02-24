@@ -118,7 +118,7 @@ S_33_2 :
 Next_state = S_33_3;
 S_33_3 : 
 Next_state = S_35;
-S_35 : 
+S_35 : p
 Next_state = PauseIR1;
 // PauseIR1 and PauseIR2 are only for Week 1 such that TAs can see 
 // the values in IR.

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5
-Thu Feb 23 19:08:43 2023
+Thu Feb 23 19:49:07 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -21,12 +21,17 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  13. Parameter Settings for User Entity Instance: test_memory:mem
  14. Parameter Settings for User Entity Instance: test_memory:mem|memory_parser:parser
  15. Port Connectivity Checks: "slc3:slc|ISDU:state_controller"
- 16. Port Connectivity Checks: "slc3:slc|datapath:d0"
- 17. Port Connectivity Checks: "slc3:slc"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
- 21. Analysis & Synthesis Suppressed Messages
+ 16. Port Connectivity Checks: "slc3:slc|Mem2IO:memory_subsystem"
+ 17. Port Connectivity Checks: "slc3:slc|datapath:d0"
+ 18. Port Connectivity Checks: "slc3:slc|HexDriver:hex_drivers[3]"
+ 19. Port Connectivity Checks: "slc3:slc|HexDriver:hex_drivers[2]"
+ 20. Port Connectivity Checks: "slc3:slc|HexDriver:hex_drivers[1]"
+ 21. Port Connectivity Checks: "slc3:slc|HexDriver:hex_drivers[0]"
+ 22. Port Connectivity Checks: "slc3:slc"
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
+ 26. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -52,7 +57,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 23 19:08:43 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 23 19:49:07 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab5                                        ;
 ; Top-level Entity Name              ; slc3_testtop                                ;
@@ -255,65 +260,63 @@ Encoding Type:  One-Hot
 +----------------+------------+------------+------------+--------------+--------------+--------------+------------+----------------+----------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                        ;
-+--------------------------------------------------+----------------------------------------+
-; Register name                                    ; Reason for Removal                     ;
-+--------------------------------------------------+----------------------------------------+
-; slc3:slc|datapath:d0|Reg_16:MAR_Reg|Out[0..15]   ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[0..11]   ; Lost fanout                            ;
-; slc3:slc|Mem2IO:memory_subsystem|hex_data[0..15] ; Stuck at GND due to stuck port data_in ;
-; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[12..15]   ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[12]       ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[12]      ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[13]       ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[13]      ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[14]       ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[14]      ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[15]       ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[15]      ; Lost fanout                            ;
-; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[0..11]    ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.S_32        ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.S_01        ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State~2           ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State~3           ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State~4           ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State~5           ; Lost fanout                            ;
-; sync:button_sync[0]|q                            ; Lost fanout                            ;
-; sync:button_sync[1]|q                            ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.Halted      ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.PauseIR1    ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.PauseIR2    ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.S_18        ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.S_33_1      ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.S_33_2      ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.S_33_3      ; Lost fanout                            ;
-; slc3:slc|ISDU:state_controller|State.S_35        ; Lost fanout                            ;
-; Total Number of Removed Registers = 84           ;                                        ;
-+--------------------------------------------------+----------------------------------------+
++---------------------------------------------------------------------+
+; Registers Removed During Synthesis                                  ;
++------------------------------------------------+--------------------+
+; Register name                                  ; Reason for Removal ;
++------------------------------------------------+--------------------+
+; slc3:slc|datapath:d0|Reg_16:MAR_Reg|Out[0..15] ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[0..11] ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[12..15] ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[12]     ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[12]    ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[13]     ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[13]    ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[14]     ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[14]    ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[15]     ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[15]    ; Lost fanout        ;
+; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[0..11]  ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.S_32      ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.S_01      ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State~2         ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State~3         ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State~4         ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State~5         ; Lost fanout        ;
+; sync:button_sync[0]|q                          ; Lost fanout        ;
+; sync:button_sync[1]|q                          ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.Halted    ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.PauseIR1  ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.PauseIR2  ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.S_18      ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.S_33_1    ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.S_33_2    ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.S_33_3    ; Lost fanout        ;
+; slc3:slc|ISDU:state_controller|State.S_35      ; Lost fanout        ;
+; Total Number of Removed Registers = 68         ;                    ;
++------------------------------------------------+--------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                               ;
-+----------------------------------------------+---------------------------+------------------------------------------------+
-; Register name                                ; Reason for Removal        ; Registers Removed due to This Register         ;
-+----------------------------------------------+---------------------------+------------------------------------------------+
-; slc3:slc|ISDU:state_controller|State~2       ; Lost Fanouts              ; slc3:slc|ISDU:state_controller|State.PauseIR2, ;
-;                                              ;                           ; slc3:slc|ISDU:state_controller|State.S_33_1,   ;
-;                                              ;                           ; slc3:slc|ISDU:state_controller|State.S_33_3    ;
-; slc3:slc|Mem2IO:memory_subsystem|hex_data[5] ; Stuck at GND              ; sync:button_sync[0]|q, sync:button_sync[1]|q   ;
-;                                              ; due to stuck port data_in ;                                                ;
-; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[12]   ; Lost Fanouts              ; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[12],    ;
-;                                              ;                           ; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[12]    ;
-; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[13]   ; Lost Fanouts              ; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[13],    ;
-;                                              ;                           ; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[13]    ;
-; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[14]   ; Lost Fanouts              ; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[14],    ;
-;                                              ;                           ; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[14]    ;
-; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[15]   ; Lost Fanouts              ; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[15],    ;
-;                                              ;                           ; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[15]    ;
-; slc3:slc|ISDU:state_controller|State~3       ; Lost Fanouts              ; slc3:slc|ISDU:state_controller|State.S_33_2    ;
-; slc3:slc|ISDU:state_controller|State~4       ; Lost Fanouts              ; slc3:slc|ISDU:state_controller|State.S_18      ;
-+----------------------------------------------+---------------------------+------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                           ;
++--------------------------------------------+--------------------+---------------------------------------------------------------------+
+; Register name                              ; Reason for Removal ; Registers Removed due to This Register                              ;
++--------------------------------------------+--------------------+---------------------------------------------------------------------+
+; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[12] ; Lost Fanouts       ; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[12],                         ;
+;                                            ;                    ; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[12], sync:button_sync[0]|q, ;
+;                                            ;                    ; sync:button_sync[1]|q                                               ;
+; slc3:slc|ISDU:state_controller|State~2     ; Lost Fanouts       ; slc3:slc|ISDU:state_controller|State.PauseIR2,                      ;
+;                                            ;                    ; slc3:slc|ISDU:state_controller|State.S_33_1,                        ;
+;                                            ;                    ; slc3:slc|ISDU:state_controller|State.S_33_3                         ;
+; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[13] ; Lost Fanouts       ; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[13],                         ;
+;                                            ;                    ; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[13]                         ;
+; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[14] ; Lost Fanouts       ; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[14],                         ;
+;                                            ;                    ; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[14]                         ;
+; slc3:slc|datapath:d0|Reg_16:IR_Reg|Out[15] ; Lost Fanouts       ; slc3:slc|datapath:d0|Reg_16:PC_Reg|Out[15],                         ;
+;                                            ;                    ; slc3:slc|datapath:d0|Reg_16:MDR_Reg|Out[15]                         ;
+; slc3:slc|ISDU:state_controller|State~3     ; Lost Fanouts       ; slc3:slc|ISDU:state_controller|State.S_33_2                         ;
+; slc3:slc|ISDU:state_controller|State~4     ; Lost Fanouts       ; slc3:slc|ISDU:state_controller|State.S_18                           ;
++--------------------------------------------+--------------------+---------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -373,6 +376,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------+
 
 
++--------------------------------------------------------------+
+; Port Connectivity Checks: "slc3:slc|Mem2IO:memory_subsystem" ;
++------+--------+----------+-----------------------------------+
+; Port ; Type   ; Severity ; Details                           ;
++------+--------+----------+-----------------------------------+
+; HEX0 ; Output ; Info     ; Explicitly unconnected            ;
+; HEX1 ; Output ; Info     ; Explicitly unconnected            ;
+; HEX2 ; Output ; Info     ; Explicitly unconnected            ;
+; HEX3 ; Output ; Info     ; Explicitly unconnected            ;
++------+--------+----------+-----------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "slc3:slc|datapath:d0"                                                                    ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -383,6 +398,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IR[10..6] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; IR[4..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "slc3:slc|HexDriver:hex_drivers[3]" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; In   ; Input ; Info     ; Stuck at GND                        ;
++------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "slc3:slc|HexDriver:hex_drivers[2]" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; In   ; Input ; Info     ; Stuck at GND                        ;
++------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "slc3:slc|HexDriver:hex_drivers[1]" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; In   ; Input ; Info     ; Stuck at GND                        ;
++------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "slc3:slc|HexDriver:hex_drivers[0]" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; In   ; Input ; Info     ; Stuck at GND                        ;
++------+-------+----------+-------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------+
@@ -424,7 +475,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Feb 23 19:08:32 2023
+    Info: Processing started: Thu Feb 23 19:48:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -467,22 +518,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file isdu.sv
     Info (12023): Found entity 1: ISDU File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ISDU.sv Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file instantiateram.sv
     Info (12023): Found entity 1: Instantiateram File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/Instantiateram.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file ram.v
+    Info (12023): Found entity 1: ram File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ram.v Line: 39
 Info (12127): Elaborating entity "slc3_testtop" for the top level hierarchy
 Info (12128): Elaborating entity "sync" for hierarchy "sync:button_sync[0]" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3_testtop.sv Line: 15
 Info (12128): Elaborating entity "slc3" for hierarchy "slc3:slc" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3_testtop.sv Line: 29
-Warning (10030): Net "MARMUX" at slc3.sv(45) has no driver or initial value, using a default initial value '0' File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 45
-Warning (10030): Net "BEN" at slc3.sv(46) has no driver or initial value, using a default initial value '0' File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 46
+Warning (10858): Verilog HDL warning at slc3.sv(35): object hex_4 used but never assigned File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 35
+Warning (10030): Net "hex_4" at slc3.sv(35) has no driver or initial value, using a default initial value '0' File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 35
+Warning (10030): Net "MARMUX" at slc3.sv(51) has no driver or initial value, using a default initial value '0' File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 51
+Warning (10030): Net "BEN" at slc3.sv(52) has no driver or initial value, using a default initial value '0' File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 52
 Warning (10034): Output port "LED" at slc3.sv(23) has no driver File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 23
 Info (12128): Elaborating entity "HexDriver" for hierarchy "slc3:slc|HexDriver:hex_drivers[0]" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 36
-Info (12128): Elaborating entity "datapath" for hierarchy "slc3:slc|datapath:d0" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 58
+Info (12128): Elaborating entity "datapath" for hierarchy "slc3:slc|datapath:d0" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 64
 Info (12128): Elaborating entity "BusMux" for hierarchy "slc3:slc|datapath:d0|BusMux:Tri_State_Buff" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/datapath.sv Line: 26
 Info (10264): Verilog HDL Case Statement information at BusMux.sv(11): all case item expressions in this case statement are onehot File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/BusMux.sv Line: 11
 Info (12128): Elaborating entity "Reg_16" for hierarchy "slc3:slc|datapath:d0|Reg_16:MDR_Reg" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/datapath.sv Line: 34
 Info (12128): Elaborating entity "TwoInputMux" for hierarchy "slc3:slc|datapath:d0|TwoInputMux:MDRMult" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/datapath.sv Line: 65
 Info (12128): Elaborating entity "ThreeInputMux" for hierarchy "slc3:slc|datapath:d0|ThreeInputMux:PCMult" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/datapath.sv Line: 74
 Warning (10958): SystemVerilog warning at ThreeInputMux.sv(9): unique or priority keyword makes case statement complete File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ThreeInputMux.sv Line: 9
-Info (12128): Elaborating entity "Mem2IO" for hierarchy "slc3:slc|Mem2IO:memory_subsystem" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 67
-Info (12128): Elaborating entity "ISDU" for hierarchy "slc3:slc|ISDU:state_controller" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 74
+Info (12128): Elaborating entity "Mem2IO" for hierarchy "slc3:slc|Mem2IO:memory_subsystem" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 73
+Info (12128): Elaborating entity "ISDU" for hierarchy "slc3:slc|ISDU:state_controller" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 80
 Info (12128): Elaborating entity "test_memory" for hierarchy "test_memory:mem" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3_testtop.sv Line: 30
 Warning (10034): Output port "readout" at test_memory.sv(32) has no driver File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/test_memory.sv Line: 32
 Info (12128): Elaborating entity "memory_parser" for hierarchy "test_memory:mem|memory_parser:parser" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/test_memory.sv Line: 71
@@ -546,11 +601,11 @@ Warning (21074): Design contains 13 input pin(s) that do not drive logic
 Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 38 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 4734 megabytes
-    Info: Processing ended: Thu Feb 23 19:08:43 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 62 warnings
+    Info: Peak virtual memory: 4737 megabytes
+    Info: Processing ended: Thu Feb 23 19:49:07 2023
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+
