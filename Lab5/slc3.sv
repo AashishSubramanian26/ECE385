@@ -33,12 +33,14 @@ module slc3(
 // For Lab 1, they will direclty be connected to the IR register through an always_comb circuit
 // For Lab 2, they will be patched into the MEM2IO module so that Memory-mapped IO can take place
 logic [3:0] hex_4[3:0]; 
-HexDriver hex_drivers[3:0] (hex_4, {HEX3, HEX2, HEX1, HEX0});
 
-//HexDriver hex0(.In(IR[3:0]), .Out(HEX0)); 
-//HexDriver hex1(.In(IR[7:4]), .Out(HEX1)); 
-//HexDriver hex2(.In(IR[11:8]), .Out(HEX2)); 
-//HexDriver hex3(.In(IR[15:12]), .Out(HEX3)); 
+//C'etait pour ModelSim (It is for ModelSim)
+//HexDriver hex_drivers[3:0] (hex_4, {HEX3, HEX2, HEX1, HEX0});
+
+HexDriver hex0(.In(IR[3:0]), .Out(HEX0)); 
+HexDriver hex1(.In(IR[7:4]), .Out(HEX1)); 
+HexDriver hex2(.In(IR[11:8]), .Out(HEX2)); 
+HexDriver hex3(.In(IR[15:12]), .Out(HEX3)); 
 
 // This works thanks to http://stackoverflow.com/questions/1378159/verilog-can-we-have-an-array-of-custom-modules
 

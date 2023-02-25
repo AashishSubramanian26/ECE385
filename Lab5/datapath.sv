@@ -2,10 +2,11 @@ module datapath (
                     input logic  LD_MAR, LD_MDR, LD_IR, LD_BEN, LD_CC, LD_REG, LD_PC, LD_LED, Clk, Reset, Run, Continue,
                     input logic  GatePC, GateMDR, GateALU, GateMARMUX,
                     input logic  SR2MUX, ADDR1MUX, MARMUX,
-                    input logic  BEN, MIO_EN, DRMUX, SR1MUX,
+                    input logic  MIO_EN, DRMUX, SR1MUX,
                     input logic  [1:0] PCMUX, ADDR2MUX, ALUK,
                     input logic  [15:0] MDR_In,
-					output logic [15:0] MAR, MDR, IR //outputs
+					output logic [15:0] MAR, MDR, IR, PC,//outputs
+					output logic BEN
 				);
 				
 	logic 	[15:0] 	BUS,
@@ -14,7 +15,8 @@ module datapath (
 					MAR_Reg_Out, 
 					PC_Reg_Out, 
 					MDR_MUX,
-					PCMUX_Out;
+					PCMUX_Out, 
+					BEN_Reg_Out;
 
 	BusMux Tri_State_Buff(
 					.S({GateMDR, GateALU, GatePC, GateMARMUX}), 
@@ -41,6 +43,14 @@ module datapath (
 				.Out(IR_Reg_Out)
 				);
 
+	BEN  ben(
+				.D(BUS),
+				.LD_CC(LD_CC), .LD_BEN(LD_BEN), .Clk(Clk), .Reset(Reset),
+				.IR_Input(IR_Reg_Out[11:9]),
+				.Out(BEN_Reg_Out)
+				);
+
+
 	Reg_16  PC_Reg(
 				.Clk(Clk),
 				.Reset(Reset),	 
@@ -50,12 +60,12 @@ module datapath (
 				);
 
 	Reg_16  MAR_Reg(
-		.Clk(Clk),
-		.Reset(Reset),	 
-		.Load(LD_MAR), 
-		.D(BUS), 
-		.Out(MAR_Reg_Out)
-		);
+				.Clk(Clk),
+				.Reset(Reset),	 
+				.Load(LD_MAR), 
+				.D(BUS), 
+				.Out(MAR_Reg_Out)
+				);
 
 	TwoInputMux MDRMult (
 				.S(MIO_EN), 
@@ -77,6 +87,7 @@ module datapath (
 		MDR = MDR_Reg_Out;
 		MAR = MAR_Reg_Out;
 		IR  = IR_Reg_Out;
-		////PC  = PC_Reg_Out;
+		BEN = BEN_Reg_Out; 
+		//PC  = PC_Reg_Out;
 	end 
 endmodule 

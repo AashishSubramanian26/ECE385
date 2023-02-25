@@ -57,24 +57,6 @@ set_global_assignment -name EDA_TEST_BENCH_NAME testbench.sv -section_id eda_sim
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench.sv
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench.sv
 set_global_assignment -name EDA_TEST_BENCH_FILE testbench.sv -section_id testbench.sv
-set_global_assignment -name SYSTEMVERILOG_FILE HexDriver.sv
-set_global_assignment -name SYSTEMVERILOG_FILE TwoInputMux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ThreeInputMux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Reg_16.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Register_unit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE datapath.sv
-set_global_assignment -name SYSTEMVERILOG_FILE BusMux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE test_memory.sv
-set_global_assignment -name SYSTEMVERILOG_FILE synchronizers.sv
-set_global_assignment -name SYSTEMVERILOG_FILE slc3_testtop.sv
-set_global_assignment -name SYSTEMVERILOG_FILE slc3_sramtop.sv
-set_global_assignment -name SYSTEMVERILOG_FILE SLC3_2.sv
-set_global_assignment -name SYSTEMVERILOG_FILE slc3.sv
-set_global_assignment -name SYSTEMVERILOG_FILE memory_contents.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Mem2IO.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ISDU.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Instantiateram.sv
 set_location_assignment PIN_P11 -to Clk
 set_location_assignment PIN_B8 -to Continue
 set_location_assignment PIN_C17 -to HEX0[6]
@@ -126,6 +108,26 @@ set_location_assignment PIN_C12 -to SW[3]
 set_location_assignment PIN_D12 -to SW[2]
 set_location_assignment PIN_C11 -to SW[1]
 set_location_assignment PIN_C10 -to SW[0]
+set_global_assignment -name SYSTEMVERILOG_FILE Ben.sv
+set_global_assignment -name VERILOG_FILE ram_bb.v
+set_global_assignment -name SYSTEMVERILOG_FILE HexDriver.sv
+set_global_assignment -name SYSTEMVERILOG_FILE TwoInputMux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ThreeInputMux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Reg_16.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Register_unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath.sv
+set_global_assignment -name SYSTEMVERILOG_FILE BusMux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE test_memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE synchronizers.sv
+set_global_assignment -name SYSTEMVERILOG_FILE slc3_testtop.sv
+set_global_assignment -name SYSTEMVERILOG_FILE slc3_sramtop.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SLC3_2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE slc3.sv
+set_global_assignment -name SYSTEMVERILOG_FILE memory_contents.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Mem2IO.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ISDU.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Instantiateram.sv
 set_global_assignment -name QIP_FILE ram.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top

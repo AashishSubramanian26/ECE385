@@ -12,15 +12,3 @@ module Reg_16(
 					Out <= D;
 			end
 endmodule
-
-
-/*
-PCMUX
-PCReg
-BusMux
-MDRMUX
-MDRReg
-
-
-
-*/

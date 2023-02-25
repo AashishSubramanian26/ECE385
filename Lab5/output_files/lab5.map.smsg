@@ -1,2 +1,7 @@
+Info (10281): Verilog HDL Declaration information at datapath.sv(10): object "BEN" differs only in case from object "ben" in the same scope File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/datapath.sv Line: 10
 Info (10281): Verilog HDL Declaration information at slc3_sramtop.sv(7): object "Run" differs only in case from object "RUN" in the same scope File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3_sramtop.sv Line: 7
 Info (10281): Verilog HDL Declaration information at slc3_sramtop.sv(7): object "Continue" differs only in case from object "CONTINUE" in the same scope File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3_sramtop.sv Line: 7
+Info (10281): Verilog HDL Declaration information at slc3.sv(26): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 26
+Info (10281): Verilog HDL Declaration information at slc3.sv(26): object "HEX1" differs only in case from object "hex1" in the same scope File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 26
+Info (10281): Verilog HDL Declaration information at slc3.sv(26): object "HEX2" differs only in case from object "hex2" in the same scope File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 26
+Info (10281): Verilog HDL Declaration information at slc3.sv(26): object "HEX3" differs only in case from object "hex3" in the same scope File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 26
