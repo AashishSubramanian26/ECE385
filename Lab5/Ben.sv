@@ -1,4 +1,4 @@
-module BEN(
+module BEN_MOD(
 			input logic [15:0] D,
 			input logic LD_CC, LD_BEN, Clk, Reset,
 			input logic [2:0] IR_Input,

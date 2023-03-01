@@ -76,7 +76,7 @@ module Processor (input logic   Clk,     // Internal
                         .Add(add), 
                         .Sub(sub),
                         .M(M));
-    ADD_SUB9         Add_Shit (
+    ADD_SUB9         Add_Stuff (
                         .A(A), 
                         .B(S), 
                         .fn(sub), 

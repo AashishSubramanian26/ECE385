@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mulitiplication
-Fri Feb 17 04:06:24 2023
+Mon Feb 27 18:40:56 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -17,7 +17,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "ADD_SUB9:Add_Shit|full_adder:fa8"
+ 12. Port Connectivity Checks: "ADD_SUB9:Add_Stuff|full_adder:fa8"
  13. Port Connectivity Checks: "register_unit:reg_unit|reg_8:reg_B"
  14. Port Connectivity Checks: "register_unit:reg_unit"
  15. Post-Synthesis Netlist Statistics for Top Partition
@@ -49,7 +49,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 17 04:06:24 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 27 18:40:56 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Mulitiplication                             ;
 ; Top-level Entity Name              ; Processor                                   ;
@@ -223,16 +223,16 @@ refer to the applicable agreement for further details.
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                           ; Entity Name   ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------+---------------+--------------+
 ; |Processor                  ; 93 (6)              ; 38 (3)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 55   ; 0            ; 0          ; |Processor                                    ; Processor     ; work         ;
-;    |ADD_SUB9:Add_Shit|      ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit                  ; ADD_SUB9      ; work         ;
-;       |full_adder:fa0|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa0   ; full_adder    ; work         ;
-;       |full_adder:fa1|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa1   ; full_adder    ; work         ;
-;       |full_adder:fa2|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa2   ; full_adder    ; work         ;
-;       |full_adder:fa3|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa3   ; full_adder    ; work         ;
-;       |full_adder:fa4|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa4   ; full_adder    ; work         ;
-;       |full_adder:fa5|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa5   ; full_adder    ; work         ;
-;       |full_adder:fa6|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa6   ; full_adder    ; work         ;
-;       |full_adder:fa7|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa7   ; full_adder    ; work         ;
-;       |full_adder:fa8|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Shit|full_adder:fa8   ; full_adder    ; work         ;
+;    |ADD_SUB9:Add_Stuff|     ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff                 ; ADD_SUB9      ; work         ;
+;       |full_adder:fa0|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa0  ; full_adder    ; work         ;
+;       |full_adder:fa1|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa1  ; full_adder    ; work         ;
+;       |full_adder:fa2|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa2  ; full_adder    ; work         ;
+;       |full_adder:fa3|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa3  ; full_adder    ; work         ;
+;       |full_adder:fa4|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa4  ; full_adder    ; work         ;
+;       |full_adder:fa5|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa5  ; full_adder    ; work         ;
+;       |full_adder:fa6|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa6  ; full_adder    ; work         ;
+;       |full_adder:fa7|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa7  ; full_adder    ; work         ;
+;       |full_adder:fa8|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|ADD_SUB9:Add_Stuff|full_adder:fa8  ; full_adder    ; work         ;
 ;    |HexDriver:HexAL|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|HexDriver:HexAL                    ; HexDriver     ; work         ;
 ;    |HexDriver:HexAU|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|HexDriver:HexAU                    ; HexDriver     ; work         ;
 ;    |HexDriver:HexBL|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor|HexDriver:HexBL                    ; HexDriver     ; work         ;
@@ -314,7 +314,7 @@ Encoding Type:  One-Hot
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ADD_SUB9:Add_Shit|full_adder:fa8"                                                   ;
+; Port Connectivity Checks: "ADD_SUB9:Add_Stuff|full_adder:fa8"                                                  ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -378,7 +378,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Feb 17 04:06:06 2023
+    Info: Processing started: Mon Feb 27 18:40:31 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mulitiplication -c Mulitiplication
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -409,10 +409,10 @@ Info (12127): Elaborating entity "Processor" for the top level hierarchy
 Info (12128): Elaborating entity "register_unit" for hierarchy "register_unit:reg_unit" File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv Line: 68
 Info (12128): Elaborating entity "reg_8" for hierarchy "register_unit:reg_unit|reg_8:reg_A" File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Register_unit.sv Line: 10
 Info (12128): Elaborating entity "control" for hierarchy "control:control_unit" File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv Line: 78
-Info (12128): Elaborating entity "ADD_SUB9" for hierarchy "ADD_SUB9:Add_Shit" File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv Line: 84
+Info (12128): Elaborating entity "ADD_SUB9" for hierarchy "ADD_SUB9:Add_Stuff" File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv Line: 84
 Warning (10036): Verilog HDL or VHDL warning at Five_Bit_Adder.sv(8): object "A8" assigned a value but never read File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv Line: 8
 Warning (10036): Verilog HDL or VHDL warning at Five_Bit_Adder.sv(8): object "BB8" assigned a value but never read File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv Line: 8
-Info (12128): Elaborating entity "full_adder" for hierarchy "ADD_SUB9:Add_Shit|full_adder:fa0" File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv Line: 13
+Info (12128): Elaborating entity "full_adder" for hierarchy "ADD_SUB9:Add_Stuff|full_adder:fa0" File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Five_Bit_Adder.sv Line: 13
 Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:HexAL" File: C:/Users/Soumi/Documents/GitHub/ECE385/lab4/Processor.sv Line: 87
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
@@ -424,10 +424,10 @@ Info (21057): Implemented 148 device resources after synthesis - the final resou
     Info (21059): Implemented 44 output pins
     Info (21061): Implemented 93 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Fri Feb 17 04:06:24 2023
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Mon Feb 27 18:40:56 2023
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:51
 
 
 +------------------------------------------+

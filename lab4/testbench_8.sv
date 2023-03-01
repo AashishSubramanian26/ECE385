@@ -30,7 +30,7 @@ always #1 Clk = ~Clk;
 initial begin
     Reset_ClearA_LoadB = 0;
     Execute = 1;
-    S = 8'hC5; 
+    S = 8'h65; 
 
     #2
 
@@ -39,7 +39,7 @@ initial begin
     #2
 
 
-    S = 8'h7; 
+    S = 8'h51; 
     Execute = 0;
 
 

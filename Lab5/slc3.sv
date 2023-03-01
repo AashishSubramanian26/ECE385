@@ -54,7 +54,8 @@ logic SR2MUX, ADDR1MUX, MARMUX;
 logic BEN, MIO_EN, DRMUX, SR1MUX;
 logic [1:0] PCMUX, ADDR2MUX, ALUK;
 logic [15:0] MDR_In;
-logic [15:0] MAR, MDR, IR; //outputs
+logic [15:0] MAR, MDR, IR, PC; //outputs
+logic Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE;
 
 
 // Connect MAR to ADDR, which is also connected as an input into MEM2IO

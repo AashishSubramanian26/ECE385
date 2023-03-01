@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "02/17/2023 04:06:51"
+// DATE "02/27/2023 18:41:54"
 
 // 
 // Device: Altera 10M50DAF484C7G Package FBGA484
@@ -39,16 +39,16 @@ module Processor (
 	HEX2,
 	Aval,
 	Bval);
-input 	logic Clk ;
-input 	logic Reset_ClearA_LoadB ;
-input 	logic Execute ;
-input 	logic [7:0] S ;
-output 	logic [6:0] HEX1 ;
-output 	logic [6:0] HEX0 ;
-output 	logic [6:0] HEX3 ;
-output 	logic [6:0] HEX2 ;
-output 	logic [7:0] Aval ;
-output 	logic [7:0] Bval ;
+input 	Clk;
+input 	Reset_ClearA_LoadB;
+input 	Execute;
+input 	[7:0] S;
+output 	[6:0] HEX1;
+output 	[6:0] HEX0;
+output 	[6:0] HEX3;
+output 	[6:0] HEX2;
+output 	[7:0] Aval;
+output 	[7:0] Bval;
 
 // Design Ports Information
 // HEX1[0]	=>  Location: PIN_C18,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -235,34 +235,34 @@ wire \comb~0_combout ;
 wire \comb~2_combout ;
 wire \reg_unit|comb~0_combout ;
 wire \control_unit|Sub~0_combout ;
-wire \Add_Shit|fa0|cout~0_combout ;
-wire \Add_Shit|fa1|cout~0_combout ;
-wire \Add_Shit|fa2|s~combout ;
-wire \Add_Shit|fa2|cout~0_combout ;
-wire \Add_Shit|fa3|s~combout ;
+wire \Add_Stuff|fa0|cout~0_combout ;
+wire \Add_Stuff|fa1|cout~0_combout ;
+wire \Add_Stuff|fa2|s~combout ;
+wire \Add_Stuff|fa2|cout~0_combout ;
+wire \Add_Stuff|fa3|s~combout ;
 wire \reg_unit|reg_A|Data_Out~6_combout ;
-wire \Add_Shit|fa8|s~0_combout ;
-wire \Add_Shit|fa3|cout~0_combout ;
-wire \Add_Shit|fa4|cout~0_combout ;
-wire \Add_Shit|fa5|cout~0_combout ;
-wire \Add_Shit|fa6|cout~0_combout ;
-wire \Add_Shit|fa7|cout~0_combout ;
+wire \Add_Stuff|fa8|s~0_combout ;
+wire \Add_Stuff|fa3|cout~0_combout ;
+wire \Add_Stuff|fa4|cout~0_combout ;
+wire \Add_Stuff|fa5|cout~0_combout ;
+wire \Add_Stuff|fa6|cout~0_combout ;
+wire \Add_Stuff|fa7|cout~0_combout ;
 wire \X~0_combout ;
 wire \X~q ;
 wire \reg_unit|reg_A|Data_Out~12_combout ;
 wire \reg_unit|reg_A|Data_Out~7_combout ;
 wire \reg_unit|reg_A|Data_Out[4]~3_combout ;
-wire \Add_Shit|fa6|s~combout ;
+wire \Add_Stuff|fa6|s~combout ;
 wire \reg_unit|reg_A|Data_Out~5_combout ;
-wire \Add_Shit|fa5|s~combout ;
+wire \Add_Stuff|fa5|s~combout ;
 wire \reg_unit|reg_A|Data_Out~4_combout ;
-wire \Add_Shit|fa4|s~combout ;
+wire \Add_Stuff|fa4|s~combout ;
 wire \reg_unit|reg_A|Data_Out~2_combout ;
 wire \reg_unit|reg_A|Data_Out~11_combout ;
 wire \reg_unit|reg_A|Data_Out~10_combout ;
-wire \Add_Shit|fa1|s~combout ;
+wire \Add_Stuff|fa1|s~combout ;
 wire \reg_unit|reg_A|Data_Out~9_combout ;
-wire \Add_Shit|fa0|s~combout ;
+wire \Add_Stuff|fa0|s~combout ;
 wire \reg_unit|reg_A|Data_Out~8_combout ;
 wire \reg_unit|reg_B|Data_Out~4_combout ;
 wire \reg_unit|reg_B|Data_Out~3_combout ;
@@ -2128,90 +2128,90 @@ defparam \control_unit|Sub~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N26
-fiftyfivenm_lcell_comb \Add_Shit|fa0|cout~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa0|cout~0 (
 // Equation(s):
-// \Add_Shit|fa0|cout~0_combout  = (\S[0]~input_o  & (((\reg_unit|reg_A|Data_Out [0])))) # (!\S[0]~input_o  & (\reg_unit|reg_B|Data_Out [0] & (\control_unit|curr_state.Subtract~q )))
+// \Add_Stuff|fa0|cout~0_combout  = (\S[0]~input_o  & (((\reg_unit|reg_A|Data_Out [0])))) # (!\S[0]~input_o  & (\reg_unit|reg_B|Data_Out [0] & (\control_unit|curr_state.Subtract~q )))
 
 	.dataa(\S[0]~input_o ),
 	.datab(\reg_unit|reg_B|Data_Out [0]),
 	.datac(\control_unit|curr_state.Subtract~q ),
 	.datad(\reg_unit|reg_A|Data_Out [0]),
 	.cin(gnd),
-	.combout(\Add_Shit|fa0|cout~0_combout ),
+	.combout(\Add_Stuff|fa0|cout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa0|cout~0 .lut_mask = 16'hEA40;
-defparam \Add_Shit|fa0|cout~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa0|cout~0 .lut_mask = 16'hEA40;
+defparam \Add_Stuff|fa0|cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N12
-fiftyfivenm_lcell_comb \Add_Shit|fa1|cout~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa1|cout~0 (
 // Equation(s):
-// \Add_Shit|fa1|cout~0_combout  = (\reg_unit|reg_A|Data_Out [1] & ((\Add_Shit|fa0|cout~0_combout ) # (\S[1]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [1] & (\Add_Shit|fa0|cout~0_combout  & (\S[1]~input_o  $ 
+// \Add_Stuff|fa1|cout~0_combout  = (\reg_unit|reg_A|Data_Out [1] & ((\Add_Stuff|fa0|cout~0_combout ) # (\S[1]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [1] & (\Add_Stuff|fa0|cout~0_combout  & (\S[1]~input_o  $ 
 // (\control_unit|Sub~0_combout ))))
 
 	.dataa(\S[1]~input_o ),
 	.datab(\reg_unit|reg_A|Data_Out [1]),
-	.datac(\Add_Shit|fa0|cout~0_combout ),
+	.datac(\Add_Stuff|fa0|cout~0_combout ),
 	.datad(\control_unit|Sub~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa1|cout~0_combout ),
+	.combout(\Add_Stuff|fa1|cout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa1|cout~0 .lut_mask = 16'hD4E8;
-defparam \Add_Shit|fa1|cout~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa1|cout~0 .lut_mask = 16'hD4E8;
+defparam \Add_Stuff|fa1|cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N12
-fiftyfivenm_lcell_comb \Add_Shit|fa2|s (
+fiftyfivenm_lcell_comb \Add_Stuff|fa2|s (
 // Equation(s):
-// \Add_Shit|fa2|s~combout  = \S[2]~input_o  $ (\control_unit|Sub~0_combout  $ (\reg_unit|reg_A|Data_Out [2] $ (\Add_Shit|fa1|cout~0_combout )))
+// \Add_Stuff|fa2|s~combout  = \S[2]~input_o  $ (\control_unit|Sub~0_combout  $ (\reg_unit|reg_A|Data_Out [2] $ (\Add_Stuff|fa1|cout~0_combout )))
 
 	.dataa(\S[2]~input_o ),
 	.datab(\control_unit|Sub~0_combout ),
 	.datac(\reg_unit|reg_A|Data_Out [2]),
-	.datad(\Add_Shit|fa1|cout~0_combout ),
+	.datad(\Add_Stuff|fa1|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa2|s~combout ),
+	.combout(\Add_Stuff|fa2|s~combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa2|s .lut_mask = 16'h6996;
-defparam \Add_Shit|fa2|s .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa2|s .lut_mask = 16'h6996;
+defparam \Add_Stuff|fa2|s .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N6
-fiftyfivenm_lcell_comb \Add_Shit|fa2|cout~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa2|cout~0 (
 // Equation(s):
-// \Add_Shit|fa2|cout~0_combout  = (\reg_unit|reg_A|Data_Out [2] & ((\Add_Shit|fa1|cout~0_combout ) # (\S[2]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [2] & (\Add_Shit|fa1|cout~0_combout  & (\S[2]~input_o  $ 
+// \Add_Stuff|fa2|cout~0_combout  = (\reg_unit|reg_A|Data_Out [2] & ((\Add_Stuff|fa1|cout~0_combout ) # (\S[2]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [2] & (\Add_Stuff|fa1|cout~0_combout  & (\S[2]~input_o  $ 
 // (\control_unit|Sub~0_combout ))))
 
 	.dataa(\S[2]~input_o ),
 	.datab(\reg_unit|reg_A|Data_Out [2]),
 	.datac(\control_unit|Sub~0_combout ),
-	.datad(\Add_Shit|fa1|cout~0_combout ),
+	.datad(\Add_Stuff|fa1|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa2|cout~0_combout ),
+	.combout(\Add_Stuff|fa2|cout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa2|cout~0 .lut_mask = 16'hDE48;
-defparam \Add_Shit|fa2|cout~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa2|cout~0 .lut_mask = 16'hDE48;
+defparam \Add_Stuff|fa2|cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N8
-fiftyfivenm_lcell_comb \Add_Shit|fa3|s (
+fiftyfivenm_lcell_comb \Add_Stuff|fa3|s (
 // Equation(s):
-// \Add_Shit|fa3|s~combout  = \S[3]~input_o  $ (\control_unit|Sub~0_combout  $ (\reg_unit|reg_A|Data_Out [3] $ (\Add_Shit|fa2|cout~0_combout )))
+// \Add_Stuff|fa3|s~combout  = \S[3]~input_o  $ (\control_unit|Sub~0_combout  $ (\reg_unit|reg_A|Data_Out [3] $ (\Add_Stuff|fa2|cout~0_combout )))
 
 	.dataa(\S[3]~input_o ),
 	.datab(\control_unit|Sub~0_combout ),
 	.datac(\reg_unit|reg_A|Data_Out [3]),
-	.datad(\Add_Shit|fa2|cout~0_combout ),
+	.datad(\Add_Stuff|fa2|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa3|s~combout ),
+	.combout(\Add_Stuff|fa3|s~combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa3|s .lut_mask = 16'h6996;
-defparam \Add_Shit|fa3|s .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa3|s .lut_mask = 16'h6996;
+defparam \Add_Stuff|fa3|s .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N16
@@ -2232,121 +2232,121 @@ defparam \reg_unit|reg_A|Data_Out~6 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N22
-fiftyfivenm_lcell_comb \Add_Shit|fa8|s~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa8|s~0 (
 // Equation(s):
-// \Add_Shit|fa8|s~0_combout  = \S[7]~input_o  $ (\reg_unit|reg_A|Data_Out [7] $ (((\control_unit|curr_state.Subtract~q  & \reg_unit|reg_B|Data_Out [0]))))
+// \Add_Stuff|fa8|s~0_combout  = \S[7]~input_o  $ (\reg_unit|reg_A|Data_Out [7] $ (((\control_unit|curr_state.Subtract~q  & \reg_unit|reg_B|Data_Out [0]))))
 
 	.dataa(\S[7]~input_o ),
 	.datab(\reg_unit|reg_A|Data_Out [7]),
 	.datac(\control_unit|curr_state.Subtract~q ),
 	.datad(\reg_unit|reg_B|Data_Out [0]),
 	.cin(gnd),
-	.combout(\Add_Shit|fa8|s~0_combout ),
+	.combout(\Add_Stuff|fa8|s~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa8|s~0 .lut_mask = 16'h9666;
-defparam \Add_Shit|fa8|s~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa8|s~0 .lut_mask = 16'h9666;
+defparam \Add_Stuff|fa8|s~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N20
-fiftyfivenm_lcell_comb \Add_Shit|fa3|cout~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa3|cout~0 (
 // Equation(s):
-// \Add_Shit|fa3|cout~0_combout  = (\reg_unit|reg_A|Data_Out [3] & ((\Add_Shit|fa2|cout~0_combout ) # (\S[3]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [3] & (\Add_Shit|fa2|cout~0_combout  & (\S[3]~input_o  $ 
+// \Add_Stuff|fa3|cout~0_combout  = (\reg_unit|reg_A|Data_Out [3] & ((\Add_Stuff|fa2|cout~0_combout ) # (\S[3]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [3] & (\Add_Stuff|fa2|cout~0_combout  & (\S[3]~input_o  $ 
 // (\control_unit|Sub~0_combout ))))
 
 	.dataa(\S[3]~input_o ),
 	.datab(\reg_unit|reg_A|Data_Out [3]),
 	.datac(\control_unit|Sub~0_combout ),
-	.datad(\Add_Shit|fa2|cout~0_combout ),
+	.datad(\Add_Stuff|fa2|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa3|cout~0_combout ),
+	.combout(\Add_Stuff|fa3|cout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa3|cout~0 .lut_mask = 16'hDE48;
-defparam \Add_Shit|fa3|cout~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa3|cout~0 .lut_mask = 16'hDE48;
+defparam \Add_Stuff|fa3|cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N2
-fiftyfivenm_lcell_comb \Add_Shit|fa4|cout~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa4|cout~0 (
 // Equation(s):
-// \Add_Shit|fa4|cout~0_combout  = (\reg_unit|reg_A|Data_Out [4] & ((\Add_Shit|fa3|cout~0_combout ) # (\S[4]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [4] & (\Add_Shit|fa3|cout~0_combout  & (\S[4]~input_o  $ 
+// \Add_Stuff|fa4|cout~0_combout  = (\reg_unit|reg_A|Data_Out [4] & ((\Add_Stuff|fa3|cout~0_combout ) # (\S[4]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [4] & (\Add_Stuff|fa3|cout~0_combout  & (\S[4]~input_o  $ 
 // (\control_unit|Sub~0_combout ))))
 
 	.dataa(\S[4]~input_o ),
 	.datab(\reg_unit|reg_A|Data_Out [4]),
 	.datac(\control_unit|Sub~0_combout ),
-	.datad(\Add_Shit|fa3|cout~0_combout ),
+	.datad(\Add_Stuff|fa3|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa4|cout~0_combout ),
+	.combout(\Add_Stuff|fa4|cout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa4|cout~0 .lut_mask = 16'hDE48;
-defparam \Add_Shit|fa4|cout~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa4|cout~0 .lut_mask = 16'hDE48;
+defparam \Add_Stuff|fa4|cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N0
-fiftyfivenm_lcell_comb \Add_Shit|fa5|cout~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa5|cout~0 (
 // Equation(s):
-// \Add_Shit|fa5|cout~0_combout  = (\reg_unit|reg_A|Data_Out [5] & ((\Add_Shit|fa4|cout~0_combout ) # (\S[5]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [5] & (\Add_Shit|fa4|cout~0_combout  & (\S[5]~input_o  $ 
+// \Add_Stuff|fa5|cout~0_combout  = (\reg_unit|reg_A|Data_Out [5] & ((\Add_Stuff|fa4|cout~0_combout ) # (\S[5]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [5] & (\Add_Stuff|fa4|cout~0_combout  & (\S[5]~input_o  $ 
 // (\control_unit|Sub~0_combout ))))
 
 	.dataa(\S[5]~input_o ),
 	.datab(\reg_unit|reg_A|Data_Out [5]),
 	.datac(\control_unit|Sub~0_combout ),
-	.datad(\Add_Shit|fa4|cout~0_combout ),
+	.datad(\Add_Stuff|fa4|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa5|cout~0_combout ),
+	.combout(\Add_Stuff|fa5|cout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa5|cout~0 .lut_mask = 16'hDE48;
-defparam \Add_Shit|fa5|cout~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa5|cout~0 .lut_mask = 16'hDE48;
+defparam \Add_Stuff|fa5|cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N18
-fiftyfivenm_lcell_comb \Add_Shit|fa6|cout~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa6|cout~0 (
 // Equation(s):
-// \Add_Shit|fa6|cout~0_combout  = (\reg_unit|reg_A|Data_Out [6] & ((\Add_Shit|fa5|cout~0_combout ) # (\control_unit|Sub~0_combout  $ (\S[6]~input_o )))) # (!\reg_unit|reg_A|Data_Out [6] & (\Add_Shit|fa5|cout~0_combout  & (\control_unit|Sub~0_combout  $ 
+// \Add_Stuff|fa6|cout~0_combout  = (\reg_unit|reg_A|Data_Out [6] & ((\Add_Stuff|fa5|cout~0_combout ) # (\control_unit|Sub~0_combout  $ (\S[6]~input_o )))) # (!\reg_unit|reg_A|Data_Out [6] & (\Add_Stuff|fa5|cout~0_combout  & (\control_unit|Sub~0_combout  $ 
 // (\S[6]~input_o ))))
 
 	.dataa(\reg_unit|reg_A|Data_Out [6]),
 	.datab(\control_unit|Sub~0_combout ),
 	.datac(\S[6]~input_o ),
-	.datad(\Add_Shit|fa5|cout~0_combout ),
+	.datad(\Add_Stuff|fa5|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa6|cout~0_combout ),
+	.combout(\Add_Stuff|fa6|cout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa6|cout~0 .lut_mask = 16'hBE28;
-defparam \Add_Shit|fa6|cout~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa6|cout~0 .lut_mask = 16'hBE28;
+defparam \Add_Stuff|fa6|cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N10
-fiftyfivenm_lcell_comb \Add_Shit|fa7|cout~0 (
+fiftyfivenm_lcell_comb \Add_Stuff|fa7|cout~0 (
 // Equation(s):
-// \Add_Shit|fa7|cout~0_combout  = (\reg_unit|reg_A|Data_Out [7] & ((\Add_Shit|fa6|cout~0_combout ) # (\S[7]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [7] & (\Add_Shit|fa6|cout~0_combout  & (\S[7]~input_o  $ 
+// \Add_Stuff|fa7|cout~0_combout  = (\reg_unit|reg_A|Data_Out [7] & ((\Add_Stuff|fa6|cout~0_combout ) # (\S[7]~input_o  $ (\control_unit|Sub~0_combout )))) # (!\reg_unit|reg_A|Data_Out [7] & (\Add_Stuff|fa6|cout~0_combout  & (\S[7]~input_o  $ 
 // (\control_unit|Sub~0_combout ))))
 
 	.dataa(\S[7]~input_o ),
 	.datab(\reg_unit|reg_A|Data_Out [7]),
 	.datac(\control_unit|Sub~0_combout ),
-	.datad(\Add_Shit|fa6|cout~0_combout ),
+	.datad(\Add_Stuff|fa6|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa7|cout~0_combout ),
+	.combout(\Add_Stuff|fa7|cout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa7|cout~0 .lut_mask = 16'hDE48;
-defparam \Add_Shit|fa7|cout~0 .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa7|cout~0 .lut_mask = 16'hDE48;
+defparam \Add_Stuff|fa7|cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N4
 fiftyfivenm_lcell_comb \X~0 (
 // Equation(s):
-// \X~0_combout  = (\reg_unit|reg_A|Data_Out~12_combout ) # ((\reg_unit|reg_A|Data_Out~6_combout  & (\Add_Shit|fa8|s~0_combout  $ (\Add_Shit|fa7|cout~0_combout ))))
+// \X~0_combout  = (\reg_unit|reg_A|Data_Out~12_combout ) # ((\reg_unit|reg_A|Data_Out~6_combout  & (\Add_Stuff|fa8|s~0_combout  $ (\Add_Stuff|fa7|cout~0_combout ))))
 
 	.dataa(\reg_unit|reg_A|Data_Out~12_combout ),
-	.datab(\Add_Shit|fa8|s~0_combout ),
+	.datab(\Add_Stuff|fa8|s~0_combout ),
 	.datac(\reg_unit|reg_A|Data_Out~6_combout ),
-	.datad(\Add_Shit|fa7|cout~0_combout ),
+	.datad(\Add_Stuff|fa7|cout~0_combout ),
 	.cin(gnd),
 	.combout(\X~0_combout ),
 	.cout());
@@ -2394,12 +2394,12 @@ defparam \reg_unit|reg_A|Data_Out~12 .sum_lutc_input = "datac";
 // Location: LCCOMB_X67_Y48_N18
 fiftyfivenm_lcell_comb \reg_unit|reg_A|Data_Out~7 (
 // Equation(s):
-// \reg_unit|reg_A|Data_Out~7_combout  = (\reg_unit|reg_A|Data_Out~12_combout ) # ((\reg_unit|reg_A|Data_Out~6_combout  & (\Add_Shit|fa8|s~0_combout  $ (\Add_Shit|fa6|cout~0_combout ))))
+// \reg_unit|reg_A|Data_Out~7_combout  = (\reg_unit|reg_A|Data_Out~12_combout ) # ((\reg_unit|reg_A|Data_Out~6_combout  & (\Add_Stuff|fa8|s~0_combout  $ (\Add_Stuff|fa6|cout~0_combout ))))
 
 	.dataa(\reg_unit|reg_A|Data_Out~6_combout ),
-	.datab(\Add_Shit|fa8|s~0_combout ),
+	.datab(\Add_Stuff|fa8|s~0_combout ),
 	.datac(\reg_unit|reg_A|Data_Out~12_combout ),
-	.datad(\Add_Shit|fa6|cout~0_combout ),
+	.datad(\Add_Stuff|fa6|cout~0_combout ),
 	.cin(gnd),
 	.combout(\reg_unit|reg_A|Data_Out~7_combout ),
 	.cout());
@@ -2445,31 +2445,31 @@ defparam \reg_unit|reg_A|Data_Out[7] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N30
-fiftyfivenm_lcell_comb \Add_Shit|fa6|s (
+fiftyfivenm_lcell_comb \Add_Stuff|fa6|s (
 // Equation(s):
-// \Add_Shit|fa6|s~combout  = \reg_unit|reg_A|Data_Out [6] $ (\control_unit|Sub~0_combout  $ (\S[6]~input_o  $ (\Add_Shit|fa5|cout~0_combout )))
+// \Add_Stuff|fa6|s~combout  = \reg_unit|reg_A|Data_Out [6] $ (\control_unit|Sub~0_combout  $ (\S[6]~input_o  $ (\Add_Stuff|fa5|cout~0_combout )))
 
 	.dataa(\reg_unit|reg_A|Data_Out [6]),
 	.datab(\control_unit|Sub~0_combout ),
 	.datac(\S[6]~input_o ),
-	.datad(\Add_Shit|fa5|cout~0_combout ),
+	.datad(\Add_Stuff|fa5|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa6|s~combout ),
+	.combout(\Add_Stuff|fa6|s~combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa6|s .lut_mask = 16'h6996;
-defparam \Add_Shit|fa6|s .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa6|s .lut_mask = 16'h6996;
+defparam \Add_Stuff|fa6|s .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N20
 fiftyfivenm_lcell_comb \reg_unit|reg_A|Data_Out~5 (
 // Equation(s):
-// \reg_unit|reg_A|Data_Out~5_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Shit|fa6|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [7]))))
+// \reg_unit|reg_A|Data_Out~5_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Stuff|fa6|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [7]))))
 
 	.dataa(\reg_unit|reg_A|Data_Out [7]),
 	.datab(\reg_unit|comb~0_combout ),
 	.datac(\comb~2_combout ),
-	.datad(\Add_Shit|fa6|s~combout ),
+	.datad(\Add_Stuff|fa6|s~combout ),
 	.cin(gnd),
 	.combout(\reg_unit|reg_A|Data_Out~5_combout ),
 	.cout());
@@ -2498,31 +2498,31 @@ defparam \reg_unit|reg_A|Data_Out[6] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N2
-fiftyfivenm_lcell_comb \Add_Shit|fa5|s (
+fiftyfivenm_lcell_comb \Add_Stuff|fa5|s (
 // Equation(s):
-// \Add_Shit|fa5|s~combout  = \S[5]~input_o  $ (\control_unit|Sub~0_combout  $ (\reg_unit|reg_A|Data_Out [5] $ (\Add_Shit|fa4|cout~0_combout )))
+// \Add_Stuff|fa5|s~combout  = \S[5]~input_o  $ (\control_unit|Sub~0_combout  $ (\reg_unit|reg_A|Data_Out [5] $ (\Add_Stuff|fa4|cout~0_combout )))
 
 	.dataa(\S[5]~input_o ),
 	.datab(\control_unit|Sub~0_combout ),
 	.datac(\reg_unit|reg_A|Data_Out [5]),
-	.datad(\Add_Shit|fa4|cout~0_combout ),
+	.datad(\Add_Stuff|fa4|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa5|s~combout ),
+	.combout(\Add_Stuff|fa5|s~combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa5|s .lut_mask = 16'h6996;
-defparam \Add_Shit|fa5|s .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa5|s .lut_mask = 16'h6996;
+defparam \Add_Stuff|fa5|s .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N26
 fiftyfivenm_lcell_comb \reg_unit|reg_A|Data_Out~4 (
 // Equation(s):
-// \reg_unit|reg_A|Data_Out~4_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Shit|fa5|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [6]))))
+// \reg_unit|reg_A|Data_Out~4_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Stuff|fa5|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [6]))))
 
 	.dataa(\reg_unit|reg_A|Data_Out [6]),
 	.datab(\reg_unit|comb~0_combout ),
 	.datac(\comb~2_combout ),
-	.datad(\Add_Shit|fa5|s~combout ),
+	.datad(\Add_Stuff|fa5|s~combout ),
 	.cin(gnd),
 	.combout(\reg_unit|reg_A|Data_Out~4_combout ),
 	.cout());
@@ -2551,31 +2551,31 @@ defparam \reg_unit|reg_A|Data_Out[5] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X66_Y48_N14
-fiftyfivenm_lcell_comb \Add_Shit|fa4|s (
+fiftyfivenm_lcell_comb \Add_Stuff|fa4|s (
 // Equation(s):
-// \Add_Shit|fa4|s~combout  = \S[4]~input_o  $ (\reg_unit|reg_A|Data_Out [4] $ (\control_unit|Sub~0_combout  $ (\Add_Shit|fa3|cout~0_combout )))
+// \Add_Stuff|fa4|s~combout  = \S[4]~input_o  $ (\reg_unit|reg_A|Data_Out [4] $ (\control_unit|Sub~0_combout  $ (\Add_Stuff|fa3|cout~0_combout )))
 
 	.dataa(\S[4]~input_o ),
 	.datab(\reg_unit|reg_A|Data_Out [4]),
 	.datac(\control_unit|Sub~0_combout ),
-	.datad(\Add_Shit|fa3|cout~0_combout ),
+	.datad(\Add_Stuff|fa3|cout~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa4|s~combout ),
+	.combout(\Add_Stuff|fa4|s~combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa4|s .lut_mask = 16'h6996;
-defparam \Add_Shit|fa4|s .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa4|s .lut_mask = 16'h6996;
+defparam \Add_Stuff|fa4|s .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N28
 fiftyfivenm_lcell_comb \reg_unit|reg_A|Data_Out~2 (
 // Equation(s):
-// \reg_unit|reg_A|Data_Out~2_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Shit|fa4|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [5]))))
+// \reg_unit|reg_A|Data_Out~2_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Stuff|fa4|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [5]))))
 
 	.dataa(\reg_unit|reg_A|Data_Out [5]),
 	.datab(\reg_unit|comb~0_combout ),
 	.datac(\comb~2_combout ),
-	.datad(\Add_Shit|fa4|s~combout ),
+	.datad(\Add_Stuff|fa4|s~combout ),
 	.cin(gnd),
 	.combout(\reg_unit|reg_A|Data_Out~2_combout ),
 	.cout());
@@ -2606,9 +2606,9 @@ defparam \reg_unit|reg_A|Data_Out[4] .power_up = "low";
 // Location: LCCOMB_X67_Y48_N14
 fiftyfivenm_lcell_comb \reg_unit|reg_A|Data_Out~11 (
 // Equation(s):
-// \reg_unit|reg_A|Data_Out~11_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & (\Add_Shit|fa3|s~combout )) # (!\comb~2_combout  & ((\reg_unit|reg_A|Data_Out [4])))))
+// \reg_unit|reg_A|Data_Out~11_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & (\Add_Stuff|fa3|s~combout )) # (!\comb~2_combout  & ((\reg_unit|reg_A|Data_Out [4])))))
 
-	.dataa(\Add_Shit|fa3|s~combout ),
+	.dataa(\Add_Stuff|fa3|s~combout ),
 	.datab(\reg_unit|comb~0_combout ),
 	.datac(\comb~2_combout ),
 	.datad(\reg_unit|reg_A|Data_Out [4]),
@@ -2642,9 +2642,9 @@ defparam \reg_unit|reg_A|Data_Out[3] .power_up = "low";
 // Location: LCCOMB_X67_Y48_N8
 fiftyfivenm_lcell_comb \reg_unit|reg_A|Data_Out~10 (
 // Equation(s):
-// \reg_unit|reg_A|Data_Out~10_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & (\Add_Shit|fa2|s~combout )) # (!\comb~2_combout  & ((\reg_unit|reg_A|Data_Out [3])))))
+// \reg_unit|reg_A|Data_Out~10_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & (\Add_Stuff|fa2|s~combout )) # (!\comb~2_combout  & ((\reg_unit|reg_A|Data_Out [3])))))
 
-	.dataa(\Add_Shit|fa2|s~combout ),
+	.dataa(\Add_Stuff|fa2|s~combout ),
 	.datab(\reg_unit|reg_A|Data_Out [3]),
 	.datac(\comb~2_combout ),
 	.datad(\reg_unit|comb~0_combout ),
@@ -2676,31 +2676,31 @@ defparam \reg_unit|reg_A|Data_Out[2] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N6
-fiftyfivenm_lcell_comb \Add_Shit|fa1|s (
+fiftyfivenm_lcell_comb \Add_Stuff|fa1|s (
 // Equation(s):
-// \Add_Shit|fa1|s~combout  = \S[1]~input_o  $ (\Add_Shit|fa0|cout~0_combout  $ (\reg_unit|reg_A|Data_Out [1] $ (\control_unit|Sub~0_combout )))
+// \Add_Stuff|fa1|s~combout  = \S[1]~input_o  $ (\Add_Stuff|fa0|cout~0_combout  $ (\reg_unit|reg_A|Data_Out [1] $ (\control_unit|Sub~0_combout )))
 
 	.dataa(\S[1]~input_o ),
-	.datab(\Add_Shit|fa0|cout~0_combout ),
+	.datab(\Add_Stuff|fa0|cout~0_combout ),
 	.datac(\reg_unit|reg_A|Data_Out [1]),
 	.datad(\control_unit|Sub~0_combout ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa1|s~combout ),
+	.combout(\Add_Stuff|fa1|s~combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa1|s .lut_mask = 16'h6996;
-defparam \Add_Shit|fa1|s .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa1|s .lut_mask = 16'h6996;
+defparam \Add_Stuff|fa1|s .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N10
 fiftyfivenm_lcell_comb \reg_unit|reg_A|Data_Out~9 (
 // Equation(s):
-// \reg_unit|reg_A|Data_Out~9_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Shit|fa1|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [2]))))
+// \reg_unit|reg_A|Data_Out~9_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Stuff|fa1|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [2]))))
 
 	.dataa(\comb~2_combout ),
 	.datab(\reg_unit|comb~0_combout ),
 	.datac(\reg_unit|reg_A|Data_Out [2]),
-	.datad(\Add_Shit|fa1|s~combout ),
+	.datad(\Add_Stuff|fa1|s~combout ),
 	.cin(gnd),
 	.combout(\reg_unit|reg_A|Data_Out~9_combout ),
 	.cout());
@@ -2729,29 +2729,29 @@ defparam \reg_unit|reg_A|Data_Out[1] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N16
-fiftyfivenm_lcell_comb \Add_Shit|fa0|s (
+fiftyfivenm_lcell_comb \Add_Stuff|fa0|s (
 // Equation(s):
-// \Add_Shit|fa0|s~combout  = \reg_unit|reg_A|Data_Out [0] $ (\S[0]~input_o )
+// \Add_Stuff|fa0|s~combout  = \reg_unit|reg_A|Data_Out [0] $ (\S[0]~input_o )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(\reg_unit|reg_A|Data_Out [0]),
 	.datad(\S[0]~input_o ),
 	.cin(gnd),
-	.combout(\Add_Shit|fa0|s~combout ),
+	.combout(\Add_Stuff|fa0|s~combout ),
 	.cout());
 // synopsys translate_off
-defparam \Add_Shit|fa0|s .lut_mask = 16'h0FF0;
-defparam \Add_Shit|fa0|s .sum_lutc_input = "datac";
+defparam \Add_Stuff|fa0|s .lut_mask = 16'h0FF0;
+defparam \Add_Stuff|fa0|s .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y48_N4
 fiftyfivenm_lcell_comb \reg_unit|reg_A|Data_Out~8 (
 // Equation(s):
-// \reg_unit|reg_A|Data_Out~8_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Shit|fa0|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [1]))))
+// \reg_unit|reg_A|Data_Out~8_combout  = (!\reg_unit|comb~0_combout  & ((\comb~2_combout  & ((\Add_Stuff|fa0|s~combout ))) # (!\comb~2_combout  & (\reg_unit|reg_A|Data_Out [1]))))
 
 	.dataa(\reg_unit|reg_A|Data_Out [1]),
-	.datab(\Add_Shit|fa0|s~combout ),
+	.datab(\Add_Stuff|fa0|s~combout ),
 	.datac(\comb~2_combout ),
 	.datad(\reg_unit|comb~0_combout ),
 	.cin(gnd),

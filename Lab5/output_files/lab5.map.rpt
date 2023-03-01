@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5
-Sat Feb 25 00:08:56 2023
+Tue Feb 28 22:47:19 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Feb 25 00:08:56 2023           ;
+; Analysis & Synthesis Status        ; Failed - Tue Feb 28 22:47:19 2023           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab5                                        ;
 ; Top-level Entity Name              ; slc3_testtop                                ;
@@ -164,14 +164,13 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Feb 25 00:08:33 2023
+    Info: Processing started: Tue Feb 28 22:46:53 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ben.sv
     Info (12023): Found entity 1: BEN File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/Ben.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file ram_bb.v
-    Info (12023): Found entity 1: ram File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ram_bb.v Line: 34
+Warning (12019): Can't analyze file -- file ram_bb.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
     Info (12023): Found entity 1: HexDriver File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/HexDriver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file twoinputmux.sv
@@ -211,15 +210,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file isdu.sv
     Info (12023): Found entity 1: ISDU File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ISDU.sv Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file instantiateram.sv
     Info (12023): Found entity 1: Instantiateram File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/Instantiateram.sv Line: 18
-Error (10228): Verilog HDL error at ram.v(39): module "ram" cannot be declared more than once File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ram.v Line: 39
-Info (10499): HDL info at ram_bb.v(34): see declaration for object "ram" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ram_bb.v Line: 34
-Info (12021): Found 0 design units, including 0 entities, in source file ram.v
+Info (12021): Found 1 design units, including 1 entities, in source file ram.v
+    Info (12023): Found entity 1: ram File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ram.v Line: 39
+Info (12127): Elaborating entity "slc3_testtop" for the top level hierarchy
+Info (12128): Elaborating entity "sync" for hierarchy "sync:button_sync[0]" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3_testtop.sv Line: 15
+Info (12128): Elaborating entity "slc3" for hierarchy "slc3:slc" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3_testtop.sv Line: 29
+Error (10897): SystemVerilog error at slc3.sv(80): can't implicitly connect port "DRMUX" on instance "state_controller" of module "ISDU" - matching object in present scope does not have an equivalent data type File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 80
+Error (10784): HDL error at ISDU.sv(28): see declaration for object "DRMUX" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ISDU.sv Line: 28
+Error (10784): HDL error at slc3.sv(54): see declaration for object "DRMUX" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 54
+Error (10897): SystemVerilog error at slc3.sv(80): can't implicitly connect port "SR1MUX" on instance "state_controller" of module "ISDU" - matching object in present scope does not have an equivalent data type File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 80
+Error (10784): HDL error at ISDU.sv(28): see declaration for object "SR1MUX" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ISDU.sv Line: 28
+Error (10784): HDL error at slc3.sv(54): see declaration for object "SR1MUX" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 54
+Error (10897): SystemVerilog error at slc3.sv(80): can't implicitly connect port "SR2MUX" on instance "state_controller" of module "ISDU" - matching object in present scope does not have an equivalent data type File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 80
+Error (10784): HDL error at ISDU.sv(28): see declaration for object "SR2MUX" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ISDU.sv Line: 28
+Error (10784): HDL error at slc3.sv(53): see declaration for object "SR2MUX" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 53
+Error (10897): SystemVerilog error at slc3.sv(80): can't implicitly connect port "ADDR1MUX" on instance "state_controller" of module "ISDU" - matching object in present scope does not have an equivalent data type File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 80
+Error (10784): HDL error at ISDU.sv(28): see declaration for object "ADDR1MUX" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/ISDU.sv Line: 28
+Error (10784): HDL error at slc3.sv(53): see declaration for object "ADDR1MUX" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3.sv Line: 53
+Error (12152): Can't elaborate user hierarchy "slc3:slc" File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/slc3_testtop.sv Line: 29
 Info (144001): Generated suppressed messages file C:/Users/Soumi/Documents/GitHub/ECE385/Lab5/output_files/lab5.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
-    Error: Peak virtual memory: 4706 megabytes
-    Error: Processing ended: Sat Feb 25 00:08:56 2023
-    Error: Elapsed time: 00:00:23
-    Error: Total CPU time (on all processors): 00:00:33
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 13 errors, 3 warnings
+    Error: Peak virtual memory: 4710 megabytes
+    Error: Processing ended: Tue Feb 28 22:47:19 2023
+    Error: Elapsed time: 00:00:26
+    Error: Total CPU time (on all processors): 00:00:57
 
 
 +------------------------------------------+
