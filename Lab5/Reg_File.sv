@@ -9,15 +9,14 @@ module REGFILE(
 
 	always_ff @ (posedge Clk) begin
 		if(Reset) begin
-            registers[7:0] <= 16'h0000; 
-			//  registers[0] 	<=	16'h0000;
-			//  registers[1] 	<=	16'h0000;
-			//  registers[2] 	<=	16'h0000;
-			//  registers[3] 	<=	16'h0000;
-			//  registers[4] 	<=	16'h0000;
-			//  registers[5] 	<=	16'h0000;
-			//  registers[6] 	<=	16'h0000;
-			//  registers[7] 	<=	16'h0000;
+		  	 registers[0] 	<=	16'h0000;  
+			 registers[1] 	<=	16'h0000;
+			 registers[2] 	<=	16'h0000;
+			 registers[3] 	<=	16'h0000;
+			 registers[4] 	<=	16'h0000;
+			 registers[5] 	<=	16'h0000;
+			 registers[6] 	<=	16'h0000;
+			 registers[7] 	<=	16'h0000;
 		end
 		else if(LD_REG) begin
 			case (DR)

@@ -62,7 +62,7 @@ logic Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE;
 //	MEM2IO will determine what gets put onto Data_CPU (which serves as a potential
 //	input into MDR)
 assign ADDR = MAR; 
-assign MIO_EN = OE;
+assign MIO_EN = OE; //Should this be ~OE?
 // Connect everything to the data path (you have to figure out this part)
 datapath d0 (.*);
 

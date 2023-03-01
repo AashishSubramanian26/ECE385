@@ -23,9 +23,9 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 				output logic        LD_MAR, LD_MDR, LD_IR, LD_BEN,
 									LD_CC, LD_REG, LD_PC, LD_LED, 
 									
-				output logic        GatePC, GateMDR, GateALU, GateMARMUX,
+				output logic        GatePC, GateMDR, GateALU, GateMARMUX, DRMUX, ADDR1MUX, SR1MUX, SR2MUX,
 									
-				output logic [1:0]  PCMUX, DRMUX, SR1MUX, SR2MUX, ADDR1MUX, ADDR2MUX, ALUK,
+				output logic [1:0]  PCMUX, ADDR2MUX, ALUK,
 				  
 				output logic        Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE
 				);

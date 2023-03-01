@@ -1,11 +1,11 @@
-module datapath (	
+module datapath (
 					input logic  LD_MAR, LD_MDR, LD_IR, LD_BEN, LD_CC, LD_REG, LD_PC, LD_LED, Clk, Reset, Run, Continue,
                     input logic  GatePC, GateMDR, GateALU, GateMARMUX,
                     input logic  SR1MUX, SR2MUX, ADDR1MUX, MARMUX, MIO_EN, DRMUX,
                     input logic  [1:0] PCMUX, ADDR2MUX, ALUK,
                     input logic  [15:0] MDR_In,
 					output logic [15:0] MAR, MDR, IR, PC, //outputs
-					output logic [11:0] LED,
+					output logic [9:0] LED,
 					output logic BEN
 				);
 				
@@ -19,7 +19,7 @@ module datapath (
 					BEN_Reg_Out,
 					SR1OUT,
 					SR2OUT,
-					SR2MUX_OUT
+					SR2MUX_OUT,
 					ALU_MOD_OUT, 
 					SR1MUX_OUT, 
 					DRMUX_OUT, 
@@ -110,14 +110,14 @@ module datapath (
 					.SR2OUT(SR2OUT)
 				);
 
-	TwoInputMux (#3) SR1_Mult(
+	TwoInputMux #(3) SR1_Mult(
 		.S(SR1MUX), 
 		.D1(IR_Reg_Out[11:9]), 
 		.D2(IR_Reg_Out[8:6]), 
 		.Out_Mux(SR1MUX_OUT)
 	);
 
-	TwoInputMux (#3) DR_Mult(
+	TwoInputMux #(3) DR_Mult(
 		.S(DRMUX), 
 		.D1(IR_Reg_Out[11:9]), 
 		.D2(3'b111), 
@@ -127,7 +127,7 @@ module datapath (
 	TwoInputMux SR2_Mult(
 		.S(SR2MUX), 
 		.D1(SR2OUT), 
-		.D2({{11{IR_Reg_Out[4]}, IR_Reg_Out[4:0]}}), 
+		.D2({{11{IR_Reg_Out[4]}}, IR_Reg_Out[4:0]}), 
 		.Out_Mux(SR2MUX_OUT)
 	);
 
@@ -140,10 +140,10 @@ module datapath (
 
 	FourInputMux ADDR2_Mult(
 		.S(ADDR2MUX), 
-		.D1(16h'0000), 
-		.D2({10{IR_Reg_Out[5]}, IR_Reg_Out[5:0]}),
-		.D3({7{IR_Reg_Out[8]}, IR_Reg_Out[8:0]}),
-		.D4({5{IR_Reg_Out[5]}, IR_Reg_Out[10:0]}),
+		.D1(16'h0000), 
+		.D2({{10{IR_Reg_Out[5]}}, IR_Reg_Out[5:0]}),
+		.D3({{7{IR_Reg_Out[8]}}, IR_Reg_Out[8:0]}),
+		.D4({{5{IR_Reg_Out[5]}}, IR_Reg_Out[10:0]}),
 		.OUT(ADDR2MUX_OUT)
 	);
 
@@ -157,9 +157,9 @@ module datapath (
 
 	always_ff @ (posedge Clk) begin
 		if (LD_LED)
-			LED <= IR[11:0];
+			LED <= IR[9:0];
 		else
-			LED <= 12'b0;
+			LED <= 10'b0;
 	end
 
 endmodule 
