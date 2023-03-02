@@ -329,27 +329,24 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 			S_21 : //good
 				begin
 					ADDR2MUX = 2'b11;
-					ADDR1MUX = 1'b0;
-					PCMUX = 2'b10;
+					ADDR1MUX = 1'b1;
+					PCMUX = 2'b01;
 					LD_PC = 1'b1;
-					GATEPC = 1'b1;
 				end
 			S_12 : //JMP //good
 				begin
-					SR1MUX = 1'b1;
-					ADDR1MUX = 1'b1;
-					ADDR2MUX = 2'b00;
+					SR1MUX = 1'b0; //check
+					ALUK = 2'b11; 
+					GateALU = 1'b1; 
 					PCMUX = 2'b10;
 					LD_PC = 1'b1;
-					GATEPC = 1'b1;
 				end
 			S_22 : //good
 				begin
 					ADDR2MUX = 2'b10;
-					ADDR1MUX = 1'b0;
-					PCMUX = 2'b10;
+					ADDR1MUX = 1'b1;
+					PCMUX = 2'b01;
 					LD_PC = 1'b1;
-					GATEPC = 1'b1;
 				end
 
 			default : ;
