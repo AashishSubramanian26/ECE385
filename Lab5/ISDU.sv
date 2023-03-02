@@ -47,18 +47,32 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 		Next_State = State;
 		
 		// Default controls signal values
-		{LD_MAR, LD_MDR, LD_MDR, LD_IR, LD_BEN, LD_CC, LD_REG, LD_PC, LD_LED} = 1'b0;
+		LD_MAR = 1'b0; 
+		LD_MDR = 1'b0; 
+		LD_MDR = 1'b0; 
+		LD_IR = 1'b0; 
+		LD_BEN = 1'b0; 
+		LD_CC = 1'b0; 
+		LD_REG = 1'b0; 
+		LD_PC = 1'b0; 
+		LD_LED = 1'b0;
 		 
-		{GatePC, GateMDR, GateALU, GateMARMUX} = 1'b0;
+		GatePC = 1'b0; 
+		GateMDR = 1'b0; 
+		GateALU = 1'b0; 
+		GateMARMUX = 1'b0;
 		 
 		ALUK = 2'b00;
 		PCMUX = 2'b00;
 
-		{DRMUX, SR1MUX, SR2MUX, ADDR1MUX} = 1'b0;
+		DRMUX = 1'b0;
+		SR1MUX = 1'b0;
+		SR2MUX = 1'b0;
+		ADDR1MUX = 1'b0;
 		ADDR2MUX = 2'b00;
 		 
-		Mem_OE = 1'b1;
-		Mem_WE = 1'b1;
+		Mem_OE = 1'b0;
+		Mem_WE = 1'b0;
 	
 		// Assign next state
 		unique case (State)
@@ -183,41 +197,41 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 		// Assign control signals based on current state
 		case (State)
 			Halted: ; //Maybe delete
-			S_18 : 
+			S_18 : //good
 				begin 
 					GatePC = 1'b1;
 					LD_MAR = 1'b1;
 					PCMUX = 2'b00;
 					LD_PC = 1'b1;
 				end
-			S_33_1 : 
-					Mem_OE = 1'b0;
+			S_33_1 :  //good
+					Mem_OE = 1'b1;
 			S_33_2 : 
 				begin 
-					Mem_OE = 1'b0;
-					LD_MDR = 1'b1;
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1; //do we need
 				end
 			S_33_3 : 
 				begin 
-					Mem_OE = 1'b0;
+					Mem_OE = 1'b1;
 					LD_MDR = 1'b1;
 				end
-			S_35 : 
+			S_35 : //good
 				begin 
 					GateMDR = 1'b1;
 					LD_IR = 1'b1;
 				end
-			PauseIR1: 
-				begin
-					LD_LED = 1'b1;
-				end
+			PauseIR1: ; //check
+			// 	begin
+			// 		LD_LED = 1'b1;
+			// 	end
 			PauseIR2: ;
-			S_32 : 
+			S_32 : //good
 				LD_BEN = 1'b1;
-			S_1 : //ADD
+			S_1 : //ADD /good
 				begin 
-					SR2MUX = IR_5;
-					SR1MUX = 1'b1;
+					SR2MUX = IR_5; 
+					SR1MUX = 1'b0;
 					ALUK = 2'b00;
 					GateALU = 1'b1;
 					DRMUX = 1'b0;
@@ -225,102 +239,101 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 					LD_CC = 1'b1;
 
 				end
-			S_5 : //AND
-				begin
+			S_5 : //AND //good
+				begin 
 					SR2MUX = IR_5;
-					SR1MUX = 1'b1;
+					SR1MUX = 1'b0;
 					ALUK = 2'b01;
 					GateALU = 1'b1;
 					LD_REG = 1'b1;
 					LD_CC = 1'b1;
 					DRMUX = 1'b0;
 				end
-			S_9  : //NOT
+			S_9  : //NOT //good
 				begin
 					DRMUX = 1'b0;
 					SR1MUX = 1'b1;
-					SR2MUX = 1'b0;
+					SR2MUX = IR_5;
 					ALUK = 2'b10;
 					GateALU = 1'b1;
 					LD_CC = 1'b1;
 					LD_REG = 1'b1;
 				end
-			S_06 : //LDR
+			S_06 : //LDR //CHECK
 				begin
 					SR1MUX = 1'b1;
 					ADDR2MUX = 2'b01;
-					ADDR1MUX = 1'b1;
+					ADDR1MUX = 1'b0; //either b0 or b1
 					GateMARMUX = 1'b1;
 					LD_MAR = 1'b1;
+					//DRMUX = 1'b0; //maybe
 				end
-			S_25_1 : 
+			S_25_1 : //good
 				begin
-					Mem_OE = 1'b0;
-					Mem_WE = 1'b1;
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1;
 				end
 			S_25_2 :
 				begin
-					Mem_OE = 1'b0;
-					Mem_WE = 1'b1;
+					Mem_OE = 1'b1;
 					LD_MDR = 1'b1;
 				end
 			S_25_3 :
 				begin
-					Mem_OE = 1'b0;
-					Mem_WE = 1'b1;
+					Mem_OE = 1'b1;
 					LD_MDR = 1'b1;
 				end
-			S_27 :
+			S_27 : //good
 				begin
 					GateMDR = 1'b1;
 					DRMUX = 1'b0;
 					LD_REG = 1'b1;
 					LD_CC = 1'b1;
 				end
-			S_07 : //STR
+			S_07 : //STR //good
 				begin
 					SR1MUX = 1'b1;
 					ADDR2MUX = 2'b01;
-					ADDR1MUX = 1'b1;
+					ADDR1MUX = 1'b0;
 					GateMARMUX = 1'b1;
 					LD_MAR = 1'b1;
 				end
-			S_23 :
+			S_23 : //good
 				begin
 					ALUK = 2'b11;
 					GateALU = 1'b1;
 					SR1MUX = 1'b0;
-					LD_MDR = 1'b1;
+					LD_MDR = 1'b0;
 				end
-			S_16_1 :
+			S_16_1 : //good can delete MEM_WE
 				begin
-					Mem_OE = 1'b1;
-					Mem_WE = 1'b0;
+					Mem_OE = 1'b1; //output enable 
+					//Mem_WE = 1'b0; //write enable 
 				end
 			S_16_2 :
 				begin
 					Mem_OE = 1'b1;
-					Mem_WE = 1'b0;
+					//Mem_WE = 1'b0;
 				end
 			S_16_3 :
 				begin
 					Mem_OE = 1'b1;
-					Mem_WE = 1'b0;
+					//Mem_WE = 1'b0;
 				end	
-			S_04 : // JSR
+			S_04 : // JSR //CHECK
 				begin
 					GatePC = 1'b1;
-					DRMUX = IR_11;
+					DRMUX = 1'b1;
 					LD_REG = 1'b1;
 				end
-			S_21 :
+			S_21 : //good
 				begin
 					ADDR2MUX = 2'b11;
 					ADDR1MUX = 1'b0;
 					PCMUX = 2'b10;
 					LD_PC = 1'b1;
 				end
-			S_12 : //JMP
+			S_12 : //JMP //good
 				begin
 					SR1MUX = 1'b1;
 					ADDR1MUX = 1'b1;
@@ -328,7 +341,7 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 					PCMUX = 2'b10;
 					LD_PC = 1'b1;
 				end
-			S_22 :
+			S_22 : //good
 				begin
 					ADDR2MUX = 2'b10;
 					ADDR1MUX = 1'b0;

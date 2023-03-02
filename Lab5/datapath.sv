@@ -112,8 +112,8 @@ module datapath (
 
 	TwoInputMux #(3) SR1_Mult(
 		.S(SR1MUX), 
-		.D1(IR_Reg_Out[11:9]), 
-		.D2(IR_Reg_Out[8:6]), 
+		.D1(IR_Reg_Out[8:6]), 
+		.D2(IR_Reg_Out[11:9]), 
 		.Out_Mux(SR1MUX_OUT)
 	);
 
