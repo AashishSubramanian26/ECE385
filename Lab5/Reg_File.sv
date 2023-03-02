@@ -8,17 +8,18 @@ module REGFILE(
 	logic [7:0] registers [15:0];
 
 	always_ff @ (posedge Clk) begin
-		if(Reset) begin
-		  	 registers[0] 	<=	16'h0000;  
-			 registers[1] 	<=	16'h0000;
-			 registers[2] 	<=	16'h0000;
-			 registers[3] 	<=	16'h0000;
-			 registers[4] 	<=	16'h0000;
-			 registers[5] 	<=	16'h0000;
-			 registers[6] 	<=	16'h0000;
-			 registers[7] 	<=	16'h0000;
-		end
-		else if(LD_REG) begin
+		// if(Reset) begin
+		//   	 registers[0] 	<=	16'h0000;  
+		// 	 registers[1] 	<=	16'h0000;
+		// 	 registers[2] 	<=	16'h0000;
+		// 	 registers[3] 	<=	16'h0000;
+		// 	 registers[4] 	<=	16'h0000;
+		// 	 registers[5] 	<=	16'h0000;
+		// 	 registers[6] 	<=	16'h0000;
+		// 	 registers[7] 	<=	16'h0000;
+		// end
+		// else 
+		if(LD_REG) begin
 			case (DR)
 				3'b000	:	registers[0] <= BUS;
 				3'b001	:	registers[1] <= BUS;
