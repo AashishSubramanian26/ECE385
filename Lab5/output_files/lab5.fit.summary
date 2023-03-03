@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Mar 02 15:50:05 2023
+Fitter Status : Successful - Thu Mar 02 16:31:16 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : lab5
 Top-level Entity Name : slc3_testtop
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 392 / 49,760 ( < 1 % )
-    Total combinational functions : 373 / 49,760 ( < 1 % )
+Total logic elements : 450 / 49,760 ( < 1 % )
+    Total combinational functions : 416 / 49,760 ( < 1 % )
     Dedicated logic registers : 161 / 49,760 ( < 1 % )
 Total registers : 161
 Total pins : 51 / 360 ( 14 % )

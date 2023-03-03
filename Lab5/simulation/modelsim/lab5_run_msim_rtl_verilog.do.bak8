@@ -5,10 +5,10 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv}
 vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv}
 vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv}
 vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv}
+vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Ben.sv}
 vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv}
 vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv}
 vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv}

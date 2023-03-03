@@ -5,7 +5,7 @@ module REGFILE(
 				output logic 	[15:0]	SR1OUT, SR2OUT
 				);
 
-	logic [7:0] registers [15:0];
+	logic [15:0] registers [7:0];
 
 	always_ff @ (posedge Clk) begin
 		// if(Reset) begin

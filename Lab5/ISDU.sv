@@ -30,8 +30,8 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 				output logic        Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE
 				);
 
-	enum logic [4:0] {  Halted, PauseIR1, PauseIR2, S_18, S_33_1, S_33_2, S_33_3, S_35, S_32, S_1, S_5, S_9, S_06, S_25_1,
-			S_25_2,S_25_3,S_27, S_07,S_23,S_16_1,S_16_2,S_16_3, S_04,S_21, S_12, S_00, S_22}   State, Next_State;   // Internal state logic
+	enum logic [4:0] {  Halted, PauseIR1, PauseIR2, S_18, S_33_1, S_33_2, S_33_3, S_33_4 ,S_35, S_32, S_1, S_5, S_9, S_06, S_25_1,
+			S_25_2,S_25_3,S_25_4,S_27, S_07,S_23,S_16_1,S_16_2,S_16_3,S_16_4, S_04,S_21, S_12, S_00, S_22}   State, Next_State;   // Internal state logic
 		
 	always_ff @ (posedge Clk)
 	begin
@@ -88,6 +88,8 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 			S_33_2 : 
 				Next_State = S_33_3;
 			S_33_3 : 
+				Next_State = S_33_4;
+			S_33_4 : 
 				Next_State = S_35;
 			S_35 : 
 				Next_State = S_32;
@@ -169,6 +171,9 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 				Next_State = S_25_3;
 
 			S_25_3 :
+				Next_State = S_25_4;
+			
+			S_25_4 :
 				Next_State = S_27;
 
 			S_27 :
@@ -188,6 +193,9 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 				Next_State = S_16_3;
 
 			S_16_3 :
+				Next_State = S_16_4;
+
+			S_16_4 :
 				Next_State = S_18;
 
 			default : ;
@@ -212,6 +220,11 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 					LD_MDR = 1'b1; //do we need
 				end
 			S_33_3 : 
+				begin 
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1;
+				end
+			S_33_4 : 
 				begin 
 					Mem_OE = 1'b1;
 					LD_MDR = 1'b1;
@@ -261,11 +274,12 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 				end
 			S_06 : //LDR //CHECK
 				begin
-					SR1MUX = 1'b1;
+					SR1MUX = 1'b0;
 					ADDR2MUX = 2'b01;
 					ADDR1MUX = 1'b0; //either b0 or b1
 					GateMARMUX = 1'b1;
 					LD_MAR = 1'b1;
+
 					//DRMUX = 1'b0; //maybe
 				end
 			S_25_1 : //good
@@ -279,6 +293,11 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 					LD_MDR = 1'b1;
 				end
 			S_25_3 :
+				begin
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1;
+				end
+			S_25_4:
 				begin
 					Mem_OE = 1'b1;
 					LD_MDR = 1'b1;
@@ -320,6 +339,11 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 					Mem_OE = 1'b1;
 					//Mem_WE = 1'b0;
 				end	
+			S_16_4 :
+				begin
+					Mem_OE = 1'b1;
+					//Mem_WE = 1'b0;
+				end
 			S_04 : // JSR //CHECK
 				begin
 					GatePC = 1'b1;
