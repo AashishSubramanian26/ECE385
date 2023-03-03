@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/simulation/modelsim
 vALU_MOD
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1677799988
+Z2 !s110 1677803364
 !i10b 1
 !s100 XOG2D<5^7>KiYd9BkQh:i1
 Ii31i9^^91h7[AWdc`;U:H2
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1677799988.000000
+Z6 !s108 1677803364.000000
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv|
 !i113 1
@@ -165,15 +165,15 @@ R9
 n@hex@driver
 vISDU
 R1
-Z10 !s110 1677799989
+Z10 !s110 1677803365
 !i10b 1
-!s100 WgImQGQKH>]G^R6ZnEdj>2
-I6PI_Ja8T2zZLP<jERPa2m0
+!s100 HdR@^SH61WJQPU[]j4Pml0
+I^e<o8_k``>=`559Hh0Oj?2
 R3
 !s105 ISDU_sv_unit
 S1
 R0
-w1677798794
+w1677803267
 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv
 Z11 L0 19
@@ -181,7 +181,7 @@ R5
 r1
 !s85 0
 31
-Z12 !s108 1677799989.000000
+Z12 !s108 1677803365.000000
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv|
 !i113 1
@@ -328,7 +328,7 @@ R3
 !s105 slc3_sv_unit
 S1
 R0
-w1677796478
+w1677802593
 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv
 L0 20
@@ -345,7 +345,7 @@ R8
 R9
 XSLC3_2
 R1
-R10
+R2
 !i10b 1
 !s100 Cz8_^@QRefP31?j=Zf>lj0
 IhnNN`lEW@N>j4ggePX7Hd0
@@ -360,7 +360,7 @@ R5
 r1
 !s85 0
 31
-R12
+R6
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv|
 !i113 1
@@ -395,7 +395,7 @@ R8
 R9
 vsync
 R1
-R10
+R2
 !i10b 1
 !s100 OHNUFN]797>kYzRL;ikZR2
 IE4iz;WbmaKk`9@naK5@6Z1
@@ -420,7 +420,7 @@ R8
 R9
 vsync_r0
 R1
-R10
+R2
 !i10b 1
 !s100 _Sn:CfHFjznVZen=7jc>C2
 ICRf^ZCW0<z32JUJVR5cBH3
@@ -445,7 +445,7 @@ R8
 R9
 vsync_r1
 R1
-R10
+R2
 !i10b 1
 !s100 4jfZd?z`MK2Y<NLFC0<QH2
 IaARSz[JnSEfn]PgiZTS0O0

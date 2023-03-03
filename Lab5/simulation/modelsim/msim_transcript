@@ -12,117 +12,117 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:25 on Mar 02,2023
+# Start time: 18:17:38 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv 
 # -- Compiling module BEN_MOD
 # 
 # Top level modules:
 # 	BEN_MOD
-# End time: 17:12:25 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:38 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:25 on Mar 02,2023
+# Start time: 18:17:38 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv 
 # -- Compiling module FourInputMux
 # 
 # Top level modules:
 # 	FourInputMux
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:01
+# End time: 18:17:38 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:26 on Mar 02,2023
+# Start time: 18:17:38 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv 
 # -- Compiling module ALU_MOD
 # 
 # Top level modules:
 # 	ALU_MOD
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:38 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:26 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv 
 # -- Compiling module REGFILE
 # 
 # Top level modules:
 # 	REGFILE
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:26 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:26 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv 
 # -- Compiling module TwoInputMux
 # 
 # Top level modules:
 # 	TwoInputMux
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:26 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv 
 # -- Compiling module ThreeInputMux
 # 
 # Top level modules:
 # 	ThreeInputMux
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:26 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv 
 # -- Compiling module Reg_16
 # 
 # Top level modules:
 # 	Reg_16
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:26 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:26 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv 
 # -- Compiling module BusMux
 # 
 # Top level modules:
 # 	BusMux
-# End time: 17:12:26 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:27 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv 
 # -- Compiling module test_memory
 # 
 # Top level modules:
 # 	test_memory
-# End time: 17:12:27 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:27 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv 
 # -- Compiling module sync
 # -- Compiling module sync_r0
@@ -132,389 +132,51 @@
 # 	sync
 # 	sync_r0
 # 	sync_r1
-# End time: 17:12:27 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:27 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv 
 # -- Compiling package SLC3_2
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:12:27 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:27 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv 
 # -- Compiling module Mem2IO
 # 
 # Top level modules:
 # 	Mem2IO
-# End time: 17:12:27 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:39 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:27 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv 
-# -- Compiling module ISDU
-# ** Error: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv(268): (vlog-2730) Undefined variable: '\ '.
-# ** Error: (vlog-13069) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv(271): near "end": syntax error, unexpected end.
-# End time: 17:12:27 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./lab5_run_msim_rtl_verilog.do line 22
-# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv}"
-do lab5_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:34 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv 
-# -- Compiling module BEN_MOD
-# 
-# Top level modules:
-# 	BEN_MOD
-# End time: 17:12:34 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:34 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv 
-# -- Compiling module FourInputMux
-# 
-# Top level modules:
-# 	FourInputMux
-# End time: 17:12:34 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv 
-# -- Compiling module ALU_MOD
-# 
-# Top level modules:
-# 	ALU_MOD
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv 
-# -- Compiling module REGFILE
-# 
-# Top level modules:
-# 	REGFILE
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv 
-# -- Compiling module HexDriver
-# 
-# Top level modules:
-# 	HexDriver
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv 
-# -- Compiling module TwoInputMux
-# 
-# Top level modules:
-# 	TwoInputMux
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv 
-# -- Compiling module ThreeInputMux
-# 
-# Top level modules:
-# 	ThreeInputMux
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv 
-# -- Compiling module Reg_16
-# 
-# Top level modules:
-# 	Reg_16
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv 
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv 
-# -- Compiling module BusMux
-# 
-# Top level modules:
-# 	BusMux
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv 
-# -- Compiling module test_memory
-# 
-# Top level modules:
-# 	test_memory
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv 
-# -- Compiling module sync
-# -- Compiling module sync_r0
-# -- Compiling module sync_r1
-# 
-# Top level modules:
-# 	sync
-# 	sync_r0
-# 	sync_r1
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv 
-# -- Compiling package SLC3_2
-# 
-# Top level modules:
-# 	--none--
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv 
-# -- Compiling module Mem2IO
-# 
-# Top level modules:
-# 	Mem2IO
-# End time: 17:12:35 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:12:35 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv 
-# -- Compiling module ISDU
-# ** Error: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv(268): (vlog-2730) Undefined variable: '\ '.
-# ** Error: (vlog-13069) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv(271): near "end": syntax error, unexpected end.
-# End time: 17:12:36 on Mar 02,2023, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./lab5_run_msim_rtl_verilog.do line 22
-# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv}"
-do wave.do ; restart -f ; run 3us
-# No Design Loaded!
-do lab5_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:22 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv 
-# -- Compiling module BEN_MOD
-# 
-# Top level modules:
-# 	BEN_MOD
-# End time: 17:13:22 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:22 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv 
-# -- Compiling module FourInputMux
-# 
-# Top level modules:
-# 	FourInputMux
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv 
-# -- Compiling module ALU_MOD
-# 
-# Top level modules:
-# 	ALU_MOD
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv 
-# -- Compiling module REGFILE
-# 
-# Top level modules:
-# 	REGFILE
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv 
-# -- Compiling module HexDriver
-# 
-# Top level modules:
-# 	HexDriver
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv 
-# -- Compiling module TwoInputMux
-# 
-# Top level modules:
-# 	TwoInputMux
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv 
-# -- Compiling module ThreeInputMux
-# 
-# Top level modules:
-# 	ThreeInputMux
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv 
-# -- Compiling module Reg_16
-# 
-# Top level modules:
-# 	Reg_16
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv 
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv 
-# -- Compiling module BusMux
-# 
-# Top level modules:
-# 	BusMux
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv 
-# -- Compiling module test_memory
-# 
-# Top level modules:
-# 	test_memory
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv 
-# -- Compiling module sync
-# -- Compiling module sync_r0
-# -- Compiling module sync_r1
-# 
-# Top level modules:
-# 	sync
-# 	sync_r0
-# 	sync_r1
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv 
-# -- Compiling package SLC3_2
-# 
-# Top level modules:
-# 	--none--
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv 
-# -- Compiling module Mem2IO
-# 
-# Top level modules:
-# 	Mem2IO
-# End time: 17:13:23 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:23 on Mar 02,2023
+# Start time: 18:17:39 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv 
 # -- Compiling module ISDU
 # 
 # Top level modules:
 # 	ISDU
-# End time: 17:13:24 on Mar 02,2023, Elapsed time: 0:00:01
+# End time: 18:17:40 on Mar 02,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:24 on Mar 02,2023
+# Start time: 18:17:40 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv 
 # -- Compiling module slc3
 # 
 # Top level modules:
 # 	slc3
-# End time: 17:13:24 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:40 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:24 on Mar 02,2023
+# Start time: 18:17:40 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv 
 # -- Compiling package memory_contents_sv_unit
 # -- Importing package SLC3_2
@@ -522,33 +184,33 @@ do lab5_run_msim_rtl_verilog.do
 # 
 # Top level modules:
 # 	memory_parser
-# End time: 17:13:24 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:40 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:24 on Mar 02,2023
+# Start time: 18:17:40 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv 
 # -- Compiling module slc3_testtop
 # 
 # Top level modules:
 # 	slc3_testtop
-# End time: 17:13:24 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:40 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:24 on Mar 02,2023
+# Start time: 18:17:40 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 17:13:24 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:17:40 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 17:13:24 on Mar 02,2023
+# Start time: 18:17:40 on Mar 02,2023
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.slc3_testtop
@@ -584,9 +246,9 @@ do lab5_run_msim_rtl_verilog.do
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Soumi  Hostname: LAPTOP-BC1I6CAC  ProcessID: 24368
-#           Attempting to use alternate WLF file "./wlfthzrhj8".
+#           Attempting to use alternate WLF file "./wlft7k0arw".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfthzrhj8
+#           Using alternate file: ./wlft7k0arw
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -606,277 +268,7 @@ do lab5_run_msim_rtl_verilog.do
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
 # ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-do lab5_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:43 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv 
-# -- Compiling module BEN_MOD
-# 
-# Top level modules:
-# 	BEN_MOD
-# End time: 17:13:43 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:43 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv 
-# -- Compiling module FourInputMux
-# 
-# Top level modules:
-# 	FourInputMux
-# End time: 17:13:43 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:43 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv 
-# -- Compiling module ALU_MOD
-# 
-# Top level modules:
-# 	ALU_MOD
-# End time: 17:13:43 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:43 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv 
-# -- Compiling module REGFILE
-# 
-# Top level modules:
-# 	REGFILE
-# End time: 17:13:43 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:43 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv 
-# -- Compiling module HexDriver
-# 
-# Top level modules:
-# 	HexDriver
-# End time: 17:13:43 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:43 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv 
-# -- Compiling module TwoInputMux
-# 
-# Top level modules:
-# 	TwoInputMux
-# End time: 17:13:43 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:43 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv 
-# -- Compiling module ThreeInputMux
-# 
-# Top level modules:
-# 	ThreeInputMux
-# End time: 17:13:43 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:43 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv 
-# -- Compiling module Reg_16
-# 
-# Top level modules:
-# 	Reg_16
-# End time: 17:13:43 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv 
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv 
-# -- Compiling module BusMux
-# 
-# Top level modules:
-# 	BusMux
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv 
-# -- Compiling module test_memory
-# 
-# Top level modules:
-# 	test_memory
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv 
-# -- Compiling module sync
-# -- Compiling module sync_r0
-# -- Compiling module sync_r1
-# 
-# Top level modules:
-# 	sync
-# 	sync_r0
-# 	sync_r1
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv 
-# -- Compiling package SLC3_2
-# 
-# Top level modules:
-# 	--none--
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv 
-# -- Compiling module Mem2IO
-# 
-# Top level modules:
-# 	Mem2IO
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv 
-# -- Compiling module ISDU
-# 
-# Top level modules:
-# 	ISDU
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv 
-# -- Compiling module slc3
-# 
-# Top level modules:
-# 	slc3
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv 
-# -- Compiling package memory_contents_sv_unit
-# -- Importing package SLC3_2
-# -- Compiling module memory_parser
-# 
-# Top level modules:
-# 	memory_parser
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv 
-# -- Compiling module slc3_testtop
-# 
-# Top level modules:
-# 	slc3_testtop
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:13:44 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv 
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# End time: 17:13:44 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
-# End time: 17:13:45 on Mar 02,2023, Elapsed time: 0:00:21
-# Errors: 0, Warnings: 14
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 17:13:45 on Mar 02,2023
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.slc3_testtop
-# Loading work.slc3
-# Loading work.datapath
-# Loading work.BusMux
-# Loading work.Reg_16
-# Loading work.BEN_MOD
-# Loading work.TwoInputMux
-# Loading work.ThreeInputMux
-# Loading work.ALU_MOD
-# Loading work.REGFILE
-# Loading work.FourInputMux
-# Loading work.Mem2IO
-# Loading work.ISDU
-# Loading work.test_memory
-# Loading work.SLC3_2
-# Loading work.memory_contents_sv_unit
-# Loading work.memory_parser
-# Loading work.HexDriver
-# Loading work.sync
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# 
-# add wave *
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Soumi  Hostname: LAPTOP-BC1I6CAC  ProcessID: 24368
-#           Attempting to use alternate WLF file "./wlftn6y1bg".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftn6y1bg
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-do wave.do ; restart -f ; run 3us
+do wave.do ; restart -f; run 3us
 # ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
 # ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
@@ -901,7 +293,11 @@ do wave.do ; restart -f ; run 3us
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
 # ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/simulation/modelsim/wave.do
+add wave -position insertpoint  \
+sim:/testbench/HEX0 \
+sim:/testbench/HEX1 \
+sim:/testbench/HEX2 \
+sim:/testbench/HEX3
 do lab5_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -914,117 +310,117 @@ do lab5_run_msim_rtl_verilog.do
 # 
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv 
 # -- Compiling module BEN_MOD
 # 
 # Top level modules:
 # 	BEN_MOD
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv 
 # -- Compiling module FourInputMux
 # 
 # Top level modules:
 # 	FourInputMux
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv 
 # -- Compiling module ALU_MOD
 # 
 # Top level modules:
 # 	ALU_MOD
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv 
 # -- Compiling module REGFILE
 # 
 # Top level modules:
 # 	REGFILE
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv 
 # -- Compiling module TwoInputMux
 # 
 # Top level modules:
 # 	TwoInputMux
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv 
 # -- Compiling module ThreeInputMux
 # 
 # Top level modules:
 # 	ThreeInputMux
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv 
 # -- Compiling module Reg_16
 # 
 # Top level modules:
 # 	Reg_16
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv 
 # -- Compiling module BusMux
 # 
 # Top level modules:
 # 	BusMux
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv 
 # -- Compiling module test_memory
 # 
 # Top level modules:
 # 	test_memory
-# End time: 17:29:00 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:00 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv 
 # -- Compiling module sync
 # -- Compiling module sync_r0
@@ -1034,51 +430,51 @@ do lab5_run_msim_rtl_verilog.do
 # 	sync
 # 	sync_r0
 # 	sync_r1
-# End time: 17:29:01 on Mar 02,2023, Elapsed time: 0:00:01
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:01 on Mar 02,2023
+# Start time: 18:29:24 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv 
 # -- Compiling package SLC3_2
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:29:01 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:24 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:01 on Mar 02,2023
+# Start time: 18:29:25 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv 
 # -- Compiling module Mem2IO
 # 
 # Top level modules:
 # 	Mem2IO
-# End time: 17:29:01 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:25 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:01 on Mar 02,2023
+# Start time: 18:29:25 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv 
 # -- Compiling module ISDU
 # 
 # Top level modules:
 # 	ISDU
-# End time: 17:29:01 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:25 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:01 on Mar 02,2023
+# Start time: 18:29:25 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv 
 # -- Compiling module slc3
 # 
 # Top level modules:
 # 	slc3
-# End time: 17:29:01 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:25 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:01 on Mar 02,2023
+# Start time: 18:29:25 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv 
 # -- Compiling package memory_contents_sv_unit
 # -- Importing package SLC3_2
@@ -1086,35 +482,35 @@ do lab5_run_msim_rtl_verilog.do
 # 
 # Top level modules:
 # 	memory_parser
-# End time: 17:29:01 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:25 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:01 on Mar 02,2023
+# Start time: 18:29:25 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv 
 # -- Compiling module slc3_testtop
 # 
 # Top level modules:
 # 	slc3_testtop
-# End time: 17:29:01 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:25 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:29:01 on Mar 02,2023
+# Start time: 18:29:25 on Mar 02,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 17:29:01 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 18:29:25 on Mar 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
-# End time: 17:29:02 on Mar 02,2023, Elapsed time: 0:15:17
+# End time: 18:29:26 on Mar 02,2023, Elapsed time: 0:11:46
 # Errors: 0, Warnings: 26
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 17:29:02 on Mar 02,2023
+# Start time: 18:29:26 on Mar 02,2023
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.slc3_testtop
@@ -1150,9 +546,9 @@ do lab5_run_msim_rtl_verilog.do
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Soumi  Hostname: LAPTOP-BC1I6CAC  ProcessID: 24368
-#           Attempting to use alternate WLF file "./wlftkszmtb".
+#           Attempting to use alternate WLF file "./wlfty4tqag".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftkszmtb
+#           Using alternate file: ./wlfty4tqag
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -1172,488 +568,7 @@ do lab5_run_msim_rtl_verilog.do
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
 # ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-do wave.do ; restart -f ; run 3us
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-do wave.do ; restart -f ; run 3us
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/simulation/modelsim/wave.do
-do wave.do ; restart -f ; run 3us
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/simulation/modelsim/wave.do
-do wave.do ; restart -f ; run 3us
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/simulation/modelsim/wave.do
-do lab5_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv 
-# -- Compiling module BEN_MOD
-# 
-# Top level modules:
-# 	BEN_MOD
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv 
-# -- Compiling module FourInputMux
-# 
-# Top level modules:
-# 	FourInputMux
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv 
-# -- Compiling module ALU_MOD
-# 
-# Top level modules:
-# 	ALU_MOD
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv 
-# -- Compiling module REGFILE
-# 
-# Top level modules:
-# 	REGFILE
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv 
-# -- Compiling module HexDriver
-# 
-# Top level modules:
-# 	HexDriver
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv 
-# -- Compiling module TwoInputMux
-# 
-# Top level modules:
-# 	TwoInputMux
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv 
-# -- Compiling module ThreeInputMux
-# 
-# Top level modules:
-# 	ThreeInputMux
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv 
-# -- Compiling module Reg_16
-# 
-# Top level modules:
-# 	Reg_16
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv 
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv 
-# -- Compiling module BusMux
-# 
-# Top level modules:
-# 	BusMux
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv 
-# -- Compiling module test_memory
-# 
-# Top level modules:
-# 	test_memory
-# End time: 17:33:08 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:08 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv 
-# -- Compiling module sync
-# -- Compiling module sync_r0
-# -- Compiling module sync_r1
-# 
-# Top level modules:
-# 	sync
-# 	sync_r0
-# 	sync_r1
-# End time: 17:33:09 on Mar 02,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:09 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/SLC3_2.sv 
-# -- Compiling package SLC3_2
-# 
-# Top level modules:
-# 	--none--
-# End time: 17:33:09 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:09 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Mem2IO.sv 
-# -- Compiling module Mem2IO
-# 
-# Top level modules:
-# 	Mem2IO
-# End time: 17:33:09 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:09 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv 
-# -- Compiling module ISDU
-# 
-# Top level modules:
-# 	ISDU
-# End time: 17:33:09 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:09 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv 
-# -- Compiling module slc3
-# 
-# Top level modules:
-# 	slc3
-# End time: 17:33:09 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:09 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv 
-# -- Compiling package memory_contents_sv_unit
-# -- Importing package SLC3_2
-# -- Compiling module memory_parser
-# 
-# Top level modules:
-# 	memory_parser
-# End time: 17:33:09 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:09 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv 
-# -- Compiling module slc3_testtop
-# 
-# Top level modules:
-# 	slc3_testtop
-# End time: 17:33:09 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5 {C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:09 on Mar 02,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5" C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv 
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# End time: 17:33:09 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
-# End time: 17:33:10 on Mar 02,2023, Elapsed time: 0:04:08
-# Errors: 0, Warnings: 62
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 17:33:10 on Mar 02,2023
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.slc3_testtop
-# Loading work.slc3
-# Loading work.datapath
-# Loading work.BusMux
-# Loading work.Reg_16
-# Loading work.BEN_MOD
-# Loading work.TwoInputMux
-# Loading work.ThreeInputMux
-# Loading work.ALU_MOD
-# Loading work.REGFILE
-# Loading work.FourInputMux
-# Loading work.Mem2IO
-# Loading work.ISDU
-# Loading work.test_memory
-# Loading work.SLC3_2
-# Loading work.memory_contents_sv_unit
-# Loading work.memory_parser
-# Loading work.HexDriver
-# Loading work.sync
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# 
-# add wave *
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Soumi  Hostname: LAPTOP-BC1I6CAC  ProcessID: 24368
-#           Attempting to use alternate WLF file "./wlfty5re87".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfty5re87
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-do wave.do ; restart -f ; run 3us
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-{sim:/testbench/HEX0[6]}
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-{sim:/testbench/HEX0[5]}
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-{sim:/testbench/HEX0[4]}
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-{sim:/testbench/HEX0[3]}
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-{sim:/testbench/HEX0[2]}
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-{sim:/testbench/HEX0[1]}
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-{sim:/testbench/HEX0[0]}
-# WARNING: No extended dataflow license exists
-do wave.do ; restart -f ; run 3us
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-# WARNING: No extended dataflow license exists
-do wave.do ; restart -f ; run 3us
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/Register_File File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(113): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(120): [PCDPC] - Port size (3) does not match connection size (16) for port 'Out_Mux'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/FourInputMux.sv(11): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ADDR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR2_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/DR_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/SR1_Mult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv(9): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
-# ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
-do wave.do ; restart -f ; run 3us
+do wave.do ; restart -f; run 3us
 # ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(54): [PCDPC] - Port size (1) does not match connection size (16) for port 'Out'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv(5).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/ben File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BEN_MOD.sv
 # ** Warning: (vsim-3015) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_File.sv(4).

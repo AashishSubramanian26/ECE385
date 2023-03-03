@@ -1,5 +1,5 @@
 Flow report for lab5
-Thu Mar 02 16:38:02 2023
+Thu Mar 02 18:17:12 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 02 16:38:02 2023       ;
+; Flow Status                        ; Successful - Thu Mar 02 18:17:12 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab5                                        ;
 ; Top-level Entity Name              ; slc3_testtop                                ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/02/2023 16:37:50 ;
+; Start date & time ; 03/02/2023 18:17:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab5                ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+--------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name  ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 186422301581.167779666920572           ; --            ; --           ; --             ;
+; COMPILER_SIGNATURE_ID                ; 186422301581.167780262224836           ; --            ; --           ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; testbench.sv   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench.sv                           ; --            ; --           ; eda_simulation ;
@@ -110,8 +110,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4724 MB             ; 00:00:29                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:29                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4724 MB             ; 00:00:24                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:24                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

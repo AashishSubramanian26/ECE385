@@ -322,7 +322,7 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 					ALUK = 2'b11;
 					GateALU = 1'b1;
 					SR1MUX = 1'b0;
-					LD_MDR = 1'b0;
+					LD_MDR = 1'b1;
 				end
 			S_16_1 : //good can delete MEM_WE
 				begin
