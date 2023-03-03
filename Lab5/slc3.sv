@@ -89,6 +89,5 @@ ISDU state_controller(
 //		SRAM_WE <= SRAM_WE_In;
 //end
 
-assign LED = IR[9:0];
 	
 endmodule
