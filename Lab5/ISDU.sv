@@ -234,11 +234,12 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 					GateMDR = 1'b1;
 					LD_IR = 1'b1;
 				end
-			PauseIR1: ; //check
-			// 	begin
-			// 		LD_LED = 1'b1;
-			// 	end
-			PauseIR2: ;
+			PauseIR1:  //check
+			//begin
+				LD_LED = 1'b1;
+			//end
+			PauseIR2: 
+				LD_LED = 1'b1;
 			S_32 : //good
 				LD_BEN = 1'b1;
 			S_1 : //ADD /good
@@ -311,7 +312,7 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 				end
 			S_07 : //STR //good
 				begin
-					SR1MUX = 1'b1;
+					SR1MUX = 1'b0;
 					ADDR2MUX = 2'b01;
 					ADDR1MUX = 1'b0;
 					GateMARMUX = 1'b1;
@@ -321,27 +322,27 @@ module ISDU (   input logic         Clk, Reset, Run, Continue,
 				begin
 					ALUK = 2'b11;
 					GateALU = 1'b1;
-					SR1MUX = 1'b0;
+					SR1MUX = 1'b1;
 					LD_MDR = 1'b1;
 				end
 			S_16_1 : //good can delete MEM_WE
 				begin
-					Mem_OE = 1'b1; //output enable 
+					Mem_WE = 1'b1; //Wutput enable 
 					//Mem_WE = 1'b0; //write enable 
 				end
 			S_16_2 :
 				begin
-					Mem_OE = 1'b1;
+					Mem_WE = 1'b1;
 					//Mem_WE = 1'b0;
 				end
 			S_16_3 :
 				begin
-					Mem_OE = 1'b1;
+					Mem_WE = 1'b1;
 					//Mem_WE = 1'b0;
 				end	
 			S_16_4 :
 				begin
-					Mem_OE = 1'b1;
+					Mem_WE = 1'b1;
 					//Mem_WE = 1'b0;
 				end
 			S_04 : // JSR //CHECK

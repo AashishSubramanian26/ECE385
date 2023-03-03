@@ -28,7 +28,7 @@ module testbench();
     
         #2
         Run = 1'b0;
-        SW = 10'h0003;
+        SW = 10'h03;
     
         #2
         Run = 1'b1;

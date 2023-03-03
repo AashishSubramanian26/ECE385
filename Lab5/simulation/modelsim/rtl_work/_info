@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/simulation/modelsim
 vALU_MOD
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1677805833
+Z2 !s110 1677812439
 !i10b 1
 !s100 XOG2D<5^7>KiYd9BkQh:i1
 Ii31i9^^91h7[AWdc`;U:H2
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1677805833.000000
+Z6 !s108 1677812439.000000
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ALU_MOD.sv|
 !i113 1
@@ -62,7 +62,7 @@ R9
 n@b@e@n_@m@o@d
 vBusMux
 R1
-Z10 !s110 1677805834
+Z10 !s110 1677812440
 !i10b 1
 !s100 E[hdIJd7A3gL^PXHjR@=C0
 Ie6Y2lzDbfXgmCcbekMnb53
@@ -78,7 +78,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1677805834.000000
+Z11 !s108 1677812440.000000
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/BusMux.sv|
 !i113 1
@@ -90,13 +90,13 @@ vdatapath
 R1
 R10
 !i10b 1
-!s100 cHGL@YmWZ`[dk=L>S?2T52
-IRLNU9AYz4eVNQdTO21R>d2
+!s100 ]HHId[]eY_AJ_aLUoYD6z1
+IaCoX5hc86Y8BSIin6XfUC1
 R3
 !s105 datapath_sv_unit
 S1
 R0
-w1677793157
+w1677810941
 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/datapath.sv
 L0 1
@@ -139,7 +139,7 @@ R9
 n@four@input@mux
 vHexDriver
 R1
-R2
+R10
 !i10b 1
 !s100 Y1]Z:z2^9A5JNQgodIB1?0
 I]X<eGeTjmfQnHBd5z6B:13
@@ -155,7 +155,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/HexDriver.sv|
 !i113 1
@@ -167,13 +167,13 @@ vISDU
 R1
 R10
 !i10b 1
-!s100 HdR@^SH61WJQPU[]j4Pml0
-I^e<o8_k``>=`559Hh0Oj?2
+!s100 K??;ikmSe0D6Qc>[k<UUz0
+I6BWdUaUYR_ZD^fEDeJa;51
 R3
 !s105 ISDU_sv_unit
 S1
 R0
-w1677803267
+w1677812424
 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ISDU.sv
 Z12 L0 19
@@ -228,14 +228,14 @@ IL>RQ^7EgmLL1`YCC@BnLj0
 !i103 1
 S1
 R0
-Z14 w1677805699
+Z14 w1677810145
 Z15 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv
 Z16 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv
 L0 17
 R5
-R11
-Z17 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv|
-Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv|
+Z17 !s108 1677812441.000000
+Z18 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv|
+Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/memory_contents.sv|
 !i113 1
 R7
 R8
@@ -249,8 +249,8 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 4Mbj1_IXAXNEo>@Sg7@zg0
-Im>X5?ILEb^4kTVzYA5e:k2
+!s100 hfX5[fVi=fEbdX7KInPF?2
+I`3zh[Wa80l;SWWmc3<1e=3
 !s105 memory_contents_sv_unit
 S1
 R0
@@ -259,16 +259,16 @@ R15
 R16
 R12
 R5
-R11
 R17
 R18
+R19
 !i113 1
 R7
 R8
 R9
 vReg_16
 R1
-R2
+R10
 !i10b 1
 !s100 <fd3izWFR_cW9^e[e^V5A3
 IfNK^HFQSo3EL;9ej`9@@51
@@ -284,7 +284,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/Reg_16.sv|
 !i113 1
@@ -294,7 +294,7 @@ R9
 n@reg_16
 vREGFILE
 R1
-R2
+R10
 !i10b 1
 !s100 fG1QEC^8D=[?Gicaz6TPL1
 IP1<T6Oajcf:So?SCjDk8]2
@@ -322,13 +322,13 @@ vslc3
 R1
 R10
 !i10b 1
-!s100 C:T=Al`b6T=:;_FDgRHZg0
-IM6f]kbeL[4eTLQRUz`hUc3
+!s100 14Cn5cYF]g`R8zU4_3HGX1
+I=lWooQ6QYeTC[X0?6Ac2I2
 R3
 !s105 slc3_sv_unit
 S1
 R0
-w1677805754
+w1677809306
 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3.sv
 L0 20
@@ -370,7 +370,7 @@ R9
 n@s@l@c3_2
 vslc3_testtop
 R1
-R10
+Z20 !s110 1677812441
 !i10b 1
 !s100 ^4hhCjYV2aT;kkekDk8a71
 IV6K5nXnhn_O=eTa;4Cl@d2
@@ -378,7 +378,7 @@ R3
 !s105 slc3_testtop_sv_unit
 S1
 R0
-Z19 w1677793050
+Z21 w1677793050
 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv
 L0 4
@@ -386,7 +386,7 @@ R5
 r1
 !s85 0
 31
-R11
+R17
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/slc3_testtop.sv|
 !i113 1
@@ -400,20 +400,20 @@ R10
 !s100 OHNUFN]797>kYzRL;ikZR2
 IE4iz;WbmaKk`9@naK5@6Z1
 R3
-Z20 !s105 synchronizers_sv_unit
+Z22 !s105 synchronizers_sv_unit
 S1
 R0
-R19
-Z21 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv
-Z22 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv
+R21
+Z23 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv
+Z24 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv
 L0 7
 R5
 r1
 !s85 0
 31
 R11
-Z23 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv|
-Z24 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv|
+Z25 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/synchronizers.sv|
 !i113 1
 R7
 R8
@@ -425,20 +425,20 @@ R10
 !s100 _Sn:CfHFjznVZen=7jc>C2
 ICRf^ZCW0<z32JUJVR5cBH3
 R3
-R20
+R22
 S1
 R0
-R19
 R21
-R22
+R23
+R24
 L0 21
 R5
 r1
 !s85 0
 31
 R11
-R23
-R24
+R25
+R26
 !i113 1
 R7
 R8
@@ -450,20 +450,20 @@ R10
 !s100 4jfZd?z`MK2Y<NLFC0<QH2
 IaARSz[JnSEfn]PgiZTS0O0
 R3
-R20
+R22
 S1
 R0
-R19
 R21
-R22
+R23
+R24
 L0 42
 R5
 r1
 !s85 0
 31
 R11
-R23
-R24
+R25
+R26
 !i113 1
 R7
 R8
@@ -478,7 +478,7 @@ R3
 !s105 test_memory_sv_unit
 S1
 R0
-R19
+R21
 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/test_memory.sv
 L0 26
@@ -495,15 +495,15 @@ R8
 R9
 vtestbench
 R1
-R10
+R20
 !i10b 1
-!s100 3nMAaEbHWR?_iflibU02o0
-IK@HC>LhA7^E<517QdIESb0
+!s100 jZSX2dcn=lC_IAMbRI8P33
+I8;D38K;@HLE@RJ<mOnEBQ2
 R3
 !s105 testbench_sv_unit
 S1
 R0
-w1677805827
+w1677811019
 8C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv
 FC:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv
 L0 1
@@ -511,7 +511,7 @@ R5
 r1
 !s85 0
 31
-R11
+R17
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/testbench.sv|
 !i113 1
@@ -520,7 +520,7 @@ R8
 R9
 vThreeInputMux
 R1
-R2
+R10
 !i10b 1
 !s100 1d5HBjJ_GhMUOLYzeUGCO1
 I1Y<UJ]zZUY5K5cQRM;X;90
@@ -536,7 +536,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/ThreeInputMux.sv|
 !i113 1
@@ -546,7 +546,7 @@ R9
 n@three@input@mux
 vTwoInputMux
 R1
-R2
+R10
 !i10b 1
 !s100 5?jDJo3Wigdco<KoN_9dM0
 Igdog?WVYT4UK7>nkRhGz50
@@ -562,7 +562,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5|C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv|
 !i113 1

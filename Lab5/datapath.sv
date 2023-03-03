@@ -16,15 +16,16 @@ module datapath (
 					PC_Reg_Out, 
 					MDR_MUX,
 					PCMUX_Out, 
-					BEN_Reg_Out,
 					SR1OUT,
 					SR2OUT,
 					SR2MUX_OUT,
 					ALU_MOD_OUT, 
-					SR1MUX_OUT, 
-					DRMUX_OUT, 
 					ADDR1MUX_OUT, 
 					ADDR2MUX_OUT;
+
+	logic BEN_Reg_Out; 
+
+	logic [2:0] DRMUX_OUT, SR1MUX_OUT; 
 
 	BusMux Tri_State_Buff(
 					.S({GateMDR, GateALU, GatePC, GateMARMUX}), 
