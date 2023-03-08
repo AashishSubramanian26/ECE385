@@ -548,3 +548,5 @@ do wave.do ; restart -f; run 3000ns
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/PCMult
 # ** Warning: (vsim-8315) C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab5/TwoInputMux.sv(8): No condition is true in the unique/priority if/case statement.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/slc/d0/MDRMult
+# End time: 17:56:43 on Mar 03,2023, Elapsed time: 20:56:01
+# Errors: 0, Warnings: 16
