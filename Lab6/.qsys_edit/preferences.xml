@@ -7,8 +7,7 @@
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Basic Functions,Library/Memory Interfaces and Controllers/SDRAM,Library,Project,Library/Qsys Interconnect,Library/Memory Interfaces and Controllers" />
+ <library expandedCategories="Library,Project" />
  <window width="1296" height="696" x="-8" y="-8" />
  <generation path="_PROJECT_NAME_" />
 </preferences>
