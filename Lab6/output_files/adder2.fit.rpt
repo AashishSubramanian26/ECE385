@@ -1,5 +1,5 @@
 Fitter report for adder2
-Tue Mar 07 22:15:36 2023
+Tue Mar 07 23:02:58 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -72,7 +72,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Mar 07 22:15:36 2023       ;
+; Fitter Status                      ; Successful - Tue Mar 07 23:02:58 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; adder2                                      ;
 ; Top-level Entity Name              ; lab61                                       ;
@@ -158,14 +158,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.37        ;
+; Average used               ; 1.35        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  12.5%      ;
-;     Processor 3            ;  12.4%      ;
-;     Processor 4            ;  12.4%      ;
+;     Processor 2            ;  11.8%      ;
+;     Processor 3            ;  11.8%      ;
+;     Processor 4            ;  11.8%      ;
 +----------------------------+-------------+
 
 
@@ -515,7 +515,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/output_files/adder2.pin.
+The pin-out file can be found in C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/output_files/adder2.pin.
 
 
 +----------------------------------------------------------------------------+
@@ -2102,9 +2102,9 @@ Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors
 Info (119006): Selected device 10M50DAF484C7G for design "adder2"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Info (15535): Implemented PLL "lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|pll7" as MAX 10 PLL type File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 150
-    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of 0 degrees (0 ps) for lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|wire_pll7_clk[0] port File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 150
-    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of -18 degrees (-1000 ps) for lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|wire_pll7_clk[1] port File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 150
+Info (15535): Implemented PLL "lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|pll7" as MAX 10 PLL type File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 150
+    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of 0 degrees (0 ps) for lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|wire_pll7_clk[0] port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 150
+    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of -18 degrees (-1000 ps) for lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|wire_pll7_clk[1] port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 150
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -2154,39 +2154,39 @@ Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):  100.000 altera_reserved_tck
-Info (176353): Automatically promoted node lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|wire_pll7_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 192
+Info (176353): Automatically promoted node lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|wire_pll7_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 192
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
-Info (176353): Automatically promoted node lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|wire_pll7_clk[1] (placed in counter C1 of PLL_1) File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 192
+Info (176353): Automatically promoted node lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|wire_pll7_clk[1] (placed in counter C1 of PLL_1) File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 192
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
-Info (176353): Automatically promoted node MAX10_CLK1_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61.sv Line: 11
+Info (176353): Automatically promoted node MAX10_CLK1_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61.sv Line: 11
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G16
 Info (176353): Automatically promoted node altera_internal_jtag~TCKUTAP 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller_001|r_sync_rst  File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 288
+Info (176353): Automatically promoted node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller_001|r_sync_rst  File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 288
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_nios2_gen2_0:nios2_gen2_0|lab61soc_nios2_gen2_0_cpu:cpu|W_rf_wren File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_nios2_gen2_0_cpu.v Line: 3451
-        Info (176357): Destination node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller_001|WideOr0~0 File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 290
+        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_nios2_gen2_0:nios2_gen2_0|lab61soc_nios2_gen2_0_cpu:cpu|W_rf_wren File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_nios2_gen2_0_cpu.v Line: 3451
+        Info (176357): Destination node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller_001|WideOr0~0 File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 290
         Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_nios2_gen2_0:nios2_gen2_0|lab61soc_nios2_gen2_0_cpu:cpu|lab61soc_nios2_gen2_0_cpu_nios2_oci:the_lab61soc_nios2_gen2_0_cpu_nios2_oci|lab61soc_nios2_gen2_0_cpu_nios2_oci_debug:the_lab61soc_nios2_gen2_0_cpu_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer|din_s1 File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_std_synchronizer.v Line: 45
-Info (176353): Automatically promoted node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out  File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/altera_reset_synchronizer.v Line: 62
+Info (176353): Automatically promoted node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller_002|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out  File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/altera_reset_synchronizer.v Line: 62
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|active_rnw~1 File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 215
-        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|active_cs_n~0 File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 212
-        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|active_cs_n~1 File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 212
-        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|i_refs[0] File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 356
-        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|i_refs[2] File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 356
-        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|i_refs[1] File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 356
-Info (176353): Automatically promoted node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller|r_sync_rst  File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 288
+        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|active_rnw~1 File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 215
+        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|active_cs_n~0 File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 212
+        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|active_cs_n~1 File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 212
+        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|i_refs[0] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 356
+        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|i_refs[2] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 356
+        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram:sdram|i_refs[1] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram.v Line: 356
+Info (176353): Automatically promoted node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller|r_sync_rst  File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 288
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller|WideOr0~0 File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 290
-Info (176353): Automatically promoted node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller_002|merged_reset~0  File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 134
+        Info (176357): Destination node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller|WideOr0~0 File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 290
+Info (176353): Automatically promoted node lab61soc:m_lab61_soc|altera_reset_controller:rst_controller_002|merged_reset~0  File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/altera_reset_controller.v Line: 134
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|prev_reset  File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 274
+Info (176353): Automatically promoted node lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|prev_reset  File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 274
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|readdata[0]~1 File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 258
+        Info (176357): Destination node lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|readdata[0]~1 File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 258
 Info (176233): Starting register packing
 Warning (176250): Ignoring invalid fast I/O register assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (176251): Ignoring some wildcard destinations of fast I/O register assignments
@@ -2214,7 +2214,7 @@ Info (176235): Finished register packing
     Extra Info (176218): Packed 16 registers into blocks of type I/O Input Buffer
     Extra Info (176218): Packed 53 registers into blocks of type I/O Output Buffer
     Extra Info (176220): Created 34 register duplicates
-Warning (15064): PLL "lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|pll7" output port clk[1] feeds output pin "DRAM_CLK~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 150
+Warning (15064): PLL "lab61soc:m_lab61_soc|lab61soc_sdram_pll:sdram_pll|lab61soc_sdram_pll_altpll_vg92:sd1|pll7" output port clk[1] feeds output pin "DRAM_CLK~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab61soc/synthesis/submodules/lab61soc_sdram_pll.v Line: 150
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "ADC_CLK_10" is assigned to location or region, but does not exist in design
     Warning (15706): Node "ARDUINO_IO[0]" is assigned to location or region, but does not exist in design
@@ -2351,7 +2351,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:07
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -2364,25 +2364,25 @@ Info (170195): Router estimated average interconnect usage is 1% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.52 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.45 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:07
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/output_files/adder2.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/output_files/adder2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 150 warnings
     Info: Peak virtual memory: 5686 megabytes
-    Info: Processing ended: Tue Mar 07 22:15:37 2023
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Processing ended: Tue Mar 07 23:02:59 2023
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Soumi/Documents/GitHub/ECE385/Lab6/output_files/adder2.fit.smsg.
+The suppressed messages can be found in C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/output_files/adder2.fit.smsg.
 
 
