@@ -14,7 +14,6 @@ module lab61soc (
 	sdram_wire_ras_n,
 	sdram_wire_we_n,
 	accumulate_export,
-	order66_export,
 	sw_export);	
 
 	input		clk_clk;
@@ -30,7 +29,6 @@ module lab61soc (
 	output	[1:0]	sdram_wire_dqm;
 	output		sdram_wire_ras_n;
 	output		sdram_wire_we_n;
-	input	[7:0]	accumulate_export;
-	input	[7:0]	order66_export;
+	input		accumulate_export;
 	input	[7:0]	sw_export;
 endmodule

@@ -1,0 +1,24 @@
+int main()
+{
+	volatile unsigned int *ACCU_PIO = (unsigned int*)0x70; //make a pointer to access the PIO block
+	volatile unsigned int *SW_PIO  = (unsigned int*)0x60; //make a pointer to access the PIO block
+	volatile unsigned int *LED_PIO = (unsigned int*)0x90; //make a pointer to access the PIO block
+
+	*LED_PIO = 0; //clear all LEDs
+	int sum = 0;
+	int Reset_Pressed = 0; // initialize the condition of reset button
+
+	while ( (1+1) != 3) //infinite loop
+	{
+		if(*ACCU_PIO == 0 && Reset_Pressed == 0) {
+			sum = sum + *SW_PIO;
+			Reset_Pressed = 1;  //no longer adding values continuously
+		}
+		if(*ACCU_PIO == 1 && Reset_Pressed == 1) {
+			Reset_Pressed = 0;
+		}
+		//maybe don't need to add sum = sum%255 if sum > 255
+		*LED_PIO = sum;
+	}
+	return 1; //never gets here
+}

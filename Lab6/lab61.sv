@@ -10,6 +10,7 @@
 
 module lab61(  	 	  input	        MAX10_CLK1_50, 
 					  input  [1:0]  KEY,
+					  input [7:0] SW, 
 					  output [7:0]  LEDR,
 					  output [12:0] DRAM_ADDR,
 					  output [1:0]  DRAM_BA,
@@ -29,6 +30,8 @@ module lab61(  	 	  input	        MAX10_CLK1_50,
 				  // the interface in lab61_soc.v
 				  lab61soc m_lab61_soc (.clk_clk(MAX10_CLK1_50),
 											 .reset_reset_n(KEY[0]), 
+											 .accumulate_export(KEY[1]), 
+											 .sw_export(SW), 
 											 .led_wire_export(LEDR),
 											//SDRAM
 											.sdram_clk_clk(DRAM_CLK),                            //clk_sdram.clk

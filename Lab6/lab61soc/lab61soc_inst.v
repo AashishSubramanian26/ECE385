@@ -13,7 +13,6 @@
 		.sdram_wire_ras_n  (<connected-to-sdram_wire_ras_n>),  //           .ras_n
 		.sdram_wire_we_n   (<connected-to-sdram_wire_we_n>),   //           .we_n
 		.accumulate_export (<connected-to-accumulate_export>), // accumulate.export
-		.order66_export    (<connected-to-order66_export>),    //    order66.export
 		.sw_export         (<connected-to-sw_export>)          //         sw.export
 	);
 

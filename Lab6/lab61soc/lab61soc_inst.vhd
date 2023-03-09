@@ -13,8 +13,7 @@
 			sdram_wire_dqm    : out   std_logic_vector(1 downto 0);                     -- dqm
 			sdram_wire_ras_n  : out   std_logic;                                        -- ras_n
 			sdram_wire_we_n   : out   std_logic;                                        -- we_n
-			accumulate_export : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- export
-			order66_export    : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- export
+			accumulate_export : in    std_logic                     := 'X';             -- export
 			sw_export         : in    std_logic_vector(7 downto 0)  := (others => 'X')  -- export
 		);
 	end component lab61soc;
@@ -35,7 +34,6 @@
 			sdram_wire_ras_n  => CONNECTED_TO_sdram_wire_ras_n,  --           .ras_n
 			sdram_wire_we_n   => CONNECTED_TO_sdram_wire_we_n,   --           .we_n
 			accumulate_export => CONNECTED_TO_accumulate_export, -- accumulate.export
-			order66_export    => CONNECTED_TO_order66_export,    --    order66.export
 			sw_export         => CONNECTED_TO_sw_export          --         sw.export
 		);
 
