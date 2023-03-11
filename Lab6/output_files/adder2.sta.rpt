@@ -1,5 +1,5 @@
 Timing Analyzer report for adder2
-Wed Mar 08 18:16:33 2023
+Fri Mar 10 17:56:15 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -45,11 +45,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  37. Report RSKM
  38. Unconstrained Paths Summary
  39. Clock Status Summary
- 40. Unconstrained Input Ports
- 41. Unconstrained Output Ports
- 42. Unconstrained Input Ports
- 43. Unconstrained Output Ports
- 44. Timing Analyzer Messages
+ 40. Timing Analyzer Messages
 
 
 
@@ -94,13 +90,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.89        ;
+; Average used               ; 1.93        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  29.6%      ;
-;     Processors 3-4         ;  29.6%      ;
+;     Processor 2            ;  33.2%      ;
+;     Processor 3            ;  30.2%      ;
+;     Processor 4            ;  30.1%      ;
 +----------------------------+-------------+
 
 
@@ -109,74 +106,90 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                              ; Status ; Read at                  ;
 +----------------------------------------------------------------------------+--------+--------------------------+
-; lab61soc/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Wed Mar 08 18:16:28 2023 ;
-; lab61soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Wed Mar 08 18:16:28 2023 ;
-; lab61soc/synthesis/submodules/lab61soc_nios2_gen2_0_cpu.sdc                ; OK     ; Wed Mar 08 18:16:28 2023 ;
+; lab6.sdc                                                                   ; OK     ; Fri Mar 10 17:56:09 2023 ;
+; lab61soc/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Fri Mar 10 17:56:09 2023 ;
+; lab61soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Fri Mar 10 17:56:09 2023 ;
+; lab61soc/synthesis/submodules/lab61soc_nios2_gen2_0_cpu.sdc                ; OK     ; Fri Mar 10 17:56:09 2023 ;
 +----------------------------------------------------------------------------+--------+--------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                    ;
-+---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
-; Clock Name          ; Type ; Period  ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                 ;
-+---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
-; altera_reserved_tck ; Base ; 100.000 ; 10.0 MHz  ; 0.000 ; 50.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { altera_reserved_tck } ;
-+---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                    ;
++---------------------------------------+-----------+---------+-----------+--------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+-------------+-----------------------------------------+-------------------------------------------+
+; Clock Name                            ; Type      ; Period  ; Frequency ; Rise   ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master      ; Source                                  ; Targets                                   ;
++---------------------------------------+-----------+---------+-----------+--------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+-------------+-----------------------------------------+-------------------------------------------+
+; altera_reserved_tck                   ; Base      ; 100.000 ; 10.0 MHz  ; 0.000  ; 50.000 ;            ;           ;             ;       ;        ;           ;            ;          ;             ;                                         ; { altera_reserved_tck }                   ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; Generated ; 20.000  ; 50.0 MHz  ; 17.000 ; 27.000 ; 50.00      ; 1         ; 1           ; -54.0 ;        ;           ;            ; false    ; main_clk_50 ; m_lab61_soc|sdram_pll|sd1|pll7|inclk[0] ; { m_lab61_soc|sdram_pll|sd1|pll7|clk[0] } ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[1] ; Generated ; 20.000  ; 50.0 MHz  ; 17.000 ; 27.000 ; 50.00      ; 1         ; 1           ; -54.0 ;        ;           ;            ; false    ; main_clk_50 ; m_lab61_soc|sdram_pll|sd1|pll7|inclk[0] ; { m_lab61_soc|sdram_pll|sd1|pll7|clk[1] } ;
+; main_clk_50                           ; Base      ; 20.000  ; 50.0 MHz  ; 0.000  ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;             ;                                         ; { MAX10_CLK1_50 }                         ;
++---------------------------------------+-----------+---------+-----------+--------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+-------------+-----------------------------------------+-------------------------------------------+
 
 
-+-----------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                        ;
-+------------+-----------------+---------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
-+------------+-----------------+---------------------+------+
-; 126.39 MHz ; 126.39 MHz      ; altera_reserved_tck ;      ;
-+------------+-----------------+---------------------+------+
++-----------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                          ;
++------------+-----------------+---------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                            ; Note ;
++------------+-----------------+---------------------------------------+------+
+; 83.24 MHz  ; 83.24 MHz       ; main_clk_50                           ;      ;
+; 90.98 MHz  ; 90.98 MHz       ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ;      ;
+; 119.62 MHz ; 119.62 MHz      ; altera_reserved_tck                   ;      ;
++------------+-----------------+---------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+----------------------------------------------+
-; Slow 1200mV 85C Model Setup Summary          ;
-+---------------------+--------+---------------+
-; Clock               ; Slack  ; End Point TNS ;
-+---------------------+--------+---------------+
-; altera_reserved_tck ; 46.044 ; 0.000         ;
-+---------------------+--------+---------------+
++----------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                            ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 0.674  ; 0.000         ;
+; main_clk_50                           ; 7.986  ; 0.000         ;
+; altera_reserved_tck                   ; 45.820 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
-+---------------------------------------------+
-; Slow 1200mV 85C Model Hold Summary          ;
-+---------------------+-------+---------------+
-; Clock               ; Slack ; End Point TNS ;
-+---------------------+-------+---------------+
-; altera_reserved_tck ; 0.340 ; 0.000         ;
-+---------------------+-------+---------------+
++---------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                            ;
++---------------------------------------+-------+---------------+
+; Clock                                 ; Slack ; End Point TNS ;
++---------------------------------------+-------+---------------+
+; main_clk_50                           ; 0.231 ; 0.000         ;
+; altera_reserved_tck                   ; 0.340 ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 0.341 ; 0.000         ;
++---------------------------------------+-------+---------------+
 
 
-+----------------------------------------------+
-; Slow 1200mV 85C Model Recovery Summary       ;
-+---------------------+--------+---------------+
-; Clock               ; Slack  ; End Point TNS ;
-+---------------------+--------+---------------+
-; altera_reserved_tck ; 97.851 ; 0.000         ;
-+---------------------+--------+---------------+
++----------------------------------------------------------------+
+; Slow 1200mV 85C Model Recovery Summary                         ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 13.556 ; 0.000         ;
+; main_clk_50                           ; 14.741 ; 0.000         ;
+; altera_reserved_tck                   ; 97.635 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
-+---------------------------------------------+
-; Slow 1200mV 85C Model Removal Summary       ;
-+---------------------+-------+---------------+
-; Clock               ; Slack ; End Point TNS ;
-+---------------------+-------+---------------+
-; altera_reserved_tck ; 1.120 ; 0.000         ;
-+---------------------+-------+---------------+
++---------------------------------------------------------------+
+; Slow 1200mV 85C Model Removal Summary                         ;
++---------------------------------------+-------+---------------+
+; Clock                                 ; Slack ; End Point TNS ;
++---------------------------------------+-------+---------------+
+; altera_reserved_tck                   ; 1.173 ; 0.000         ;
+; main_clk_50                           ; 3.740 ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 4.756 ; 0.000         ;
++---------------------------------------+-------+---------------+
 
 
-+---------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
-+---------------------+--------+--------------------+
-; Clock               ; Slack  ; End Point TNS      ;
-+---------------------+--------+--------------------+
-; altera_reserved_tck ; 49.627 ; 0.000              ;
-+---------------------+--------+--------------------+
++----------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary              ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; main_clk_50                           ; 9.550  ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 9.708  ; 0.000         ;
+; altera_reserved_tck                   ; 49.618 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
 -----------------------------------------------
@@ -185,10 +198,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-Number of Synchronizer Chains Found: 3
+Number of Synchronizer Chains Found: 16
 Shortest Synchronizer Chain: 2 Registers
-Fraction of Chains for which MTBFs Could Not be Calculated: 0.333
-Worst Case Available Settling Time: 197.133 ns
+Fraction of Chains for which MTBFs Could Not be Calculated: 0.188
+Worst Case Available Settling Time: 32.553 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.8
@@ -197,59 +210,71 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+-----------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                         ;
-+------------+-----------------+---------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
-+------------+-----------------+---------------------+------+
-; 137.63 MHz ; 137.63 MHz      ; altera_reserved_tck ;      ;
-+------------+-----------------+---------------------+------+
++-----------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                           ;
++------------+-----------------+---------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                            ; Note ;
++------------+-----------------+---------------------------------------+------+
+; 89.85 MHz  ; 89.85 MHz       ; main_clk_50                           ;      ;
+; 98.36 MHz  ; 98.36 MHz       ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ;      ;
+; 129.13 MHz ; 129.13 MHz      ; altera_reserved_tck                   ;      ;
++------------+-----------------+---------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+----------------------------------------------+
-; Slow 1200mV 0C Model Setup Summary           ;
-+---------------------+--------+---------------+
-; Clock               ; Slack  ; End Point TNS ;
-+---------------------+--------+---------------+
-; altera_reserved_tck ; 46.367 ; 0.000         ;
-+---------------------+--------+---------------+
++----------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                             ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 1.329  ; 0.000         ;
+; main_clk_50                           ; 8.870  ; 0.000         ;
+; altera_reserved_tck                   ; 46.128 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
-+---------------------------------------------+
-; Slow 1200mV 0C Model Hold Summary           ;
-+---------------------+-------+---------------+
-; Clock               ; Slack ; End Point TNS ;
-+---------------------+-------+---------------+
-; altera_reserved_tck ; 0.305 ; 0.000         ;
-+---------------------+-------+---------------+
++---------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                             ;
++---------------------------------------+-------+---------------+
+; Clock                                 ; Slack ; End Point TNS ;
++---------------------------------------+-------+---------------+
+; main_clk_50                           ; 0.205 ; 0.000         ;
+; altera_reserved_tck                   ; 0.305 ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 0.307 ; 0.000         ;
++---------------------------------------+-------+---------------+
 
 
-+----------------------------------------------+
-; Slow 1200mV 0C Model Recovery Summary        ;
-+---------------------+--------+---------------+
-; Clock               ; Slack  ; End Point TNS ;
-+---------------------+--------+---------------+
-; altera_reserved_tck ; 98.005 ; 0.000         ;
-+---------------------+--------+---------------+
++----------------------------------------------------------------+
+; Slow 1200mV 0C Model Recovery Summary                          ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 14.157 ; 0.000         ;
+; main_clk_50                           ; 15.269 ; 0.000         ;
+; altera_reserved_tck                   ; 97.858 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
-+---------------------------------------------+
-; Slow 1200mV 0C Model Removal Summary        ;
-+---------------------+-------+---------------+
-; Clock               ; Slack ; End Point TNS ;
-+---------------------+-------+---------------+
-; altera_reserved_tck ; 1.039 ; 0.000         ;
-+---------------------+-------+---------------+
++---------------------------------------------------------------+
+; Slow 1200mV 0C Model Removal Summary                          ;
++---------------------------------------+-------+---------------+
+; Clock                                 ; Slack ; End Point TNS ;
++---------------------------------------+-------+---------------+
+; altera_reserved_tck                   ; 1.075 ; 0.000         ;
+; main_clk_50                           ; 3.421 ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 4.277 ; 0.000         ;
++---------------------------------------+-------+---------------+
 
 
-+--------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
-+---------------------+--------+-------------------+
-; Clock               ; Slack  ; End Point TNS     ;
-+---------------------+--------+-------------------+
-; altera_reserved_tck ; 49.648 ; 0.000             ;
-+---------------------+--------+-------------------+
++----------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary               ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; main_clk_50                           ; 9.582  ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 9.704  ; 0.000         ;
+; altera_reserved_tck                   ; 49.642 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -258,10 +283,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-Number of Synchronizer Chains Found: 3
+Number of Synchronizer Chains Found: 16
 Shortest Synchronizer Chain: 2 Registers
-Fraction of Chains for which MTBFs Could Not be Calculated: 0.333
-Worst Case Available Settling Time: 197.398 ns
+Fraction of Chains for which MTBFs Could Not be Calculated: 0.188
+Worst Case Available Settling Time: 33.154 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.8
@@ -270,49 +295,59 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+----------------------------------------------+
-; Fast 1200mV 0C Model Setup Summary           ;
-+---------------------+--------+---------------+
-; Clock               ; Slack  ; End Point TNS ;
-+---------------------+--------+---------------+
-; altera_reserved_tck ; 48.646 ; 0.000         ;
-+---------------------+--------+---------------+
++----------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary                             ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 4.261  ; 0.000         ;
+; main_clk_50                           ; 13.315 ; 0.000         ;
+; altera_reserved_tck                   ; 48.526 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
-+---------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary           ;
-+---------------------+-------+---------------+
-; Clock               ; Slack ; End Point TNS ;
-+---------------------+-------+---------------+
-; altera_reserved_tck ; 0.147 ; 0.000         ;
-+---------------------+-------+---------------+
++---------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                             ;
++---------------------------------------+-------+---------------+
+; Clock                                 ; Slack ; End Point TNS ;
++---------------------------------------+-------+---------------+
+; main_clk_50                           ; 0.080 ; 0.000         ;
+; altera_reserved_tck                   ; 0.147 ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 0.149 ; 0.000         ;
++---------------------------------------+-------+---------------+
 
 
-+----------------------------------------------+
-; Fast 1200mV 0C Model Recovery Summary        ;
-+---------------------+--------+---------------+
-; Clock               ; Slack  ; End Point TNS ;
-+---------------------+--------+---------------+
-; altera_reserved_tck ; 98.988 ; 0.000         ;
-+---------------------+--------+---------------+
++----------------------------------------------------------------+
+; Fast 1200mV 0C Model Recovery Summary                          ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 16.922 ; 0.000         ;
+; main_clk_50                           ; 17.369 ; 0.000         ;
+; altera_reserved_tck                   ; 98.892 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
-+---------------------------------------------+
-; Fast 1200mV 0C Model Removal Summary        ;
-+---------------------+-------+---------------+
-; Clock               ; Slack ; End Point TNS ;
-+---------------------+-------+---------------+
-; altera_reserved_tck ; 0.486 ; 0.000         ;
-+---------------------+-------+---------------+
++---------------------------------------------------------------+
+; Fast 1200mV 0C Model Removal Summary                          ;
++---------------------------------------+-------+---------------+
+; Clock                                 ; Slack ; End Point TNS ;
++---------------------------------------+-------+---------------+
+; altera_reserved_tck                   ; 0.496 ; 0.000         ;
+; main_clk_50                           ; 1.835 ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 2.234 ; 0.000         ;
++---------------------------------------+-------+---------------+
 
 
-+--------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
-+---------------------+--------+-------------------+
-; Clock               ; Slack  ; End Point TNS     ;
-+---------------------+--------+-------------------+
-; altera_reserved_tck ; 49.424 ; 0.000             ;
-+---------------------+--------+-------------------+
++----------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary               ;
++---------------------------------------+--------+---------------+
+; Clock                                 ; Slack  ; End Point TNS ;
++---------------------------------------+--------+---------------+
+; main_clk_50                           ; 9.401  ; 0.000         ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 9.720  ; 0.000         ;
+; altera_reserved_tck                   ; 49.413 ; 0.000         ;
++---------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -321,10 +356,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-Number of Synchronizer Chains Found: 3
+Number of Synchronizer Chains Found: 16
 Shortest Synchronizer Chain: 2 Registers
-Fraction of Chains for which MTBFs Could Not be Calculated: 0.333
-Worst Case Available Settling Time: 198.804 ns
+Fraction of Chains for which MTBFs Could Not be Calculated: 0.188
+Worst Case Available Settling Time: 36.797 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.8
@@ -333,16 +368,20 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+----------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                              ;
-+----------------------+--------+-------+----------+---------+---------------------+
-; Clock                ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+----------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack     ; 46.044 ; 0.147 ; 97.851   ; 0.486   ; 49.424              ;
-;  altera_reserved_tck ; 46.044 ; 0.147 ; 97.851   ; 0.486   ; 49.424              ;
-; Design-wide TNS      ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
-;  altera_reserved_tck ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-+----------------------+--------+-------+----------+---------+---------------------+
++----------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                ;
++----------------------------------------+--------+-------+----------+---------+---------------------+
+; Clock                                  ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack                       ; 0.674  ; 0.080 ; 13.556   ; 0.496   ; 9.401               ;
+;  altera_reserved_tck                   ; 45.820 ; 0.147 ; 97.635   ; 0.496   ; 49.413              ;
+;  m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 0.674  ; 0.149 ; 13.556   ; 2.234   ; 9.704               ;
+;  main_clk_50                           ; 7.986  ; 0.080 ; 14.741   ; 1.835   ; 9.401               ;
+; Design-wide TNS                        ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  altera_reserved_tck                   ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
+;  m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
+;  main_clk_50                           ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
++----------------------------------------+--------+-------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -611,43 +650,63 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Setup Transfers                                                                       ;
-+---------------------+---------------------+----------+----------+----------+----------+
-; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 1100     ; 0        ; 34       ; 0        ;
-+---------------------+---------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                               ;
++---------------------------------------+---------------------------------------+------------+------------+----------+----------+
+; From Clock                            ; To Clock                              ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
++---------------------------------------+---------------------------------------+------------+------------+----------+----------+
+; altera_reserved_tck                   ; altera_reserved_tck                   ; 1098       ; 0          ; 34       ; 0        ;
+; main_clk_50                           ; altera_reserved_tck                   ; false path ; 0          ; 0        ; 0        ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 26451      ; 0          ; 0        ; 0        ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[1] ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 1          ; 1          ; 0        ; 0        ;
+; main_clk_50                           ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 105        ; 0          ; 0        ; 0        ;
+; altera_reserved_tck                   ; main_clk_50                           ; false path ; false path ; 0        ; 0        ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; main_clk_50                           ; 68         ; 0          ; 0        ; 0        ;
+; main_clk_50                           ; main_clk_50                           ; 46192      ; 0          ; 0        ; 0        ;
++---------------------------------------+---------------------------------------+------------+------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+---------------------------------------------------------------------------------------+
-; Hold Transfers                                                                        ;
-+---------------------+---------------------+----------+----------+----------+----------+
-; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 1100     ; 0        ; 34       ; 0        ;
-+---------------------+---------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                ;
++---------------------------------------+---------------------------------------+------------+------------+----------+----------+
+; From Clock                            ; To Clock                              ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
++---------------------------------------+---------------------------------------+------------+------------+----------+----------+
+; altera_reserved_tck                   ; altera_reserved_tck                   ; 1098       ; 0          ; 34       ; 0        ;
+; main_clk_50                           ; altera_reserved_tck                   ; false path ; 0          ; 0        ; 0        ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 26451      ; 0          ; 0        ; 0        ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[1] ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 1          ; 1          ; 0        ; 0        ;
+; main_clk_50                           ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 105        ; 0          ; 0        ; 0        ;
+; altera_reserved_tck                   ; main_clk_50                           ; false path ; false path ; 0        ; 0        ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; main_clk_50                           ; 68         ; 0          ; 0        ; 0        ;
+; main_clk_50                           ; main_clk_50                           ; 46192      ; 0          ; 0        ; 0        ;
++---------------------------------------+---------------------------------------+------------+------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+---------------------------------------------------------------------------------------+
-; Recovery Transfers                                                                    ;
-+---------------------+---------------------+----------+----------+----------+----------+
-; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 24       ; 0        ; 0        ; 0        ;
-+---------------------+---------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                                                        ;
++---------------------------------------+---------------------------------------+----------+----------+----------+----------+
+; From Clock                            ; To Clock                              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------+---------------------------------------+----------+----------+----------+----------+
+; altera_reserved_tck                   ; altera_reserved_tck                   ; 24       ; 0        ; 0        ; 0        ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 500      ; 0        ; 0        ; 0        ;
+; main_clk_50                           ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 6        ; 0        ; 0        ; 0        ;
+; main_clk_50                           ; main_clk_50                           ; 670      ; 0        ; 0        ; 0        ;
++---------------------------------------+---------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+---------------------------------------------------------------------------------------+
-; Removal Transfers                                                                     ;
-+---------------------+---------------------+----------+----------+----------+----------+
-; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 24       ; 0        ; 0        ; 0        ;
-+---------------------+---------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                                         ;
++---------------------------------------+---------------------------------------+----------+----------+----------+----------+
+; From Clock                            ; To Clock                              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------+---------------------------------------+----------+----------+----------+----------+
+; altera_reserved_tck                   ; altera_reserved_tck                   ; 24       ; 0        ; 0        ; 0        ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 500      ; 0        ; 0        ; 0        ;
+; main_clk_50                           ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; 6        ; 0        ; 0        ; 0        ;
+; main_clk_50                           ; main_clk_50                           ; 670      ; 0        ; 0        ; 0        ;
++---------------------------------------+---------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -669,204 +728,24 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 1     ; 1    ;
-; Unconstrained Input Ports       ; 28    ; 28   ;
-; Unconstrained Input Port Paths  ; 66    ; 66   ;
-; Unconstrained Output Ports      ; 47    ; 47   ;
-; Unconstrained Output Port Paths ; 63    ; 63   ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
-+------------------------------------------------------------------+
-; Clock Status Summary                                             ;
-+---------------------+---------------------+------+---------------+
-; Target              ; Clock               ; Type ; Status        ;
-+---------------------+---------------------+------+---------------+
-; MAX10_CLK1_50       ;                     ; Base ; Unconstrained ;
-; altera_reserved_tck ; altera_reserved_tck ; Base ; Constrained   ;
-+---------------------+---------------------+------+---------------+
-
-
-+------------------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                                  ;
-+---------------------+--------------------------------------------------------------------------------------+
-; Input Port          ; Comment                                                                              ;
-+---------------------+--------------------------------------------------------------------------------------+
-; DRAM_DQ[0]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[1]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[2]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[3]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[4]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[5]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[6]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[7]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[8]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[9]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[10]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[11]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[12]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[13]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[14]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[15]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; KEY[1]              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; MAX10_CLK1_50       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[0]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[1]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[2]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[3]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[4]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[5]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[6]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[7]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; altera_reserved_tdi ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; altera_reserved_tms ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------------+--------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                                  ;
-+---------------------+---------------------------------------------------------------------------------------+
-; Output Port         ; Comment                                                                               ;
-+---------------------+---------------------------------------------------------------------------------------+
-; DRAM_ADDR[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[4]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[5]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[6]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[7]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[8]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[9]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[10]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[11]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[12]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_BA[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_BA[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_CAS_N          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_CLK            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_CS_N           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[2]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[3]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[4]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[5]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[6]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[7]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[8]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[9]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[10]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[11]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[12]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[13]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[14]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[15]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_LDQM           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_RAS_N          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_UDQM           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_WE_N           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[0]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[1]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[2]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[3]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[4]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[5]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[6]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[7]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; altera_reserved_tdo ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------------+---------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                                  ;
-+---------------------+--------------------------------------------------------------------------------------+
-; Input Port          ; Comment                                                                              ;
-+---------------------+--------------------------------------------------------------------------------------+
-; DRAM_DQ[0]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[1]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[2]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[3]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[4]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[5]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[6]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[7]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[8]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[9]          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[10]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[11]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[12]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[13]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[14]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[15]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; KEY[1]              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; MAX10_CLK1_50       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[0]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[1]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[2]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[3]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[4]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[5]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[6]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[7]               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; altera_reserved_tdi ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; altera_reserved_tms ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------------+--------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                                  ;
-+---------------------+---------------------------------------------------------------------------------------+
-; Output Port         ; Comment                                                                               ;
-+---------------------+---------------------------------------------------------------------------------------+
-; DRAM_ADDR[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[4]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[5]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[6]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[7]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[8]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[9]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[10]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[11]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_ADDR[12]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_BA[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_BA[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_CAS_N          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_CLK            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_CS_N           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[2]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[3]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[4]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[5]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[6]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[7]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[8]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[9]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[10]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[11]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[12]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[13]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[14]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_DQ[15]         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_LDQM           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_RAS_N          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_UDQM           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; DRAM_WE_N           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[0]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[1]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[2]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[3]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[4]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[5]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[6]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[7]             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; altera_reserved_tdo ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------------+---------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                    ;
++---------------------------------------+---------------------------------------+-----------+-------------+
+; Target                                ; Clock                                 ; Type      ; Status      ;
++---------------------------------------+---------------------------------------+-----------+-------------+
+; MAX10_CLK1_50                         ; main_clk_50                           ; Base      ; Constrained ;
+; altera_reserved_tck                   ; altera_reserved_tck                   ; Base      ; Constrained ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; m_lab61_soc|sdram_pll|sd1|pll7|clk[0] ; Generated ; Constrained ;
+; m_lab61_soc|sdram_pll|sd1|pll7|clk[1] ; m_lab61_soc|sdram_pll|sd1|pll7|clk[1] ; Generated ; Constrained ;
++---------------------------------------+---------------------------------------+-----------+-------------+
 
 
 +--------------------------+
@@ -875,7 +754,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 08 18:16:26 2023
+    Info: Processing started: Fri Mar 10 17:56:07 2023
 Info: Command: quartus_sta adder2 -c adder2
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 24 assignments for entity "DE10_LITE_Default" -- entity does not exist in design
@@ -913,50 +792,236 @@ Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity sld_hub
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
+Info (332104): Reading SDC File: 'lab6.sdc'
+Warning (332043): Overwriting existing clock: altera_reserved_tck
+Warning (332174): Ignored filter at lab6.sdc(102): DRAM_DQ[16] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 102
+Warning (332049): Ignored set_input_delay at lab6.sdc(102): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 102
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[16]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 102
+Warning (332049): Ignored set_input_delay at lab6.sdc(103): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 103
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[16]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 103
+Warning (332174): Ignored filter at lab6.sdc(104): DRAM_DQ[17] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 104
+Warning (332049): Ignored set_input_delay at lab6.sdc(104): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 104
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[17]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 104
+Warning (332049): Ignored set_input_delay at lab6.sdc(105): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 105
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[17]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 105
+Warning (332174): Ignored filter at lab6.sdc(106): DRAM_DQ[18] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 106
+Warning (332049): Ignored set_input_delay at lab6.sdc(106): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 106
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[18]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 106
+Warning (332049): Ignored set_input_delay at lab6.sdc(107): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 107
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[18]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 107
+Warning (332174): Ignored filter at lab6.sdc(108): DRAM_DQ[19] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 108
+Warning (332049): Ignored set_input_delay at lab6.sdc(108): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 108
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[19]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 108
+Warning (332049): Ignored set_input_delay at lab6.sdc(109): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 109
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[19]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 109
+Warning (332174): Ignored filter at lab6.sdc(110): DRAM_DQ[20] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 110
+Warning (332049): Ignored set_input_delay at lab6.sdc(110): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 110
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[20]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 110
+Warning (332049): Ignored set_input_delay at lab6.sdc(111): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 111
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[20]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 111
+Warning (332174): Ignored filter at lab6.sdc(112): DRAM_DQ[21] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 112
+Warning (332049): Ignored set_input_delay at lab6.sdc(112): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 112
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[21]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 112
+Warning (332049): Ignored set_input_delay at lab6.sdc(113): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 113
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[21]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 113
+Warning (332174): Ignored filter at lab6.sdc(114): DRAM_DQ[22] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 114
+Warning (332049): Ignored set_input_delay at lab6.sdc(114): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 114
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[22]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 114
+Warning (332049): Ignored set_input_delay at lab6.sdc(115): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 115
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[22]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 115
+Warning (332174): Ignored filter at lab6.sdc(116): DRAM_DQ[23] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 116
+Warning (332049): Ignored set_input_delay at lab6.sdc(116): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 116
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[23]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 116
+Warning (332049): Ignored set_input_delay at lab6.sdc(117): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 117
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[23]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 117
+Warning (332174): Ignored filter at lab6.sdc(118): DRAM_DQ[24] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 118
+Warning (332049): Ignored set_input_delay at lab6.sdc(118): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 118
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[24]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 118
+Warning (332049): Ignored set_input_delay at lab6.sdc(119): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 119
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[24]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 119
+Warning (332174): Ignored filter at lab6.sdc(120): DRAM_DQ[25] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 120
+Warning (332049): Ignored set_input_delay at lab6.sdc(120): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 120
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[25]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 120
+Warning (332049): Ignored set_input_delay at lab6.sdc(121): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 121
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[25]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 121
+Warning (332174): Ignored filter at lab6.sdc(122): DRAM_DQ[26] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 122
+Warning (332049): Ignored set_input_delay at lab6.sdc(122): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 122
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[26]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 122
+Warning (332049): Ignored set_input_delay at lab6.sdc(123): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 123
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[26]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 123
+Warning (332174): Ignored filter at lab6.sdc(124): DRAM_DQ[27] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 124
+Warning (332049): Ignored set_input_delay at lab6.sdc(124): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 124
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[27]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 124
+Warning (332049): Ignored set_input_delay at lab6.sdc(125): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 125
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[27]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 125
+Warning (332174): Ignored filter at lab6.sdc(126): DRAM_DQ[28] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 126
+Warning (332049): Ignored set_input_delay at lab6.sdc(126): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 126
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[28]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 126
+Warning (332049): Ignored set_input_delay at lab6.sdc(127): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 127
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[28]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 127
+Warning (332174): Ignored filter at lab6.sdc(128): DRAM_DQ[29] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 128
+Warning (332049): Ignored set_input_delay at lab6.sdc(128): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 128
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[29]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 128
+Warning (332049): Ignored set_input_delay at lab6.sdc(129): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 129
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[29]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 129
+Warning (332174): Ignored filter at lab6.sdc(130): DRAM_DQ[30] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 130
+Warning (332049): Ignored set_input_delay at lab6.sdc(130): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 130
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[30]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 130
+Warning (332049): Ignored set_input_delay at lab6.sdc(131): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 131
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[30]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 131
+Warning (332174): Ignored filter at lab6.sdc(132): DRAM_DQ[31] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 132
+Warning (332049): Ignored set_input_delay at lab6.sdc(132): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 132
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  3.000 [get_ports {DRAM_DQ[31]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 132
+Warning (332049): Ignored set_input_delay at lab6.sdc(133): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 133
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[31]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 133
+Warning (332174): Ignored filter at lab6.sdc(138): KEY[2] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 138
+Warning (332049): Ignored set_input_delay at lab6.sdc(138): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 138
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {KEY[2]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 138
+Warning (332049): Ignored set_input_delay at lab6.sdc(139): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 139
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {KEY[2]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 139
+Warning (332174): Ignored filter at lab6.sdc(140): KEY[3] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 140
+Warning (332049): Ignored set_input_delay at lab6.sdc(140): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 140
+    Info (332050): set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {KEY[3]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 140
+Warning (332049): Ignored set_input_delay at lab6.sdc(141): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 141
+    Info (332050): set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {KEY[3]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 141
+Warning (332174): Ignored filter at lab6.sdc(188): DRAM_DQM[0] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 188
+Warning (332049): Ignored set_output_delay at lab6.sdc(188): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 188
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQM[0]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 188
+Warning (332174): Ignored filter at lab6.sdc(189): DRAM_DQM[1] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 189
+Warning (332049): Ignored set_output_delay at lab6.sdc(189): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 189
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQM[1]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 189
+Warning (332174): Ignored filter at lab6.sdc(190): DRAM_DQM[2] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 190
+Warning (332049): Ignored set_output_delay at lab6.sdc(190): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 190
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQM[2]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 190
+Warning (332174): Ignored filter at lab6.sdc(191): DRAM_DQM[3] could not be matched with a port File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 191
+Warning (332049): Ignored set_output_delay at lab6.sdc(191): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 191
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQM[3]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 191
+Warning (332049): Ignored set_output_delay at lab6.sdc(208): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 208
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[16]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 208
+Warning (332049): Ignored set_output_delay at lab6.sdc(209): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 209
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[17]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 209
+Warning (332049): Ignored set_output_delay at lab6.sdc(210): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 210
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[18]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 210
+Warning (332049): Ignored set_output_delay at lab6.sdc(211): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 211
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[19]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 211
+Warning (332049): Ignored set_output_delay at lab6.sdc(212): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 212
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[20]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 212
+Warning (332049): Ignored set_output_delay at lab6.sdc(213): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 213
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[21]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 213
+Warning (332049): Ignored set_output_delay at lab6.sdc(214): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 214
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[22]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 214
+Warning (332049): Ignored set_output_delay at lab6.sdc(215): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 215
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[23]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 215
+Warning (332049): Ignored set_output_delay at lab6.sdc(216): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 216
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[24]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 216
+Warning (332049): Ignored set_output_delay at lab6.sdc(217): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 217
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[25]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 217
+Warning (332049): Ignored set_output_delay at lab6.sdc(218): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 218
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[26]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 218
+Warning (332049): Ignored set_output_delay at lab6.sdc(219): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 219
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[27]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 219
+Warning (332049): Ignored set_output_delay at lab6.sdc(220): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 220
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[28]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 220
+Warning (332049): Ignored set_output_delay at lab6.sdc(221): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 221
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[29]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 221
+Warning (332049): Ignored set_output_delay at lab6.sdc(222): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 222
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[30]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 222
+Warning (332049): Ignored set_output_delay at lab6.sdc(223): Argument <targets> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 223
+    Info (332050): set_output_delay -add_delay  -clock [get_clocks {m_lab61_soc|sdram_pll|sd1|pll7|clk[0]}]  2.000 [get_ports {DRAM_DQ[31]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 223
+Warning (332174): Ignored filter at lab6.sdc(254): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_break:the_lab7_soc_nios2_qsys_0_nios2_oci_break|break_readreg* could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 254
+Warning (332174): Ignored filter at lab6.sdc(254): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr* could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 254
+Warning (332049): Ignored set_false_path at lab6.sdc(254): Argument <from> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 254
+    Info (332050): set_false_path -from [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_break:the_lab7_soc_nios2_qsys_0_nios2_oci_break|break_readreg*}] -to [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr*}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 254
+Warning (332049): Ignored set_false_path at lab6.sdc(254): Argument <to> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 254
+Warning (332174): Ignored filter at lab6.sdc(255): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_debug:the_lab7_soc_nios2_qsys_0_nios2_oci_debug|*resetlatch could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 255
+Warning (332174): Ignored filter at lab6.sdc(255): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr[33] could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 255
+Warning (332049): Ignored set_false_path at lab6.sdc(255): Argument <from> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 255
+    Info (332050): set_false_path -from [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_debug:the_lab7_soc_nios2_qsys_0_nios2_oci_debug|*resetlatch}] -to [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr[33]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 255
+Warning (332049): Ignored set_false_path at lab6.sdc(255): Argument <to> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 255
+Warning (332174): Ignored filter at lab6.sdc(256): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_debug:the_lab7_soc_nios2_qsys_0_nios2_oci_debug|monitor_ready could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 256
+Warning (332174): Ignored filter at lab6.sdc(256): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr[0] could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 256
+Warning (332049): Ignored set_false_path at lab6.sdc(256): Argument <from> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 256
+    Info (332050): set_false_path -from [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_debug:the_lab7_soc_nios2_qsys_0_nios2_oci_debug|monitor_ready}] -to [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr[0]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 256
+Warning (332049): Ignored set_false_path at lab6.sdc(256): Argument <to> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 256
+Warning (332174): Ignored filter at lab6.sdc(257): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_debug:the_lab7_soc_nios2_qsys_0_nios2_oci_debug|monitor_error could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 257
+Warning (332174): Ignored filter at lab6.sdc(257): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr[34] could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 257
+Warning (332049): Ignored set_false_path at lab6.sdc(257): Argument <from> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 257
+    Info (332050): set_false_path -from [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_debug:the_lab7_soc_nios2_qsys_0_nios2_oci_debug|monitor_error}] -to [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr[34]}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 257
+Warning (332049): Ignored set_false_path at lab6.sdc(257): Argument <to> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 257
+Warning (332174): Ignored filter at lab6.sdc(258): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_ocimem:the_lab7_soc_nios2_qsys_0_nios2_ocimem|*MonDReg* could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 258
+Warning (332049): Ignored set_false_path at lab6.sdc(258): Argument <from> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 258
+    Info (332050): set_false_path -from [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_ocimem:the_lab7_soc_nios2_qsys_0_nios2_ocimem|*MonDReg*}] -to [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr*}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 258
+Warning (332049): Ignored set_false_path at lab6.sdc(258): Argument <to> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 258
+Warning (332174): Ignored filter at lab6.sdc(259): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_sysclk:the_lab7_soc_nios2_qsys_0_jtag_debug_module_sysclk|*jdo* could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 259
+Warning (332049): Ignored set_false_path at lab6.sdc(259): Argument <from> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 259
+    Info (332050): set_false_path -from [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_tck:the_lab7_soc_nios2_qsys_0_jtag_debug_module_tck|*sr*}] -to [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_sysclk:the_lab7_soc_nios2_qsys_0_jtag_debug_module_sysclk|*jdo*}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 259
+Warning (332049): Ignored set_false_path at lab6.sdc(259): Argument <to> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 259
+Warning (332174): Ignored filter at lab6.sdc(260): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_sysclk:the_lab7_soc_nios2_qsys_0_jtag_debug_module_sysclk|ir* could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 260
+Warning (332049): Ignored set_false_path at lab6.sdc(260): Argument <to> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 260
+    Info (332050): set_false_path -from [get_keepers {sld_hub:*|irf_reg*}] -to [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper:the_lab7_soc_nios2_qsys_0_jtag_debug_module_wrapper|lab7_soc_nios2_qsys_0_jtag_debug_module_sysclk:the_lab7_soc_nios2_qsys_0_jtag_debug_module_sysclk|ir*}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 260
+Warning (332174): Ignored filter at lab6.sdc(261): *lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_debug:the_lab7_soc_nios2_qsys_0_nios2_oci_debug|monitor_go could not be matched with a keeper File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 261
+Warning (332049): Ignored set_false_path at lab6.sdc(261): Argument <to> is an empty collection File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 261
+    Info (332050): set_false_path -from [get_keepers {sld_hub:*|sld_shadow_jsm:shadow_jsm|state[1]}] -to [get_keepers {*lab7_soc_nios2_qsys_0:*|lab7_soc_nios2_qsys_0_nios2_oci:the_lab7_soc_nios2_qsys_0_nios2_oci|lab7_soc_nios2_qsys_0_nios2_oci_debug:the_lab7_soc_nios2_qsys_0_nios2_oci_debug|monitor_go}] File: C:/Users/Soumi/Documents/GitHub/ECE385_`/Lab6/lab6.sdc Line: 261
 Info (332104): Reading SDC File: 'lab61soc/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'lab61soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc'
 Info (332104): Reading SDC File: 'lab61soc/synthesis/submodules/lab61soc_nios2_gen2_0_cpu.sdc'
-Warning (332060): Node: MAX10_CLK1_50 was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register lab61soc:m_lab61_soc|lab61soc_sdram:sdram|m_addr[0] is being clocked by MAX10_CLK1_50
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: altera_internal_jtag  from: tck  to: tckutap
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
-    Warning (332056): Node: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
-    Warning (332056): Node: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Clock: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] was found on node: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] with settings that do not match the following PLL specifications:
+        Warning (332056): -phase (expected: 0.00, found: -54.00)
+    Warning (332056): Clock: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] was found on node: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] with settings that do not match the following PLL specifications:
+        Warning (332056): -phase (expected: -18.00, found: -54.00)
 Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
     Critical Warning (332169): From altera_reserved_tck (Rise) to altera_reserved_tck (Rise) (setup and hold)
     Critical Warning (332169): From altera_reserved_tck (Rise) to altera_reserved_tck (Fall) (setup and hold)
+    Critical Warning (332169): From main_clk_50 (Rise) to main_clk_50 (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) to main_clk_50 (Rise) (setup and hold)
+    Critical Warning (332169): From main_clk_50 (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[1] (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[1] (Fall) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
-Info (332146): Worst-case setup slack is 46.044
+Info (332146): Worst-case setup slack is 0.674
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    46.044               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.340
+    Info (332119):     0.674               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):     7.986               0.000 main_clk_50 
+    Info (332119):    45.820               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.231
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     0.231               0.000 main_clk_50 
     Info (332119):     0.340               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 97.851
+    Info (332119):     0.341               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+Info (332146): Worst-case recovery slack is 13.556
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    97.851               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 1.120
+    Info (332119):    13.556               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):    14.741               0.000 main_clk_50 
+    Info (332119):    97.635               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 1.173
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.120               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 49.627
+    Info (332119):     1.173               0.000 altera_reserved_tck 
+    Info (332119):     3.740               0.000 main_clk_50 
+    Info (332119):     4.756               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+Info (332146): Worst-case minimum pulse width slack is 9.550
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    49.627               0.000 altera_reserved_tck 
-Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332119):     9.550               0.000 main_clk_50 
+    Info (332119):     9.708               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):    49.618               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 16 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-    Info (332114): Number of Synchronizer Chains Found: 3
+    Info (332114): Number of Synchronizer Chains Found: 16
     Info (332114): Shortest Synchronizer Chain: 2 Registers
-    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.333
-    Info (332114): Worst Case Available Settling Time: 197.133 ns
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.188
+    Info (332114): Worst Case Available Settling Time: 32.553 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.8
@@ -965,99 +1030,131 @@ Info (332114): Report Metastability: Found 3 synchronizer chains.
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Warning (332060): Node: MAX10_CLK1_50 was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register lab61soc:m_lab61_soc|lab61soc_sdram:sdram|m_addr[0] is being clocked by MAX10_CLK1_50
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: altera_internal_jtag  from: tck  to: tckutap
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
-    Warning (332056): Node: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
-    Warning (332056): Node: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Clock: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] was found on node: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] with settings that do not match the following PLL specifications:
+        Warning (332056): -phase (expected: 0.00, found: -54.00)
+    Warning (332056): Clock: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] was found on node: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] with settings that do not match the following PLL specifications:
+        Warning (332056): -phase (expected: -18.00, found: -54.00)
 Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
     Critical Warning (332169): From altera_reserved_tck (Rise) to altera_reserved_tck (Rise) (setup and hold)
     Critical Warning (332169): From altera_reserved_tck (Rise) to altera_reserved_tck (Fall) (setup and hold)
-Info (332146): Worst-case setup slack is 46.367
+    Critical Warning (332169): From main_clk_50 (Rise) to main_clk_50 (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) to main_clk_50 (Rise) (setup and hold)
+    Critical Warning (332169): From main_clk_50 (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[1] (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[1] (Fall) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+Info (332146): Worst-case setup slack is 1.329
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    46.367               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.305
+    Info (332119):     1.329               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):     8.870               0.000 main_clk_50 
+    Info (332119):    46.128               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.205
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     0.205               0.000 main_clk_50 
     Info (332119):     0.305               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 98.005
+    Info (332119):     0.307               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+Info (332146): Worst-case recovery slack is 14.157
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    98.005               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 1.039
+    Info (332119):    14.157               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):    15.269               0.000 main_clk_50 
+    Info (332119):    97.858               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 1.075
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.039               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 49.648
+    Info (332119):     1.075               0.000 altera_reserved_tck 
+    Info (332119):     3.421               0.000 main_clk_50 
+    Info (332119):     4.277               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+Info (332146): Worst-case minimum pulse width slack is 9.582
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    49.648               0.000 altera_reserved_tck 
-Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332119):     9.582               0.000 main_clk_50 
+    Info (332119):     9.704               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):    49.642               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 16 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-    Info (332114): Number of Synchronizer Chains Found: 3
+    Info (332114): Number of Synchronizer Chains Found: 16
     Info (332114): Shortest Synchronizer Chain: 2 Registers
-    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.333
-    Info (332114): Worst Case Available Settling Time: 197.398 ns
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.188
+    Info (332114): Worst Case Available Settling Time: 33.154 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.8
     Info (332114): Typical MTBF values are calculated based on the nominal silicon characteristics, at nominal operating conditions.
     Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 3.7
 Info: Analyzing Fast 1200mV 0C Model
-Warning (332060): Node: MAX10_CLK1_50 was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register lab61soc:m_lab61_soc|lab61soc_sdram:sdram|m_addr[0] is being clocked by MAX10_CLK1_50
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: altera_internal_jtag  from: tck  to: tckutap
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
-    Warning (332056): Node: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
-    Warning (332056): Node: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Clock: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] was found on node: m_lab61_soc|sdram_pll|sd1|pll7|clk[0] with settings that do not match the following PLL specifications:
+        Warning (332056): -phase (expected: 0.00, found: -54.00)
+    Warning (332056): Clock: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] was found on node: m_lab61_soc|sdram_pll|sd1|pll7|clk[1] with settings that do not match the following PLL specifications:
+        Warning (332056): -phase (expected: -18.00, found: -54.00)
 Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
     Critical Warning (332169): From altera_reserved_tck (Rise) to altera_reserved_tck (Rise) (setup and hold)
     Critical Warning (332169): From altera_reserved_tck (Rise) to altera_reserved_tck (Fall) (setup and hold)
-Info (332146): Worst-case setup slack is 48.646
+    Critical Warning (332169): From main_clk_50 (Rise) to main_clk_50 (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) to main_clk_50 (Rise) (setup and hold)
+    Critical Warning (332169): From main_clk_50 (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[1] (Rise) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+    Critical Warning (332169): From m_lab61_soc|sdram_pll|sd1|pll7|clk[1] (Fall) to m_lab61_soc|sdram_pll|sd1|pll7|clk[0] (Rise) (setup and hold)
+Info (332146): Worst-case setup slack is 4.261
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    48.646               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.147
+    Info (332119):     4.261               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):    13.315               0.000 main_clk_50 
+    Info (332119):    48.526               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.080
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     0.080               0.000 main_clk_50 
     Info (332119):     0.147               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 98.988
+    Info (332119):     0.149               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+Info (332146): Worst-case recovery slack is 16.922
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    98.988               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.486
+    Info (332119):    16.922               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):    17.369               0.000 main_clk_50 
+    Info (332119):    98.892               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.496
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.486               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 49.424
+    Info (332119):     0.496               0.000 altera_reserved_tck 
+    Info (332119):     1.835               0.000 main_clk_50 
+    Info (332119):     2.234               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+Info (332146): Worst-case minimum pulse width slack is 9.401
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    49.424               0.000 altera_reserved_tck 
-Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332119):     9.401               0.000 main_clk_50 
+    Info (332119):     9.720               0.000 m_lab61_soc|sdram_pll|sd1|pll7|clk[0] 
+    Info (332119):    49.413               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 16 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-    Info (332114): Number of Synchronizer Chains Found: 3
+    Info (332114): Number of Synchronizer Chains Found: 16
     Info (332114): Shortest Synchronizer Chain: 2 Registers
-    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.333
-    Info (332114): Worst Case Available Settling Time: 198.804 ns
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.188
+    Info (332114): Worst Case Available Settling Time: 36.797 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.8
     Info (332114): Typical MTBF values are calculated based on the nominal silicon characteristics, at nominal operating conditions.
     Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 3.7
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 47 warnings
-    Info: Peak virtual memory: 4859 megabytes
-    Info: Processing ended: Wed Mar 08 18:16:33 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:11
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 173 warnings
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Fri Mar 10 17:56:15 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:14
 
 
